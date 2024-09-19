@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Striim Server Control</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <style>
+        .alert {
+            margin-top: 10px;
+        }
+        .btn .spinner-border {
+            display: none;
+        }
+        .btn-loading .spinner-border {
+            display: inline-block;
+        }
+        .btn-loading {
+            pointer-events: none;
+        }
+        .btn-extra-small {
+            padding: 1px 5px;
+            font-size: 10px;
+            line-height: 1.5;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <h1>Striim Server Status</h1>
+        <button id="check-status" class="btn btn-info btn-extra-small">
+            Check Status
+            <span class="spinner-border spinner-border-sm ms-2" role="status" aria-hidden="true"></span>
+        </button>
+        <button id="start-striim" class="btn btn-success btn-extra-small">
+            Start Server
+            <span class="spinner-border spinner-border-sm ms-2" role="status" aria-hidden="true"></span>
+        </button>
+        <button id="stop-striim" class="btn btn-danger btn-extra-small">
+            Stop Server
+            <span class="spinner-border spinner-border-sm ms-2" role="status" aria-hidden="true"></span>
+        </button>
+        <div id="status" class="alert" role="alert"></div>
+        <div id="stop" class="alert" role="alert"></div>
+        <div id="start" class="alert" role="alert"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            function clearStatus() {
+                $('#start').hide().removeClass('alert-success alert-danger alert-info');
+                $('#stop').hide().removeClass('alert-success alert-danger alert-info');
+                $('#status').hide().removeClass('alert-success alert-danger alert-info');
+            }
+
+            $('#check-status').click(function() {
+                clearStatus();
+                $(this).addClass('btn-loading');
+                $.get('/striim/status')
+                    .done(function(data) {
+                        $('#status').removeClass('alert-danger').addClass('alert alert-success');
+                        $('#status').text(data.status).show();
+                    })
+                    .fail(function(xhr) {
+                        $('#status').removeClass('alert-success').addClass('alert alert-danger');
+                        $('#status').text(xhr.responseJSON.status).show();
+                    })
+                    .always(function() {
+                        $('#check-status').removeClass('btn-loading');
+                    });
+            });
+
+            $('#stop-striim').click(function() {
+                clearStatus();
+                $(this).addClass('btn-loading');
+                $.post('/striim/stop')
+                    .done(function(data) {
+                        $('#stop').removeClass('alert-danger').addClass('alert alert-success');
+                        $('#stop').text(data.message).show();
+                    })
+                    .fail(function(xhr) {
+                        $('#stop').removeClass('alert-success').addClass('alert alert-danger');
+                        $('#stop').text(xhr.responseJSON.status).show();
+                    })
+                    .always(function() {
+                        $('#stop-striim').removeClass('btn-loading');
+                    });
+            });
+
+            $('#start-striim').click(function() {
+                clearStatus();
+                $(this).addClass('btn-loading');
+                $.post('/striim/start')
+                    .done(function(data) {
+                        $('#start').removeClass('alert-danger').addClass('alert alert-success');
+                        $('#start').text(data.message).show();
+                    })
+                    .fail(function(xhr) {
+                        $('#start').removeClass('alert-success').addClass('alert alert-danger');
+                        $('#start').text(xhr.responseJSON.status).show();
+                    })
+                    .always(function() {
+                        $('#start-striim').removeClass('btn-loading');
+                    });
+            });
+        });
+    </script>
+
+</body>
+</html>
