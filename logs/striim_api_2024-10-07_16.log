@@ -1,0 +1,568 @@
+2024-10-07 16:12:08,025  * Debugger is active!
+2024-10-07 16:12:08,028  * Debugger PIN: 329-991-988
+2024-10-07 16:12:09,998 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 16:12:10,013 127.0.0.1 - - [07/Oct/2024 16:12:10] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 16:12:11,638 Received {'ship': 'Discovery'} from the drop down menu.
+2024-10-07 16:12:11,638 Going to use Discovery to get API URL.
+2024-10-07 16:12:11,638 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 16:12:11,639 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:12:11,640 Retrieving credentials for Discovery
+2024-10-07 16:12:11,640 Username found!
+2024-10-07 16:12:11,641 Credentials found for Discovery
+2024-10-07 16:12:12,464 Response from token request: {"token":"01ef84e8-9faa-6c41-ada8-005056a3d7b2"}
+2024-10-07 16:12:12,465 Retrieved token for Discovery: 01ef84e8-9faa-6c41-ada8-005056a3d7b2
+2024-10-07 16:12:12,466 Final API URL for Discovery: http://10.65.61.154:9080/health?token=01ef84e8-9faa-6c41-ada8-005056a3d7b2
+2024-10-07 16:12:12,466 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:12:12,466 Retrieving credentials for Discovery
+2024-10-07 16:12:12,467 Username found!
+2024-10-07 16:12:12,468 Credentials found for Discovery
+2024-10-07 16:12:12,503 127.0.0.1 - - [07/Oct/2024 16:12:12] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 16:12:16,542 Received {'ship': 'Bliss'} from the drop down menu.
+2024-10-07 16:12:16,542 Going to use Bliss to get API URL.
+2024-10-07 16:12:16,542 Built URL: http://blistriim01v.bliss.ncl.com:9080/security/authenticate
+2024-10-07 16:12:16,543 Received the following from the frontend: {'ship': 'Bliss'}
+2024-10-07 16:12:16,543 Retrieving credentials for Bliss
+2024-10-07 16:12:16,544 Username found!
+2024-10-07 16:12:16,544 Credentials found for Bliss
+2024-10-07 16:12:17,674 Response from token request: {"token":"01ef84e9-7f2f-f331-b619-005056b0416a"}
+2024-10-07 16:12:17,675 Retrieved token for Bliss: 01ef84e9-7f2f-f331-b619-005056b0416a
+2024-10-07 16:12:17,675 Final API URL for Bliss: http://blistriim01v.bliss.ncl.com:9080/health?token=01ef84e9-7f2f-f331-b619-005056b0416a
+2024-10-07 16:12:17,675 Received the following from the frontend: {'ship': 'Bliss'}
+2024-10-07 16:12:17,675 Retrieving credentials for Bliss
+2024-10-07 16:12:17,676 Username found!
+2024-10-07 16:12:17,676 Credentials found for Bliss
+2024-10-07 16:12:17,943 127.0.0.1 - - [07/Oct/2024 16:12:17] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 16:39:49,752 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 16:39:49,767 127.0.0.1 - - [07/Oct/2024 16:39:49] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 16:39:51,844 Received {'ship': 'Discovery'} from the drop down menu.
+2024-10-07 16:39:51,844 Going to use Discovery to get API URL.
+2024-10-07 16:39:51,844 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 16:39:51,844 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:39:51,844 Retrieving credentials for Discovery
+2024-10-07 16:39:51,844 Username found!
+2024-10-07 16:39:51,845 Credentials found for Discovery
+2024-10-07 16:39:52,639 Response from token request: {"token":"01ef84ec-7ccc-ce81-ada8-005056a3d7b2"}
+2024-10-07 16:39:52,640 Retrieved token for Discovery: 01ef84ec-7ccc-ce81-ada8-005056a3d7b2
+2024-10-07 16:39:52,641 Final API URL for Discovery: http://10.65.61.154:9080/health?token=01ef84ec-7ccc-ce81-ada8-005056a3d7b2
+2024-10-07 16:39:52,641 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:39:52,641 Retrieving credentials for Discovery
+2024-10-07 16:39:52,642 Username found!
+2024-10-07 16:39:52,642 Credentials found for Discovery
+2024-10-07 16:39:52,671 127.0.0.1 - - [07/Oct/2024 16:39:52] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 16:40:36,159 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 16:40:36,169 127.0.0.1 - - [07/Oct/2024 16:40:36] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 16:40:38,436 Received {'ship': 'Discovery'} from the drop down menu.
+2024-10-07 16:40:38,436 Going to use Discovery to get API URL.
+2024-10-07 16:40:38,436 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 16:40:38,437 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:40:38,437 Retrieving credentials for Discovery
+2024-10-07 16:40:38,438 Username found!
+2024-10-07 16:40:38,438 Credentials found for Discovery
+2024-10-07 16:40:39,200 Response from token request: {"token":"01ef84ec-9889-ca11-ada8-005056a3d7b2"}
+2024-10-07 16:40:39,201 Retrieved token for Discovery: 01ef84ec-9889-ca11-ada8-005056a3d7b2
+2024-10-07 16:40:39,202 Final API URL for Discovery: http://10.65.61.154:9080/health?token=01ef84ec-9889-ca11-ada8-005056a3d7b2
+2024-10-07 16:40:39,202 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:40:39,202 Retrieving credentials for Discovery
+2024-10-07 16:40:39,203 Username found!
+2024-10-07 16:40:39,203 Credentials found for Discovery
+2024-10-07 16:40:39,229 127.0.0.1 - - [07/Oct/2024 16:40:39] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 16:41:23,196 Received {'ship': 'Bliss'} from the drop down menu.
+2024-10-07 16:41:23,197 Going to use Bliss to get API URL.
+2024-10-07 16:41:23,197 Built URL: http://blistriim01v.bliss.ncl.com:9080/security/authenticate
+2024-10-07 16:41:23,198 Received the following from the frontend: {'ship': 'Bliss'}
+2024-10-07 16:41:23,198 Retrieving credentials for Bliss
+2024-10-07 16:41:23,198 Username found!
+2024-10-07 16:41:23,199 Credentials found for Bliss
+2024-10-07 16:41:24,322 Response from token request: {"token":"01ef84ed-9050-1e21-b619-005056b0416a"}
+2024-10-07 16:41:24,323 Retrieved token for Bliss: 01ef84ed-9050-1e21-b619-005056b0416a
+2024-10-07 16:41:24,323 Final API URL for Bliss: http://blistriim01v.bliss.ncl.com:9080/health?token=01ef84ed-9050-1e21-b619-005056b0416a
+2024-10-07 16:41:24,323 Received the following from the frontend: {'ship': 'Bliss'}
+2024-10-07 16:41:24,323 Retrieving credentials for Bliss
+2024-10-07 16:41:24,324 Username found!
+2024-10-07 16:41:24,324 Credentials found for Bliss
+2024-10-07 16:41:24,574 127.0.0.1 - - [07/Oct/2024 16:41:24] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 16:43:31,038 Received {'ship': 'Discovery'} from the drop down menu.
+2024-10-07 16:43:31,038 Going to use Discovery to get API URL.
+2024-10-07 16:43:31,038 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 16:43:31,039 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:43:31,039 Retrieving credentials for Discovery
+2024-10-07 16:43:31,040 Username found!
+2024-10-07 16:43:31,040 Credentials found for Discovery
+2024-10-07 16:43:31,850 Response from token request: {"token":"01ef84ec-ff72-da01-ada8-005056a3d7b2"}
+2024-10-07 16:43:31,852 Retrieved token for Discovery: 01ef84ec-ff72-da01-ada8-005056a3d7b2
+2024-10-07 16:43:31,852 Final API URL for Discovery: http://10.65.61.154:9080/health?token=01ef84ec-ff72-da01-ada8-005056a3d7b2
+2024-10-07 16:43:31,853 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:43:31,853 Retrieving credentials for Discovery
+2024-10-07 16:43:31,854 Username found!
+2024-10-07 16:43:31,854 Credentials found for Discovery
+2024-10-07 16:43:31,894 127.0.0.1 - - [07/Oct/2024 16:43:31] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 16:43:48,388 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 16:43:48,396 127.0.0.1 - - [07/Oct/2024 16:43:48] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 16:43:49,914 Received {'ship': 'Discovery'} from the drop down menu.
+2024-10-07 16:43:49,914 Going to use Discovery to get API URL.
+2024-10-07 16:43:49,914 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 16:43:49,914 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:43:49,914 Retrieving credentials for Discovery
+2024-10-07 16:43:49,914 Username found!
+2024-10-07 16:43:49,915 Credentials found for Discovery
+2024-10-07 16:43:50,670 Response from token request: {"token":"01ef84ed-0aab-0371-ada8-005056a3d7b2"}
+2024-10-07 16:43:50,670 Retrieved token for Discovery: 01ef84ed-0aab-0371-ada8-005056a3d7b2
+2024-10-07 16:43:50,671 Final API URL for Discovery: http://10.65.61.154:9080/health?token=01ef84ed-0aab-0371-ada8-005056a3d7b2
+2024-10-07 16:43:50,671 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:43:50,671 Retrieving credentials for Discovery
+2024-10-07 16:43:50,671 Username found!
+2024-10-07 16:43:50,671 Credentials found for Discovery
+2024-10-07 16:43:50,698 127.0.0.1 - - [07/Oct/2024 16:43:50] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 16:47:25,559 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 16:47:25,595 127.0.0.1 - - [07/Oct/2024 16:47:25] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 16:47:30,114 Received {'ship': 'Discovery'} from the drop down menu.
+2024-10-07 16:47:30,115 Going to use Discovery to get API URL.
+2024-10-07 16:47:30,115 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 16:47:30,116 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:47:30,117 Retrieving credentials for Discovery
+2024-10-07 16:47:30,117 Username found!
+2024-10-07 16:47:30,118 Credentials found for Discovery
+2024-10-07 16:47:30,941 Response from token request: {"token":"01ef84ed-8df2-7f11-ada8-005056a3d7b2"}
+2024-10-07 16:47:30,942 Retrieved token for Discovery: 01ef84ed-8df2-7f11-ada8-005056a3d7b2
+2024-10-07 16:47:30,942 Final API URL for Discovery: http://10.65.61.154:9080/health?token=01ef84ed-8df2-7f11-ada8-005056a3d7b2
+2024-10-07 16:47:30,943 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:47:30,943 Retrieving credentials for Discovery
+2024-10-07 16:47:30,944 Username found!
+2024-10-07 16:47:30,944 Credentials found for Discovery
+2024-10-07 16:47:30,971 127.0.0.1 - - [07/Oct/2024 16:47:30] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 16:48:12,337 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 16:48:12,342 127.0.0.1 - - [07/Oct/2024 16:48:12] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 16:48:14,147 Received {'ship': 'Discovery'} from the drop down menu.
+2024-10-07 16:48:14,147 Going to use Discovery to get API URL.
+2024-10-07 16:48:14,147 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 16:48:14,148 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:48:14,148 Retrieving credentials for Discovery
+2024-10-07 16:48:14,149 Username found!
+2024-10-07 16:48:14,149 Credentials found for Discovery
+2024-10-07 16:48:14,897 Response from token request: {"token":"01ef84ed-a829-28c1-ada8-005056a3d7b2"}
+2024-10-07 16:48:14,898 Retrieved token for Discovery: 01ef84ed-a829-28c1-ada8-005056a3d7b2
+2024-10-07 16:48:14,899 Final API URL for Discovery: http://10.65.61.154:9080/health?token=01ef84ed-a829-28c1-ada8-005056a3d7b2
+2024-10-07 16:48:14,899 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:48:14,899 Retrieving credentials for Discovery
+2024-10-07 16:48:14,900 Username found!
+2024-10-07 16:48:14,900 Credentials found for Discovery
+2024-10-07 16:48:14,943 127.0.0.1 - - [07/Oct/2024 16:48:14] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 16:49:24,664 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 16:49:24,677 127.0.0.1 - - [07/Oct/2024 16:49:24] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 16:49:27,442 Received {'ship': 'Discovery'} from the drop down menu.
+2024-10-07 16:49:27,442 Going to use Discovery to get API URL.
+2024-10-07 16:49:27,443 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 16:49:27,443 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:49:27,443 Retrieving credentials for Discovery
+2024-10-07 16:49:27,443 Username found!
+2024-10-07 16:49:27,443 Credentials found for Discovery
+2024-10-07 16:49:28,286 Response from token request: {"token":"01ef84ed-d3c7-8a81-ada8-005056a3d7b2"}
+2024-10-07 16:49:28,287 Retrieved token for Discovery: 01ef84ed-d3c7-8a81-ada8-005056a3d7b2
+2024-10-07 16:49:28,288 Final API URL for Discovery: http://10.65.61.154:9080/health?token=01ef84ed-d3c7-8a81-ada8-005056a3d7b2
+2024-10-07 16:49:28,288 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 16:49:28,288 Retrieving credentials for Discovery
+2024-10-07 16:49:28,289 Username found!
+2024-10-07 16:49:28,289 Credentials found for Discovery
+2024-10-07 16:49:28,320 127.0.0.1 - - [07/Oct/2024 16:49:28] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 16:49:32,409 Received {'ship': 'All'} from the drop down menu.
+2024-10-07 16:49:32,409 Going to use All to get API URL.
+2024-10-07 16:49:32,409 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 16:49:32,410 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:32,410 Retrieving credentials for Discovery
+2024-10-07 16:49:32,410 Username found!
+2024-10-07 16:49:32,411 Credentials found for Discovery
+2024-10-07 16:49:33,227 Response from token request: {"token":"01ef84ed-d6b5-0d81-ada8-005056a3d7b2"}
+2024-10-07 16:49:33,227 Retrieved token for Discovery: 01ef84ed-d6b5-0d81-ada8-005056a3d7b2
+2024-10-07 16:49:33,228 Final API URL for Discovery: http://10.65.61.154:9080/health?token=01ef84ed-d6b5-0d81-ada8-005056a3d7b2
+2024-10-07 16:49:33,228 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:33,228 Retrieving credentials for Discovery
+2024-10-07 16:49:33,228 Username found!
+2024-10-07 16:49:33,228 Credentials found for Discovery
+2024-10-07 16:49:33,271 Built URL: http://dawstriim01v.dawn.ncl.com:9080/security/authenticate
+2024-10-07 16:49:33,271 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:33,271 Retrieving credentials for Dawn
+2024-10-07 16:49:33,272 Username found!
+2024-10-07 16:49:33,272 Credentials found for Dawn
+2024-10-07 16:49:34,396 Response from token request: {"token":"01ef84ee-b47f-01c1-a859-005056b42f69"}
+2024-10-07 16:49:34,396 Retrieved token for Dawn: 01ef84ee-b47f-01c1-a859-005056b42f69
+2024-10-07 16:49:34,396 Final API URL for Dawn: http://dawstriim01v.dawn.ncl.com:9080/health?token=01ef84ee-b47f-01c1-a859-005056b42f69
+2024-10-07 16:49:34,396 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:34,396 Retrieving credentials for Dawn
+2024-10-07 16:49:34,397 Username found!
+2024-10-07 16:49:34,397 Credentials found for Dawn
+2024-10-07 16:49:34,760 Built URL: http://epistriim01v.epic.ncl.com:9080/security/authenticate
+2024-10-07 16:49:34,760 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:34,760 Retrieving credentials for Epic
+2024-10-07 16:49:34,760 Username found!
+2024-10-07 16:49:34,760 Credentials found for Epic
+2024-10-07 16:49:36,214 Response from token request: {"token":"01ef84ee-b581-7da1-95c6-0050569448bd"}
+2024-10-07 16:49:36,215 Retrieved token for Epic: 01ef84ee-b581-7da1-95c6-0050569448bd
+2024-10-07 16:49:36,215 Final API URL for Epic: http://epistriim01v.epic.ncl.com:9080/health?token=01ef84ee-b581-7da1-95c6-0050569448bd
+2024-10-07 16:49:36,215 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:36,215 Retrieving credentials for Epic
+2024-10-07 16:49:36,215 Username found!
+2024-10-07 16:49:36,215 Credentials found for Epic
+2024-10-07 16:49:36,626 Built URL: http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-07 16:49:36,626 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:36,626 Retrieving credentials for Encore
+2024-10-07 16:49:36,627 Username found!
+2024-10-07 16:49:36,627 Credentials found for Encore
+2024-10-07 16:49:37,604 Response from token request: {"token":"01ef84ed-aa2a-ec31-887f-005056a78bcd"}
+2024-10-07 16:49:37,604 Retrieved token for Encore: 01ef84ed-aa2a-ec31-887f-005056a78bcd
+2024-10-07 16:49:37,605 Final API URL for Encore: http://encstriim01v.encore.ncl.com:9080/health?token=01ef84ed-aa2a-ec31-887f-005056a78bcd
+2024-10-07 16:49:37,605 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:37,605 Retrieving credentials for Encore
+2024-10-07 16:49:37,605 Username found!
+2024-10-07 16:49:37,605 Credentials found for Encore
+2024-10-07 16:49:37,833 Built URL: http://escstriim01v.escape.ncl.com:9080/security/authenticate
+2024-10-07 16:49:37,833 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:37,833 Retrieving credentials for Escape
+2024-10-07 16:49:37,833 Username found!
+2024-10-07 16:49:37,833 Credentials found for Escape
+2024-10-07 16:49:39,002 Response from token request: {"token":"01ef84ee-b740-1d91-9ca6-005056962850"}
+2024-10-07 16:49:39,002 Retrieved token for Escape: 01ef84ee-b740-1d91-9ca6-005056962850
+2024-10-07 16:49:39,002 Final API URL for Escape: http://escstriim01v.escape.ncl.com:9080/health?token=01ef84ee-b740-1d91-9ca6-005056962850
+2024-10-07 16:49:39,002 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:39,003 Retrieving credentials for Escape
+2024-10-07 16:49:39,003 Username found!
+2024-10-07 16:49:39,003 Credentials found for Escape
+2024-10-07 16:49:39,369 Built URL: http://gemstriim01v.gem.ncl.com:9080/security/authenticate
+2024-10-07 16:49:39,369 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:39,369 Retrieving credentials for Gem
+2024-10-07 16:49:39,370 Username found!
+2024-10-07 16:49:39,370 Credentials found for Gem
+2024-10-07 16:49:40,246 Response from token request: {"token":"01ef84ee-b80a-9981-aa86-005056ae7535"}
+2024-10-07 16:49:40,246 Retrieved token for Gem: 01ef84ee-b80a-9981-aa86-005056ae7535
+2024-10-07 16:49:40,247 Final API URL for Gem: http://gemstriim01v.gem.ncl.com:9080/health?token=01ef84ee-b80a-9981-aa86-005056ae7535
+2024-10-07 16:49:40,247 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:40,247 Retrieving credentials for Gem
+2024-10-07 16:49:40,247 Username found!
+2024-10-07 16:49:40,247 Credentials found for Gem
+2024-10-07 16:49:40,438 Built URL: http://getstriim01v.getaway.ncl.com:9080/security/authenticate
+2024-10-07 16:49:40,439 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:40,439 Retrieving credentials for Getaway
+2024-10-07 16:49:40,439 Username found!
+2024-10-07 16:49:40,440 Credentials found for Getaway
+2024-10-07 16:49:41,672 Response from token request: {"token":"01ef84ee-b8d2-f291-818a-00505682a1c9"}
+2024-10-07 16:49:41,672 Retrieved token for Getaway: 01ef84ee-b8d2-f291-818a-00505682a1c9
+2024-10-07 16:49:41,673 Final API URL for Getaway: http://getstriim01v.getaway.ncl.com:9080/health?token=01ef84ee-b8d2-f291-818a-00505682a1c9
+2024-10-07 16:49:41,673 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:41,673 Retrieving credentials for Getaway
+2024-10-07 16:49:41,674 Username found!
+2024-10-07 16:49:41,674 Credentials found for Getaway
+2024-10-07 16:49:42,159 Built URL: http://blistriim01v.bliss.ncl.com:9080/security/authenticate
+2024-10-07 16:49:42,159 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:42,160 Retrieving credentials for Bliss
+2024-10-07 16:49:42,160 Username found!
+2024-10-07 16:49:42,160 Credentials found for Bliss
+2024-10-07 16:49:43,300 Response from token request: {"token":"01ef84ee-b9be-d931-b619-005056b0416a"}
+2024-10-07 16:49:43,301 Retrieved token for Bliss: 01ef84ee-b9be-d931-b619-005056b0416a
+2024-10-07 16:49:43,302 Final API URL for Bliss: http://blistriim01v.bliss.ncl.com:9080/health?token=01ef84ee-b9be-d931-b619-005056b0416a
+2024-10-07 16:49:43,303 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:43,303 Retrieving credentials for Bliss
+2024-10-07 16:49:43,304 Username found!
+2024-10-07 16:49:43,304 Credentials found for Bliss
+2024-10-07 16:49:43,564 Built URL: http://brestriim01v.breakaway.ncl.com:9080/security/authenticate
+2024-10-07 16:49:43,566 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:43,566 Retrieving credentials for Breakaway
+2024-10-07 16:49:43,567 Username found!
+2024-10-07 16:49:43,567 Error: No password configured for Breakaway
+2024-10-07 16:49:43,809 Response from token request: 
+2024-10-07 16:49:43,810 Failed to retrieve token. Status Code: 400
+2024-10-07 16:49:43,810 Failed to retrieve token for Breakaway. Skipping...
+2024-10-07 16:49:43,811 Built URL: http://sunstriim01v.sun.ncl.com:9080/security/authenticate
+2024-10-07 16:49:43,811 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:43,812 Retrieving credentials for Sun
+2024-10-07 16:49:43,812 Username found!
+2024-10-07 16:49:43,812 Credentials found for Sun
+2024-10-07 16:49:47,894 Response from token request: {"token":"01ef84ee-bc34-e241-a875-005056b35544"}
+2024-10-07 16:49:47,896 Retrieved token for Sun: 01ef84ee-bc34-e241-a875-005056b35544
+2024-10-07 16:49:47,896 Final API URL for Sun: http://sunstriim01v.sun.ncl.com:9080/health?token=01ef84ee-bc34-e241-a875-005056b35544
+2024-10-07 16:49:47,897 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:47,897 Retrieving credentials for Sun
+2024-10-07 16:49:47,898 Username found!
+2024-10-07 16:49:47,898 Credentials found for Sun
+2024-10-07 16:49:50,906 Built URL: http://jewstriim01v.jewel.ncl.com:9080/security/authenticate
+2024-10-07 16:49:50,907 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:50,907 Retrieving credentials for Jewel
+2024-10-07 16:49:50,908 Username found!
+2024-10-07 16:49:50,908 Credentials found for Jewel
+2024-10-07 16:49:52,212 Response from token request: {"token":"01ef84ee-bf0b-5ad1-8e39-005056987799"}
+2024-10-07 16:49:52,213 Retrieved token for Jewel: 01ef84ee-bf0b-5ad1-8e39-005056987799
+2024-10-07 16:49:52,214 Final API URL for Jewel: http://jewstriim01v.jewel.ncl.com:9080/health?token=01ef84ee-bf0b-5ad1-8e39-005056987799
+2024-10-07 16:49:52,214 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:52,214 Retrieving credentials for Jewel
+2024-10-07 16:49:52,215 Username found!
+2024-10-07 16:49:52,215 Credentials found for Jewel
+2024-10-07 16:49:52,475 Built URL: http://spistriim01v.spirit.ncl.com:9080/security/authenticate
+2024-10-07 16:49:52,476 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:52,476 Retrieving credentials for Spirit
+2024-10-07 16:49:52,476 Username found!
+2024-10-07 16:49:52,476 Credentials found for Spirit
+2024-10-07 16:49:53,918 Response from token request: {"token":"01ef84ee-c006-0e81-a069-0050569cdea2"}
+2024-10-07 16:49:53,920 Retrieved token for Spirit: 01ef84ee-c006-0e81-a069-0050569cdea2
+2024-10-07 16:49:53,921 Final API URL for Spirit: http://spistriim01v.spirit.ncl.com:9080/health?token=01ef84ee-c006-0e81-a069-0050569cdea2
+2024-10-07 16:49:53,921 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:53,921 Retrieving credentials for Spirit
+2024-10-07 16:49:53,922 Username found!
+2024-10-07 16:49:53,922 Credentials found for Spirit
+2024-10-07 16:49:54,451 Built URL: http://peastriim01v.pearl.ncl.com:9080/security/authenticate
+2024-10-07 16:49:54,452 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:54,453 Retrieving credentials for Pearl
+2024-10-07 16:49:54,454 Username found!
+2024-10-07 16:49:54,454 Credentials found for Pearl
+2024-10-07 16:49:55,798 Response from token request: {"token":"01ef84ee-c13c-6ba1-b04e-0050569a74d2"}
+2024-10-07 16:49:55,799 Retrieved token for Pearl: 01ef84ee-c13c-6ba1-b04e-0050569a74d2
+2024-10-07 16:49:55,799 Final API URL for Pearl: http://peastriim01v.pearl.ncl.com:9080/health?token=01ef84ee-c13c-6ba1-b04e-0050569a74d2
+2024-10-07 16:49:55,799 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:55,800 Retrieving credentials for Pearl
+2024-10-07 16:49:55,800 Username found!
+2024-10-07 16:49:55,801 Credentials found for Pearl
+2024-10-07 16:49:56,151 Built URL: http://skystriim01v.sky.ncl.com:9080/security/authenticate
+2024-10-07 16:49:56,152 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:56,152 Retrieving credentials for Sky
+2024-10-07 16:49:56,153 Username found!
+2024-10-07 16:49:56,153 Credentials found for Sky
+2024-10-07 16:49:57,085 Response from token request: {"token":"01ef84ee-c20b-f0a1-b60b-0050569cb35e"}
+2024-10-07 16:49:57,085 Retrieved token for Sky: 01ef84ee-c20b-f0a1-b60b-0050569cb35e
+2024-10-07 16:49:57,086 Final API URL for Sky: http://skystriim01v.sky.ncl.com:9080/health?token=01ef84ee-c20b-f0a1-b60b-0050569cb35e
+2024-10-07 16:49:57,086 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:57,086 Retrieving credentials for Sky
+2024-10-07 16:49:57,086 Username found!
+2024-10-07 16:49:57,086 Credentials found for Sky
+2024-10-07 16:49:57,230 Built URL: http://jadstriim01v.jade.ncl.com:9080/security/authenticate
+2024-10-07 16:49:57,231 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:57,231 Retrieving credentials for Jade
+2024-10-07 16:49:57,232 Username found!
+2024-10-07 16:49:57,232 Credentials found for Jade
+2024-10-07 16:49:58,162 Response from token request: {"token":"01ef84ee-c2b9-2091-8476-005056b13fa3"}
+2024-10-07 16:49:58,163 Retrieved token for Jade: 01ef84ee-c2b9-2091-8476-005056b13fa3
+2024-10-07 16:49:58,163 Final API URL for Jade: http://jadstriim01v.jade.ncl.com:9080/health?token=01ef84ee-c2b9-2091-8476-005056b13fa3
+2024-10-07 16:49:58,164 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:58,164 Retrieving credentials for Jade
+2024-10-07 16:49:58,164 Username found!
+2024-10-07 16:49:58,164 Credentials found for Jade
+2024-10-07 16:49:58,317 Built URL: http://joystriim01v.joy.ncl.com:9080/security/authenticate
+2024-10-07 16:49:58,318 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:58,318 Retrieving credentials for Joy
+2024-10-07 16:49:58,319 Username found!
+2024-10-07 16:49:58,319 Credentials found for Joy
+2024-10-07 16:49:59,374 Response from token request: {"token":"01ef84ee-c357-5c61-bdaf-005056a75810"}
+2024-10-07 16:49:59,375 Retrieved token for Joy: 01ef84ee-c357-5c61-bdaf-005056a75810
+2024-10-07 16:49:59,376 Final API URL for Joy: http://joystriim01v.joy.ncl.com:9080/health?token=01ef84ee-c357-5c61-bdaf-005056a75810
+2024-10-07 16:49:59,376 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:59,376 Retrieving credentials for Joy
+2024-10-07 16:49:59,377 Username found!
+2024-10-07 16:49:59,377 Credentials found for Joy
+2024-10-07 16:49:59,566 Built URL: http://vivstriim01v.viva.ncl.com:9080/security/authenticate
+2024-10-07 16:49:59,567 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:49:59,567 Retrieving credentials for Viva
+2024-10-07 16:49:59,568 Username found!
+2024-10-07 16:49:59,568 Credentials found for Viva
+2024-10-07 16:50:00,644 Response from token request: {"token":"01ef84ee-c42c-adc1-b233-005056ba8ddd"}
+2024-10-07 16:50:00,645 Retrieved token for Viva: 01ef84ee-c42c-adc1-b233-005056ba8ddd
+2024-10-07 16:50:00,645 Final API URL for Viva: http://vivstriim01v.viva.ncl.com:9080/health?token=01ef84ee-c42c-adc1-b233-005056ba8ddd
+2024-10-07 16:50:00,645 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:00,645 Retrieving credentials for Viva
+2024-10-07 16:50:00,646 Username found!
+2024-10-07 16:50:00,646 Credentials found for Viva
+2024-10-07 16:50:01,045 Built URL: http://pristriim01v.prima.ncl.com:9080/security/authenticate
+2024-10-07 16:50:01,046 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:01,046 Retrieving credentials for Prima
+2024-10-07 16:50:01,047 Username found!
+2024-10-07 16:50:01,048 Credentials found for Prima
+2024-10-07 16:50:03,676 Response from token request: {"token":"01ef84ed-b7b8-7751-a3c1-005056aaf62d"}
+2024-10-07 16:50:03,676 Retrieved token for Prima: 01ef84ed-b7b8-7751-a3c1-005056aaf62d
+2024-10-07 16:50:03,676 Final API URL for Prima: http://pristriim01v.prima.ncl.com:9080/health?token=01ef84ed-b7b8-7751-a3c1-005056aaf62d
+2024-10-07 16:50:03,676 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:03,676 Retrieving credentials for Prima
+2024-10-07 16:50:03,677 Username found!
+2024-10-07 16:50:03,677 Credentials found for Prima
+2024-10-07 16:50:04,008 Built URL: http://10.15.50.154:9080/security/authenticate
+2024-10-07 16:50:04,009 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:04,009 Retrieving credentials for Pride of America
+2024-10-07 16:50:04,010 Username found!
+2024-10-07 16:50:04,010 Error: No password configured for Pride of America
+2024-10-07 16:50:04,380 Response from token request: 
+2024-10-07 16:50:04,382 Failed to retrieve token. Status Code: 400
+2024-10-07 16:50:04,383 Failed to retrieve token for Pride of America. Skipping...
+2024-10-07 16:50:04,383 Built URL: http://10.3.50.154:9080/security/authenticate
+2024-10-07 16:50:04,383 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:04,384 Retrieving credentials for Star
+2024-10-07 16:50:04,384 Username found!
+2024-10-07 16:50:04,384 Credentials found for Star
+2024-10-07 16:50:08,256 Response from token request: <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+<title>Error 401 User does not exist, password is incorrect, or is deactivated</title>
+</head>
+<body><h2>HTTP ERROR 401 User does not exist, password is incorrect, or is deactivated</h2>
+<table>
+<tr><th>URI:</th><td>/security/authenticate</td></tr>
+<tr><th>STATUS:</th><td>401</td></tr>
+<tr><th>MESSAGE:</th><td>User does not exist, password is incorrect, or is deactivated</td></tr>
+<tr><th>SERVLET:</th><td>com.webaction.rest.SecurityManagerServlet-7eb9651b</td></tr>
+</table>
+
+</body>
+</html>
+
+2024-10-07 16:50:08,257 Failed to retrieve token. Status Code: 401
+2024-10-07 16:50:08,258 Failed to retrieve token for Star. Skipping...
+2024-10-07 16:50:08,258 Built URL: http://10.31.50.154:9080/security/authenticate
+2024-10-07 16:50:08,259 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:08,259 Retrieving credentials for Explorer
+2024-10-07 16:50:08,260 Username found!
+2024-10-07 16:50:08,260 Credentials found for Explorer
+2024-10-07 16:50:09,529 Response from token request: {"token":"01ef84ee-c95b-2011-bc26-005056bcaa33"}
+2024-10-07 16:50:09,529 Retrieved token for Explorer: 01ef84ee-c95b-2011-bc26-005056bcaa33
+2024-10-07 16:50:09,529 Final API URL for Explorer: http://10.31.50.154:9080/health?token=01ef84ee-c95b-2011-bc26-005056bcaa33
+2024-10-07 16:50:09,529 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:09,529 Retrieving credentials for Explorer
+2024-10-07 16:50:09,530 Username found!
+2024-10-07 16:50:09,530 Credentials found for Explorer
+2024-10-07 16:50:09,975 Built URL: http://10.75.50.154:9080/security/authenticate
+2024-10-07 16:50:09,976 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:09,976 Retrieving credentials for Grandeur
+2024-10-07 16:50:09,977 Username found!
+2024-10-07 16:50:09,977 Credentials found for Grandeur
+2024-10-07 16:50:10,807 Response from token request: {"token":"01ef84ee-ca45-8011-b3e5-0050568c28af"}
+2024-10-07 16:50:10,808 Retrieved token for Grandeur: 01ef84ee-ca45-8011-b3e5-0050568c28af
+2024-10-07 16:50:10,808 Final API URL for Grandeur: http://10.75.50.154:9080/health?token=01ef84ee-ca45-8011-b3e5-0050568c28af
+2024-10-07 16:50:10,808 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:10,808 Retrieving credentials for Grandeur
+2024-10-07 16:50:10,808 Username found!
+2024-10-07 16:50:10,809 Credentials found for Grandeur
+2024-10-07 16:50:10,978 Built URL: http://10.16.50.154:9080/security/authenticate
+2024-10-07 16:50:10,980 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:10,980 Retrieving credentials for Insignia
+2024-10-07 16:50:10,981 Username found!
+2024-10-07 16:50:10,981 Credentials found for Insignia
+2024-10-07 16:50:14,566 Response from token request: {"token":"01ef84ee-cc4a-29b1-ab61-0050569a4daf"}
+2024-10-07 16:50:14,567 Retrieved token for Insignia: 01ef84ee-cc4a-29b1-ab61-0050569a4daf
+2024-10-07 16:50:14,568 Final API URL for Insignia: http://10.16.50.154:9080/health?token=01ef84ee-cc4a-29b1-ab61-0050569a4daf
+2024-10-07 16:50:14,568 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:14,568 Retrieving credentials for Insignia
+2024-10-07 16:50:14,568 Username found!
+2024-10-07 16:50:14,568 Credentials found for Insignia
+2024-10-07 16:50:17,497 Built URL: http://10.19.50.154:9080/security/authenticate
+2024-10-07 16:50:17,498 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:17,498 Retrieving credentials for Marina
+2024-10-07 16:50:17,498 Username found!
+2024-10-07 16:50:17,498 Credentials found for Marina
+2024-10-07 16:50:19,005 Response from token request: {"token":"01ef84ee-cf16-4201-9bdc-005056b24a29"}
+2024-10-07 16:50:19,006 Retrieved token for Marina: 01ef84ee-cf16-4201-9bdc-005056b24a29
+2024-10-07 16:50:19,006 Final API URL for Marina: http://10.19.50.154:9080/health?token=01ef84ee-cf16-4201-9bdc-005056b24a29
+2024-10-07 16:50:19,006 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:19,006 Retrieving credentials for Marina
+2024-10-07 16:50:19,007 Username found!
+2024-10-07 16:50:19,007 Credentials found for Marina
+2024-10-07 16:50:19,418 Built URL: http://marstriim01v.mariner.rssc.com:9080/security/authenticate
+2024-10-07 16:50:19,419 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:19,419 Retrieving credentials for Mariner
+2024-10-07 16:50:19,420 Username found!
+2024-10-07 16:50:19,420 Credentials found for Mariner
+2024-10-07 16:50:20,756 Response from token request: {"token":"01ef84ee-d01e-ff71-a7c1-00505691d839"}
+2024-10-07 16:50:20,757 Retrieved token for Mariner: 01ef84ee-d01e-ff71-a7c1-00505691d839
+2024-10-07 16:50:20,757 Final API URL for Mariner: http://marstriim01v.mariner.rssc.com:9080/health?token=01ef84ee-d01e-ff71-a7c1-00505691d839
+2024-10-07 16:50:20,757 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:20,757 Retrieving credentials for Mariner
+2024-10-07 16:50:20,758 Username found!
+2024-10-07 16:50:20,758 Credentials found for Mariner
+2024-10-07 16:50:21,113 Built URL: http://10.18.50.154:9080/security/authenticate
+2024-10-07 16:50:21,113 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:21,113 Retrieving credentials for Nautica
+2024-10-07 16:50:21,114 Username found!
+2024-10-07 16:50:21,114 Credentials found for Nautica
+2024-10-07 16:50:24,640 Response from token request: {"token":"01ef84ee-d243-8d21-a605-00505691ae3d"}
+2024-10-07 16:50:24,642 Retrieved token for Nautica: 01ef84ee-d243-8d21-a605-00505691ae3d
+2024-10-07 16:50:24,642 Final API URL for Nautica: http://10.18.50.154:9080/health?token=01ef84ee-d243-8d21-a605-00505691ae3d
+2024-10-07 16:50:24,643 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:24,643 Retrieving credentials for Nautica
+2024-10-07 16:50:24,643 Username found!
+2024-10-07 16:50:24,644 Credentials found for Nautica
+2024-10-07 16:50:27,661 Built URL: http://navstriim01v.navigator.rssc.com:9080/security/authenticate
+2024-10-07 16:50:27,662 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:27,662 Retrieving credentials for Navigator
+2024-10-07 16:50:27,663 Username found!
+2024-10-07 16:50:27,663 Credentials found for Navigator
+2024-10-07 16:50:28,901 Response from token request: {"token":"01ef84ee-d4ea-4321-9635-00505683e679"}
+2024-10-07 16:50:28,902 Retrieved token for Navigator: 01ef84ee-d4ea-4321-9635-00505683e679
+2024-10-07 16:50:28,902 Final API URL for Navigator: http://navstriim01v.navigator.rssc.com:9080/health?token=01ef84ee-d4ea-4321-9635-00505683e679
+2024-10-07 16:50:28,903 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:28,903 Retrieving credentials for Navigator
+2024-10-07 16:50:28,903 Username found!
+2024-10-07 16:50:28,903 Credentials found for Navigator
+2024-10-07 16:50:29,302 Built URL: http://regstriim01v.regatta.oceaniacruises.com:9080/security/authenticate
+2024-10-07 16:50:29,303 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:29,303 Retrieving credentials for Regatta
+2024-10-07 16:50:29,304 Username found!
+2024-10-07 16:50:29,306 Credentials found for Regatta
+2024-10-07 16:50:30,302 Response from token request: {"token":"01ef84ee-d5de-dc51-909a-005056bcb0e7"}
+2024-10-07 16:50:30,304 Retrieved token for Regatta: 01ef84ee-d5de-dc51-909a-005056bcb0e7
+2024-10-07 16:50:30,304 Final API URL for Regatta: http://regstriim01v.regatta.oceaniacruises.com:9080/health?token=01ef84ee-d5de-dc51-909a-005056bcb0e7
+2024-10-07 16:50:30,305 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:30,305 Retrieving credentials for Regatta
+2024-10-07 16:50:30,305 Username found!
+2024-10-07 16:50:30,305 Credentials found for Regatta
+2024-10-07 16:50:30,536 Built URL: http://10.20.50.154:9080/security/authenticate
+2024-10-07 16:50:30,537 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:30,537 Retrieving credentials for Riviera
+2024-10-07 16:50:30,538 Username found!
+2024-10-07 16:50:30,538 Credentials found for Riviera
+2024-10-07 16:50:31,588 Response from token request: {"token":"01ef84ee-d69c-ae11-ac7b-005056b4307e"}
+2024-10-07 16:50:31,589 Retrieved token for Riviera: 01ef84ee-d69c-ae11-ac7b-005056b4307e
+2024-10-07 16:50:31,590 Final API URL for Riviera: http://10.20.50.154:9080/health?token=01ef84ee-d69c-ae11-ac7b-005056b4307e
+2024-10-07 16:50:31,590 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:31,590 Retrieving credentials for Riviera
+2024-10-07 16:50:31,591 Username found!
+2024-10-07 16:50:31,591 Credentials found for Riviera
+2024-10-07 16:50:31,959 Built URL: http://10.68.50.154:9080/security/authenticate
+2024-10-07 16:50:31,960 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:31,961 Retrieving credentials for Sirena
+2024-10-07 16:50:31,961 Username found!
+2024-10-07 16:50:31,962 Credentials found for Sirena
+2024-10-07 16:50:36,168 Response from token request: {"token":"01ef84ee-d905-e5e1-a5b1-005056ad9698"}
+2024-10-07 16:50:36,169 Retrieved token for Sirena: 01ef84ee-d905-e5e1-a5b1-005056ad9698
+2024-10-07 16:50:36,169 Final API URL for Sirena: http://10.68.50.154:9080/health?token=01ef84ee-d905-e5e1-a5b1-005056ad9698
+2024-10-07 16:50:36,170 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:36,170 Retrieving credentials for Sirena
+2024-10-07 16:50:36,170 Username found!
+2024-10-07 16:50:36,170 Credentials found for Sirena
+2024-10-07 16:50:39,471 Built URL: http://10.71.50.154:9080/security/authenticate
+2024-10-07 16:50:39,472 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:39,472 Retrieving credentials for Splendor
+2024-10-07 16:50:39,473 Username found!
+2024-10-07 16:50:39,473 Credentials found for Splendor
+2024-10-07 16:50:40,486 Response from token request: {"token":"01ef84ee-dbed-2751-9258-005056bf9d51"}
+2024-10-07 16:50:40,487 Retrieved token for Splendor: 01ef84ee-dbed-2751-9258-005056bf9d51
+2024-10-07 16:50:40,487 Final API URL for Splendor: http://10.71.50.154:9080/health?token=01ef84ee-dbed-2751-9258-005056bf9d51
+2024-10-07 16:50:40,487 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:40,487 Retrieving credentials for Splendor
+2024-10-07 16:50:40,488 Username found!
+2024-10-07 16:50:40,488 Credentials found for Splendor
+2024-10-07 16:50:40,812 Built URL: http://voystriim01v.voyager.rssc.com:9080/security/authenticate
+2024-10-07 16:50:40,813 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:40,813 Retrieving credentials for Voyager
+2024-10-07 16:50:40,813 Username found!
+2024-10-07 16:50:40,813 Credentials found for Voyager
+2024-10-07 16:50:42,053 Response from token request: {"token":"01ef84ee-dcd2-0911-a206-0050568597d2"}
+2024-10-07 16:50:42,054 Retrieved token for Voyager: 01ef84ee-dcd2-0911-a206-0050568597d2
+2024-10-07 16:50:42,054 Final API URL for Voyager: http://voystriim01v.voyager.rssc.com:9080/health?token=01ef84ee-dcd2-0911-a206-0050568597d2
+2024-10-07 16:50:42,055 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:42,055 Retrieving credentials for Voyager
+2024-10-07 16:50:42,055 Username found!
+2024-10-07 16:50:42,056 Credentials found for Voyager
+2024-10-07 16:50:42,414 Built URL: http://visstriim01v.vista.ncl.com:9080/security/authenticate
+2024-10-07 16:50:42,415 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:42,416 Retrieving credentials for Vista
+2024-10-07 16:50:42,417 Username found!
+2024-10-07 16:50:42,417 Credentials found for Vista
+2024-10-07 16:50:43,524 Response from token request: {"token":"01ef84ee-ddbc-6911-947b-005056a38ca6"}
+2024-10-07 16:50:43,525 Retrieved token for Vista: 01ef84ee-ddbc-6911-947b-005056a38ca6
+2024-10-07 16:50:43,526 Final API URL for Vista: http://visstriim01v.vista.ncl.com:9080/health?token=01ef84ee-ddbc-6911-947b-005056a38ca6
+2024-10-07 16:50:43,526 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 16:50:43,526 Retrieving credentials for Vista
+2024-10-07 16:50:43,527 Username found!
+2024-10-07 16:50:43,527 Credentials found for Vista
+2024-10-07 16:50:43,948 127.0.0.1 - - [07/Oct/2024 16:50:43] "POST /striim/status-by-ship HTTP/1.1" 200 -

@@ -1,0 +1,162 @@
+2024-10-03 12:58:10,044  * Debugger is active!
+2024-10-03 12:58:10,048  * Debugger PIN: 329-991-988
+2024-10-03 12:58:12,021 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 12:58:12,029 127.0.0.1 - - [03/Oct/2024 12:58:12] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 12:58:13,670 Selected ship for token authentication is: Discovery
+2024-10-03 12:58:13,670 Selected ship for token authentication is: Discovery
+2024-10-03 12:58:13,671 Using STRIIM API URL: http://10.65.61.154:9080/api/v2/applications
+2024-10-03 12:58:13,672 Split URL to append token endpoint: ['http:', '', '10.65.61.154:9080', 'api', 'v2', 'applications']
+2024-10-03 12:58:13,672 New URL after parse and appending token endpoint http://10.65.61.154:9080/security/authenticate
+2024-10-03 12:58:13,673 Selected ship for token authentication is: Discovery
+2024-10-03 12:58:13,673 Getting password for API URL http://10.65.61.154:9080/security/authenticate based on front-end selection Discovery
+2024-10-03 12:58:13,674 2%cy?jm?UK9vH7bm
+2024-10-03 12:58:13,677 2%cy?jm?UK9vH7bm
+2024-10-03 12:58:13,677 HEADERS: {'username': 'admin', 'password': '2%cy?jm?UK9vH7bm'}
+2024-10-03 12:58:13,678 Selected ship for token authentication is: Discovery
+2024-10-03 12:58:13,678 Selected ship for token authentication is: Discovery
+2024-10-03 12:58:13,679 Using STRIIM API URL: http://10.65.61.154:9080/api/v2/applications
+2024-10-03 12:58:13,680 Split URL to append token endpoint: ['http:', '', '10.65.61.154:9080', 'api', 'v2', 'applications']
+2024-10-03 12:58:13,680 New URL after parse and appending token endpoint http://10.65.61.154:9080/security/authenticate
+2024-10-03 12:58:14,697 RESPONSE: {"token":"01ef81a8-ac48-4141-8112-005056a3d7b2"}
+2024-10-03 12:58:14,697 Attempting to retrieve auth token...
+2024-10-03 12:58:14,697 Retrieved authorization token!
+2024-10-03 12:58:14,697 Using token: 01ef81a8-ac48-4141-8112-005056a3d7b2
+2024-10-03 12:58:14,700 Selected ship for token authentication is: Discovery
+2024-10-03 12:58:14,700 Selected ship for token authentication is: Discovery
+2024-10-03 12:58:14,701 Using STRIIM API URL: http://10.65.61.154:9080/api/v2/applications
+2024-10-03 12:58:14,702 Split URL to append token endpoint: ['http:', '', '10.65.61.154:9080', 'api', 'v2', 'applications']
+2024-10-03 12:58:14,702 New URL after parse and appending token endpoint http://10.65.61.154:9080/security/authenticate
+2024-10-03 12:58:14,703 Selected ship for token authentication is: Discovery
+2024-10-03 12:58:14,703 Getting password for API URL http://10.65.61.154:9080/security/authenticate based on front-end selection Discovery
+2024-10-03 12:58:14,703 2%cy?jm?UK9vH7bm
+2024-10-03 12:58:14,705 2%cy?jm?UK9vH7bm
+2024-10-03 12:58:14,706 HEADERS: {'username': 'admin', 'password': '2%cy?jm?UK9vH7bm'}
+2024-10-03 12:58:15,281 127.0.0.1 - - [03/Oct/2024 12:58:15] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 12:58:19,219 Selected ship for token authentication is: Dawn
+2024-10-03 12:58:19,220 Selected ship for token authentication is: Dawn
+2024-10-03 12:58:19,220 Using STRIIM API URL: http://dawstriim01v.dawn.ncl.com:9080/api/v2/applications
+2024-10-03 12:58:19,221 Split URL to append token endpoint: ['http:', '', 'dawstriim01v.dawn.ncl.com:9080', 'api', 'v2', 'applications']
+2024-10-03 12:58:19,221 New URL after parse and appending token endpoint http://dawstriim01v.dawn.ncl.com:9080/security/authenticate
+2024-10-03 12:58:19,222 Selected ship for token authentication is: Dawn
+2024-10-03 12:58:19,222 Getting password for API URL http://dawstriim01v.dawn.ncl.com:9080/security/authenticate based on front-end selection Dawn
+2024-10-03 12:58:19,223 g6fASC*%=(kEh^Y3
+2024-10-03 12:58:19,225 g6fASC*%=(kEh^Y3
+2024-10-03 12:58:19,226 HEADERS: {'username': 'admin', 'password': 'g6fASC*%=(kEh^Y3'}
+2024-10-03 12:58:19,227 Selected ship for token authentication is: Dawn
+2024-10-03 12:58:19,228 Selected ship for token authentication is: Dawn
+2024-10-03 12:58:19,228 Using STRIIM API URL: http://dawstriim01v.dawn.ncl.com:9080/api/v2/applications
+2024-10-03 12:58:19,229 Split URL to append token endpoint: ['http:', '', 'dawstriim01v.dawn.ncl.com:9080', 'api', 'v2', 'applications']
+2024-10-03 12:58:19,229 New URL after parse and appending token endpoint http://dawstriim01v.dawn.ncl.com:9080/security/authenticate
+2024-10-03 12:58:20,429 RESPONSE: {"token":"01ef81a9-b49c-8f31-b0ca-005056b42f69"}
+2024-10-03 12:58:20,430 Attempting to retrieve auth token...
+2024-10-03 12:58:20,430 Retrieved authorization token!
+2024-10-03 12:58:20,430 Using token: 01ef81a9-b49c-8f31-b0ca-005056b42f69
+2024-10-03 12:58:20,432 Selected ship for token authentication is: Dawn
+2024-10-03 12:58:20,432 Selected ship for token authentication is: Dawn
+2024-10-03 12:58:20,432 Using STRIIM API URL: http://dawstriim01v.dawn.ncl.com:9080/api/v2/applications
+2024-10-03 12:58:20,432 Split URL to append token endpoint: ['http:', '', 'dawstriim01v.dawn.ncl.com:9080', 'api', 'v2', 'applications']
+2024-10-03 12:58:20,432 New URL after parse and appending token endpoint http://dawstriim01v.dawn.ncl.com:9080/security/authenticate
+2024-10-03 12:58:20,433 Selected ship for token authentication is: Dawn
+2024-10-03 12:58:20,434 Getting password for API URL http://dawstriim01v.dawn.ncl.com:9080/security/authenticate based on front-end selection Dawn
+2024-10-03 12:58:20,434 g6fASC*%=(kEh^Y3
+2024-10-03 12:58:20,436 g6fASC*%=(kEh^Y3
+2024-10-03 12:58:20,436 HEADERS: {'username': 'admin', 'password': 'g6fASC*%=(kEh^Y3'}
+2024-10-03 12:58:21,029 127.0.0.1 - - [03/Oct/2024 12:58:21] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 12:58:27,232 Selected ship for token authentication is: Escape
+2024-10-03 12:58:27,233 Selected ship for token authentication is: Escape
+2024-10-03 12:58:27,234 Using STRIIM API URL: http://escstriim01v.escape.ncl.com:9080
+2024-10-03 12:58:27,234 Split URL to append token endpoint: ['http:', '', 'escstriim01v.escape.ncl.com:9080']
+2024-10-03 12:58:27,234 New URL after parse and appending token endpoint http://escstriim01v.escape.ncl.com:9080/security/authenticate
+2024-10-03 12:58:27,235 Selected ship for token authentication is: Escape
+2024-10-03 12:58:27,236 Getting password for API URL http://escstriim01v.escape.ncl.com:9080/security/authenticate based on front-end selection Escape
+2024-10-03 12:58:27,236 None
+2024-10-03 12:58:27,239 None
+2024-10-03 12:58:27,239 Error: No password configured for Escape
+2024-10-03 12:58:27,240 Selected ship for token authentication is: Escape
+2024-10-03 12:58:27,240 Selected ship for token authentication is: Escape
+2024-10-03 12:58:27,241 Using STRIIM API URL: http://escstriim01v.escape.ncl.com:9080
+2024-10-03 12:58:27,241 Split URL to append token endpoint: ['http:', '', 'escstriim01v.escape.ncl.com:9080']
+2024-10-03 12:58:27,242 New URL after parse and appending token endpoint http://escstriim01v.escape.ncl.com:9080/security/authenticate
+2024-10-03 12:58:27,778 RESPONSE: 
+2024-10-03 12:58:27,778 Attempting to retrieve auth token...
+2024-10-03 12:58:27,778 RESPONSE: 
+2024-10-03 12:58:27,778 Failed to retrieve token. Status Code: 400
+2024-10-03 12:58:27,780 Selected ship for token authentication is: Escape
+2024-10-03 12:58:27,780 Selected ship for token authentication is: Escape
+2024-10-03 12:58:27,781 Using STRIIM API URL: http://escstriim01v.escape.ncl.com:9080
+2024-10-03 12:58:27,781 Split URL to append token endpoint: ['http:', '', 'escstriim01v.escape.ncl.com:9080']
+2024-10-03 12:58:27,781 New URL after parse and appending token endpoint http://escstriim01v.escape.ncl.com:9080/security/authenticate
+2024-10-03 12:58:27,783 Selected ship for token authentication is: Escape
+2024-10-03 12:58:27,783 Getting password for API URL http://escstriim01v.escape.ncl.com:9080/security/authenticate based on front-end selection Escape
+2024-10-03 12:58:27,784 None
+2024-10-03 12:58:27,786 None
+2024-10-03 12:58:27,787 Error: No password configured for Escape
+2024-10-03 12:58:27,794 127.0.0.1 - - [03/Oct/2024 12:58:27] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-03 12:59:27,365 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 12:59:27,377 127.0.0.1 - - [03/Oct/2024 12:59:27] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 12:59:30,092 Selected ship for token authentication is: Escape
+2024-10-03 12:59:30,092 Selected ship for token authentication is: Escape
+2024-10-03 12:59:30,092 Using STRIIM API URL: http://escstriim01v.escape.ncl.com:9080
+2024-10-03 12:59:30,092 Split URL to append token endpoint: ['http:', '', 'escstriim01v.escape.ncl.com:9080']
+2024-10-03 12:59:30,092 New URL after parse and appending token endpoint http://escstriim01v.escape.ncl.com:9080/security/authenticate
+2024-10-03 12:59:30,093 Selected ship for token authentication is: Escape
+2024-10-03 12:59:30,093 Getting password for API URL http://escstriim01v.escape.ncl.com:9080/security/authenticate based on front-end selection Escape
+2024-10-03 12:59:30,093 None
+2024-10-03 12:59:30,094 None
+2024-10-03 12:59:30,094 Error: No password configured for Escape
+2024-10-03 12:59:30,094 Selected ship for token authentication is: Escape
+2024-10-03 12:59:30,094 Selected ship for token authentication is: Escape
+2024-10-03 12:59:30,094 Using STRIIM API URL: http://escstriim01v.escape.ncl.com:9080
+2024-10-03 12:59:30,094 Split URL to append token endpoint: ['http:', '', 'escstriim01v.escape.ncl.com:9080']
+2024-10-03 12:59:30,095 New URL after parse and appending token endpoint http://escstriim01v.escape.ncl.com:9080/security/authenticate
+2024-10-03 12:59:30,538 RESPONSE: 
+2024-10-03 12:59:30,539 Attempting to retrieve auth token...
+2024-10-03 12:59:30,539 RESPONSE: 
+2024-10-03 12:59:30,539 Failed to retrieve token. Status Code: 400
+2024-10-03 12:59:30,540 Selected ship for token authentication is: Escape
+2024-10-03 12:59:30,540 Selected ship for token authentication is: Escape
+2024-10-03 12:59:30,541 Using STRIIM API URL: http://escstriim01v.escape.ncl.com:9080
+2024-10-03 12:59:30,541 Split URL to append token endpoint: ['http:', '', 'escstriim01v.escape.ncl.com:9080']
+2024-10-03 12:59:30,541 New URL after parse and appending token endpoint http://escstriim01v.escape.ncl.com:9080/security/authenticate
+2024-10-03 12:59:30,542 Selected ship for token authentication is: Escape
+2024-10-03 12:59:30,543 Getting password for API URL http://escstriim01v.escape.ncl.com:9080/security/authenticate based on front-end selection Escape
+2024-10-03 12:59:30,543 None
+2024-10-03 12:59:30,545 None
+2024-10-03 12:59:30,546 Error: No password configured for Escape
+2024-10-03 12:59:30,556 127.0.0.1 - - [03/Oct/2024 12:59:30] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-03 12:59:49,924 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 12:59:49,927 127.0.0.1 - - [03/Oct/2024 12:59:49] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 12:59:51,265 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 12:59:51,267 127.0.0.1 - - [03/Oct/2024 12:59:51] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 12:59:54,084 Selected ship for token authentication is: Gem
+2024-10-03 12:59:54,085 Selected ship for token authentication is: Gem
+2024-10-03 12:59:54,085 Using STRIIM API URL: http://gemstriim01v.gem.ncl.com:9080
+2024-10-03 12:59:54,085 Split URL to append token endpoint: ['http:', '', 'gemstriim01v.gem.ncl.com:9080']
+2024-10-03 12:59:54,085 New URL after parse and appending token endpoint http://gemstriim01v.gem.ncl.com:9080/security/authenticate
+2024-10-03 12:59:54,086 Selected ship for token authentication is: Gem
+2024-10-03 12:59:54,086 Getting password for API URL http://gemstriim01v.gem.ncl.com:9080/security/authenticate based on front-end selection Gem
+2024-10-03 12:59:54,086 None
+2024-10-03 12:59:54,087 None
+2024-10-03 12:59:54,087 Error: No password configured for Gem
+2024-10-03 12:59:54,087 Selected ship for token authentication is: Gem
+2024-10-03 12:59:54,087 Selected ship for token authentication is: Gem
+2024-10-03 12:59:54,087 Using STRIIM API URL: http://gemstriim01v.gem.ncl.com:9080
+2024-10-03 12:59:54,088 Split URL to append token endpoint: ['http:', '', 'gemstriim01v.gem.ncl.com:9080']
+2024-10-03 12:59:54,088 New URL after parse and appending token endpoint http://gemstriim01v.gem.ncl.com:9080/security/authenticate
+2024-10-03 12:59:54,867 RESPONSE: 
+2024-10-03 12:59:54,867 Attempting to retrieve auth token...
+2024-10-03 12:59:54,867 RESPONSE: 
+2024-10-03 12:59:54,868 Failed to retrieve token. Status Code: 400
+2024-10-03 12:59:54,868 Selected ship for token authentication is: Gem
+2024-10-03 12:59:54,869 Selected ship for token authentication is: Gem
+2024-10-03 12:59:54,869 Using STRIIM API URL: http://gemstriim01v.gem.ncl.com:9080
+2024-10-03 12:59:54,870 Split URL to append token endpoint: ['http:', '', 'gemstriim01v.gem.ncl.com:9080']
+2024-10-03 12:59:54,870 New URL after parse and appending token endpoint http://gemstriim01v.gem.ncl.com:9080/security/authenticate
+2024-10-03 12:59:54,870 Selected ship for token authentication is: Gem
+2024-10-03 12:59:54,871 Getting password for API URL http://gemstriim01v.gem.ncl.com:9080/security/authenticate based on front-end selection Gem
+2024-10-03 12:59:54,871 None
+2024-10-03 12:59:54,873 None
+2024-10-03 12:59:54,873 Error: No password configured for Gem
+2024-10-03 12:59:54,880 127.0.0.1 - - [03/Oct/2024 12:59:54] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-03 12:59:59,166 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 12:59:59,171 127.0.0.1 - - [03/Oct/2024 12:59:59] "GET /striim/status-all HTTP/1.1" 200 -

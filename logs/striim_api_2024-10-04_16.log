@@ -1,0 +1,179 @@
+2024-10-04 16:55:51,894  * Debugger is active!
+2024-10-04 16:55:51,897  * Debugger PIN: 329-991-988
+2024-10-04 16:57:18,107 127.0.0.1 - - [04/Oct/2024 16:57:18] "GET / HTTP/1.1" 200 -
+2024-10-04 16:57:20,215 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-04 16:57:20,215 Retrieving credentials for Discovery
+2024-10-04 16:57:20,215 Username found!
+2024-10-04 16:57:20,215 Credentials found for Discovery
+2024-10-04 16:57:20,216 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 16:57:21,091 RESPONSE: {"token":"01ef8293-3da9-8d21-ada8-005056a3d7b2"}
+2024-10-04 16:57:21,092 Attempting to retrieve auth token...
+2024-10-04 16:57:21,092 Retrieved authorization token!
+2024-10-04 16:57:21,093 Using token: 01ef8293-3da9-8d21-ada8-005056a3d7b2
+2024-10-04 16:57:21,099 Built URL: http://10.65.61.154:9080/health?token=01ef8293-3da9-8d21-ada8-005056a3d7b2
+2024-10-04 16:57:21,257 Application health API was retrieved successfully.
+2024-10-04 16:57:21,257 Looking to see if application name was given...
+2024-10-04 16:57:21,257 No2024-10-04 17:18:23,493  * Restarting with stat
+2024-10-04 17:18:44,389  * Restarting with stat
+2024-10-04 17:20:05,327  * Restarting with stat
+2024-10-04 17:22:27,298  * Restarting with stat
+2024-10-04 17:22:57,770  * Restarting with stat
+2024-10-04 17:23:45,229  * Restarting with stat
+2024-10-04 17:25:22,477  * Restarting with stat
+covery&appName=admin.benny_test HTTP/1.1[0m" 415 -
+2024-10-04 17:05:37,776 127.0.0.1 - - [04/Oct/2024 17:05:37] "GET / HTTP/1.1" 200 -
+2024-10-04 17:05:39,389 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-04 17:05:39,389 Retrieving credentials for Discovery
+2024-10-04 17:05:39,390 Username found!
+2024-10-04 17:05:39,390 Credentials found for Discovery
+2024-10-04 17:05:39,390 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:05:40,259 RESPONSE: {"token":"01ef8294-66bb-f761-ada8-005056a3d7b2"}
+2024-10-04 17:05:40,260 Attempting to retrieve auth token...
+2024-10-04 17:05:40,261 Retrieved authorization token!
+2024-10-04 17:05:40,261 Using token: 01ef8294-66bb-f761-ada8-005056a3d7b2
+2024-10-04 17:05:40,267 Built URL: http://10.65.61.154:9080/health?token=01ef8294-66bb-f761-ada8-005056a3d7b2
+2024-10-04 17:05:40,419 Application health API was retrieved successfully.
+2024-10-04 17:05:40,419 Looking to see if application name was given...
+2024-10-04 17:05:40,419 No specific application name given. Will display health stats for all applications.
+2024-10-04 17:05:40,424 127.0.0.1 - - [04/Oct/2024 17:05:40] "POST /get_applications HTTP/1.1" 200 -
+2024-10-04 17:05:43,917 Checking deployment status...
+2024-10-04 17:05:43,921 127.0.0.1 - - [04/Oct/2024 17:05:43] "[31m[1mGET /application/status?ship=Discovery&appName=admin.benny_test HTTP/1.1[0m" 415 -
+2024-10-04 17:06:05,860 127.0.0.1 - - [04/Oct/2024 17:06:05] "GET / HTTP/1.1" 200 -
+2024-10-04 17:06:07,632 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-04 17:06:07,633 Retrieving credentials for Discovery
+2024-10-04 17:06:07,633 Username found!
+2024-10-04 17:06:07,634 Credentials found for Discovery
+2024-10-04 17:06:07,636 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:06:08,483 RESPONSE: {"token":"01ef8294-7791-a8a1-ada8-005056a3d7b2"}
+2024-10-04 17:06:08,484 Attempting to retrieve auth token...
+2024-10-04 17:06:08,484 Retrieved authorization token!
+2024-10-04 17:06:08,484 Using token: 01ef8294-7791-a8a1-ada8-005056a3d7b2
+2024-10-04 17:06:08,488 Built URL: http://10.65.61.154:9080/health?token=01ef8294-7791-a8a1-ada8-005056a3d7b2
+2024-10-04 17:06:08,755 Application health API was retrieved successfully.
+2024-10-04 17:06:08,755 Looking to see if application name was given...
+2024-10-04 17:06:08,755 No specific application name given. Will display health stats for all applications.
+2024-10-04 17:06:08,758 127.0.0.1 - - [04/Oct/2024 17:06:08] "POST /get_applications HTTP/1.1" 200 -
+2024-10-04 17:06:12,789 Checking deployment status...
+2024-10-04 17:06:12,798 127.0.0.1 - - [04/Oct/2024 17:06:12] "[31m[1mGET /application/status?ship=Discovery&appName=admin.benny_test HTTP/1.1[0m" 415 -
+2024-10-04 17:08:47,232 127.0.0.1 - - [04/Oct/2024 17:08:47] "GET / HTTP/1.1" 200 -
+2024-10-04 17:08:48,907 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-04 17:08:48,908 Retrieving credentials for Discovery
+2024-10-04 17:08:48,908 Username found!
+2024-10-04 17:08:48,908 Credentials found for Discovery
+2024-10-04 17:08:48,911 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:08:49,857 RESPONSE: {"token":"01ef8294-d7b6-8b11-ada8-005056a3d7b2"}
+2024-10-04 17:08:49,858 Attempting to retrieve auth token...
+2024-10-04 17:08:49,858 Retrieved authorization token!
+2024-10-04 17:08:49,858 Using token: 01ef8294-d7b6-8b11-ada8-005056a3d7b2
+2024-10-04 17:08:49,859 Built URL: http://10.65.61.154:9080/health?token=01ef8294-d7b6-8b11-ada8-005056a3d7b2
+2024-10-04 17:08:50,007 Application health API was retrieved successfully.
+2024-10-04 17:08:50,007 Looking to see if application name was given...
+2024-10-04 17:08:50,007 No specific application name given. Will display health stats for all applications.
+2024-10-04 17:08:50,014 127.0.0.1 - - [04/Oct/2024 17:08:50] "POST /get_applications HTTP/1.1" 200 -
+2024-10-04 17:08:56,165 Checking deployment status...
+2024-10-04 17:08:56,173 127.0.0.1 - - [04/Oct/2024 17:08:56] "[31m[1mGET /application/status?ship=Discovery&appName=admin.benny_test HTTP/1.1[0m" 415 -
+2024-10-04 17:09:30,086 127.0.0.1 - - [04/Oct/2024 17:09:30] "GET / HTTP/1.1" 200 -
+2024-10-04 17:09:31,618 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-04 17:09:31,618 Retrieving credentials for Discovery
+2024-10-04 17:09:31,618 Username found!
+2024-10-04 17:09:31,619 Credentials found for Discovery
+2024-10-04 17:09:31,620 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:09:32,620 RESPONSE: {"token":"01ef8294-f129-2171-ada8-005056a3d7b2"}
+2024-10-04 17:09:32,621 Attempting to retrieve auth token...
+2024-10-04 17:09:32,621 Retrieved authorization token!
+2024-10-04 17:09:32,622 Using token: 01ef8294-f129-2171-ada8-005056a3d7b2
+2024-10-04 17:09:32,630 Built URL: http://10.65.61.154:9080/health?token=01ef8294-f129-2171-ada8-005056a3d7b2
+2024-10-04 17:09:32,792 Application health API was retrieved successfully.
+2024-10-04 17:09:32,793 Looking to see if application name was given...
+2024-10-04 17:09:32,793 No specific application name given. Will display health stats for all applications.
+2024-10-04 17:09:32,801 127.0.0.1 - - [04/Oct/2024 17:09:32] "POST /get_applications HTTP/1.1" 200 -
+2024-10-04 17:10:54,770 Received the following from the frontend: {'ship': 'Discovery', 'appName': 'admin.benny_test'}
+2024-10-04 17:10:54,771 Retrieving credentials for Discovery
+2024-10-04 17:10:54,771 Username found!
+2024-10-04 17:10:54,771 Credentials found for Discovery
+2024-10-04 17:10:54,772 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:10:55,695 RESPONSE: {"token":"01ef8295-55e0-5d41-ada8-005056a3d7b2"}
+2024-10-04 17:10:55,696 Attempting to retrieve auth token...
+2024-10-04 17:10:55,697 Retrieved authorization token!
+2024-10-04 17:10:55,697 Using token: 01ef8295-55e0-5d41-ada8-005056a3d7b2
+2024-10-04 17:10:55,703 Built following URL: http://10.65.61.154:9080/api/v2/applications/admin.benny_test/deployment
+2024-10-04 17:10:55,704 Trying to undeploy app: admin.benny_test on ship Discovery
+2024-10-04 17:10:56,155 admin.benny_test undeployed successfully!
+2024-10-04 17:10:56,158 127.0.0.1 - - [04/Oct/2024 17:10:56] "DELETE /application/undeploy HTTP/1.1" 200 -
+2024-10-04 17:11:37,389 127.0.0.1 - - [04/Oct/2024 17:11:37] "GET / HTTP/1.1" 200 -
+2024-10-04 17:11:38,598 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-04 17:11:38,599 Retrieving credentials for Discovery
+2024-10-04 17:11:38,599 Username found!
+2024-10-04 17:11:38,599 Credentials found for Discovery
+2024-10-04 17:11:38,601 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:11:39,615 RESPONSE: {"token":"01ef8295-7006-6521-ada8-005056a3d7b2"}
+2024-10-04 17:11:39,616 Attempting to retrieve auth token...
+2024-10-04 17:11:39,616 Retrieved authorization token!
+2024-10-04 17:11:39,616 Using token: 01ef8295-7006-6521-ada8-005056a3d7b2
+2024-10-04 17:11:39,623 Built URL: http://10.65.61.154:9080/health?token=01ef8295-7006-6521-ada8-005056a3d7b2
+2024-10-04 17:11:39,822 Application health API was retrieved successfully.
+2024-10-04 17:11:39,823 Looking to see if application name was given...
+2024-10-04 17:11:39,823 No specific application name given. Will display health stats for all applications.
+2024-10-04 17:11:39,834 127.0.0.1 - - [04/Oct/2024 17:11:39] "POST /get_applications HTTP/1.1" 200 -
+2024-10-04 17:11:44,560 Received the following from the frontend: {'ship': 'Discovery', 'appName': 'admin.benny_test'}
+2024-10-04 17:11:44,561 Retrieving credentials for Discovery
+2024-10-04 17:11:44,561 Username found!
+2024-10-04 17:11:44,561 Credentials found for Discovery
+2024-10-04 17:11:44,563 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:11:45,465 RESPONSE: {"token":"01ef8295-7391-3991-ada8-005056a3d7b2"}
+2024-10-04 17:11:45,466 Attempting to retrieve auth token...
+2024-10-04 17:11:45,466 Retrieved authorization token!
+2024-10-04 17:11:45,466 Using token: 01ef8295-7391-3991-ada8-005056a3d7b2
+2024-10-04 17:11:45,470 Built following URL: http://10.65.61.154:9080/api/v2/applications/admin.benny_test/deployment
+2024-10-04 17:11:45,470 Starting deployment process for app: admin.benny_test on ship: Discovery
+2024-10-04 17:11:45,471 Deploying admin.benny_test on Discovery...
+2024-10-04 17:11:47,281 Deployment successful: {'namespace': 'admin', 'name': 'benny_test', 'status': 'DEPLOYED', 'links': [{'rel': 'self', 'allow': ['GET', 'DELETE'], 'href': '/api/v2/applications/admin.benny_test'}, {'rel': 'deployment', 'allow': ['POST', 'DELETE'], 'href': '/api/v2/applications/admin.benny_test/deployment'}, {'rel': 'sprint', 'allow': ['POST', 'DELETE'], 'href': '/api/v2/applications/admin.benny_test/sprint'}]}
+2024-10-04 17:11:47,282 127.0.0.1 - - [04/Oct/2024 17:11:47] "POST /application/deploy HTTP/1.1" 200 -
+2024-10-04 17:13:27,599 127.0.0.1 - - [04/Oct/2024 17:13:27] "GET / HTTP/1.1" 200 -
+2024-10-04 17:13:29,316 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-04 17:13:29,317 Retrieving credentials for Discovery
+2024-10-04 17:13:29,317 Username found!
+2024-10-04 17:13:29,317 Credentials found for Discovery
+2024-10-04 17:13:29,318 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:13:30,271 RESPONSE: {"token":"01ef8295-b1fd-c131-ada8-005056a3d7b2"}
+2024-10-04 17:13:30,272 Attempting to retrieve auth token...
+2024-10-04 17:13:30,272 Retrieved authorization token!
+2024-10-04 17:13:30,273 Using token: 01ef8295-b1fd-c131-ada8-005056a3d7b2
+2024-10-04 17:13:30,279 Built URL: http://10.65.61.154:9080/health?token=01ef8295-b1fd-c131-ada8-005056a3d7b2
+2024-10-04 17:13:30,429 Application health API was retrieved successfully.
+2024-10-04 17:13:30,429 Looking to see if application name was given...
+2024-10-04 17:13:30,430 No specific application name given. Will display health stats for all applications.
+2024-10-04 17:13:30,436 127.0.0.1 - - [04/Oct/2024 17:13:30] "POST /get_applications HTTP/1.1" 200 -
+2024-10-04 17:13:32,954 Checking deployment status...
+2024-10-04 17:13:32,960 127.0.0.1 - - [04/Oct/2024 17:13:32] "[31m[1mGET /application/status?ship=Discovery&appName=admin.benny_test HTTP/1.1[0m" 415 -
+2024-10-04 17:14:00,158 127.0.0.1 - - [04/Oct/2024 17:14:00] "GET / HTTP/1.1" 200 -
+2024-10-04 17:14:01,681 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-04 17:14:01,681 Retrieving credentials for Discovery
+2024-10-04 17:14:01,681 Username found!
+2024-10-04 17:14:01,681 Credentials found for Discovery
+2024-10-04 17:14:01,682 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:14:02,621 RESPONSE: {"token":"01ef8295-c544-c091-ada8-005056a3d7b2"}
+2024-10-04 17:14:02,622 Attempting to retrieve auth token...
+2024-10-04 17:14:02,623 Retrieved authorization token!
+2024-10-04 17:14:02,623 Using token: 01ef8295-c544-c091-ada8-005056a3d7b2
+2024-10-04 17:14:02,630 Built URL: http://10.65.61.154:9080/health?token=01ef8295-c544-c091-ada8-005056a3d7b2
+2024-10-04 17:14:02,813 Application health API was retrieved successfully.
+2024-10-04 17:14:02,813 Looking to see if application name was given...
+2024-10-04 17:14:02,813 No specific application name given. Will display health stats for all applications.
+2024-10-04 17:14:02,819 127.0.0.1 - - [04/Oct/2024 17:14:02] "POST /get_applications HTTP/1.1" 200 -
+2024-10-04 17:14:05,661 Received the following from the frontend: {'ship': 'Discovery', 'appName': 'admin.benny_test'}
+2024-10-04 17:14:05,661 Retrieving credentials for Discovery
+2024-10-04 17:14:05,662 Username found!
+2024-10-04 17:14:05,662 Credentials found for Discovery
+2024-10-04 17:14:05,664 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:14:06,661 RESPONSE: {"token":"01ef8295-c7a7-1a91-ada8-005056a3d7b2"}
+2024-10-04 17:14:06,662 Attempting to retrieve auth token...
+2024-10-04 17:14:06,662 Retrieved authorization token!
+2024-10-04 17:14:06,662 Using token: 01ef8295-c7a7-1a91-ada8-005056a3d7b2
+2024-10-04 17:14:06,665 Built following URL: http://10.65.61.154:9080/api/v2/applications/admin.benny_test/deployment
+2024-10-04 17:14:06,665 Trying to undeploy app: admin.benny_test on ship Discovery
+2024-10-04 17:14:07,247 admin.benny_test undeployed successfully!
+2024-10-04 17:14:07,248 127.0.0.1 - - [04/Oct/2024 17:14:07] "DELETE /application/undeploy HTTP/1.1" 200 -
+2024-10-04 17:14:09,966 Checking deployment status...
+2024-10-04 17:14:09,978 127.0.0.1 - - [04/Oct/2024 17:14:09] "[31m[1mGET /application/status?ship=Discovery&appName=admin.benny_test HTTP/1.1[0m" 415 -
+2024-10-04 17:18:23,426  * Detected change in 'C:\\Users\\btavarez\\dev\\striim\\striim_ship_api\\strim_app_api\\ship_app.py', reloading

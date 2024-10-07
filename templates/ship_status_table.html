@@ -1,0 +1,56 @@
+<h1>{{ selected_ship }}</h1>
+{% if app_health %}
+<table class="table table-sm table-hover">
+<thead>
+<tr>
+<th onclick="sortTable(0)">Ship<i class="bi bi-arrow-down-up"></i></th>
+<th onclick="sortTable(1)">App Name<i class="bi bi-arrow-down-up"></i></th>
+<th onclick="sortTable(2)">Status<i class="bi bi-arrow-down-up"></i></th>
+</tr>
+</thead>
+<tbody id="myTable">
+           {% if selected_ship == 'All' %}
+               {% for ship, health_data in app_health.items() %}
+                   {% for record_key, record_value in health_data.items() %}
+                       {% if record_key == 'healthRecords' %}
+                           {% for record in record_value %}
+                               {% for inner_key, inner_value in record.items() %}
+                                   {% if inner_key == 'appHealthMap' %}
+                                       {% for app_key, app_value in inner_value.items() %}
+                                            <tr>
+                                            <td>{{ ship }}</td>  <!-- Ship name -->
+                                            <td>{{ app_value['fqAppName'] or 'N/A' }}</td>  <!-- App Name -->
+                                            <td>{{ app_value['status'] or 'N/A' }}</td>  <!-- Status -->
+                                            </tr>
+                                       {% endfor %}
+                                   {% endif %}
+                               {% endfor %}
+                           {% endfor %}
+                       {% endif %}
+                   {% endfor %}
+               {% endfor %}
+           {% else %}
+<!-- For a single ship -->
+               {% for record_key, record_value in app_health.items() %}
+                   {% if record_key == 'healthRecords' %}
+                       {% for record in record_value %}
+                           {% for inner_key, inner_value in record.items() %}
+                               {% if inner_key == 'appHealthMap' %}
+                                   {% for app_key, app_value in inner_value.items() %}
+                                        <tr>
+                                        <td>{{ selected_ship }}</td>  <!-- Ship name -->
+                                        <td>{{ app_value['fqAppName'] or 'N/A' }}</td>  <!-- App Name -->
+                                        <td>{{ app_value['status'] or 'N/A' }}</td>  <!-- Status -->
+                                        </tr>
+                                   {% endfor %}
+                               {% endif %}
+                           {% endfor %}
+                       {% endfor %}
+                   {% endif %}
+               {% endfor %}
+           {% endif %}
+</tbody>
+</table>
+{% else %}
+<p>No Data Available</p>
+{% endif %}

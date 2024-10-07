@@ -1,0 +1,46 @@
+2024-10-07 11:59:29,995  * Debugger is active!
+2024-10-07 11:59:29,999  * Debugger PIN: 329-991-988
+2024-10-07 11:59:30,751 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 11:59:30,765 127.0.0.1 - - [07/Oct/2024 11:59:30] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 11:59:32,073 Received {'ship': 'Discovery'} from the drop-down menu.
+2024-10-07 11:59:32,073 Going to use Discovery to get API URL.
+2024-10-07 11:59:32,081 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 11:59:32,082 Retrieving credentials for Discovery
+2024-10-07 11:59:32,082 Username found!
+2024-10-07 11:59:32,082 Credentials found for Discovery
+2024-10-07 11:59:32,084 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 11:59:32,925 RESPONSE: {"token":"01ef84c5-5535-d5f1-ada8-005056a3d7b2"}
+2024-10-07 11:59:32,926 Attempting to retrieve auth token...
+2024-10-07 11:59:32,927 Retrieved authorization token!
+2024-10-07 11:59:32,927 Using token: 01ef84c5-5535-d5f1-ada8-005056a3d7b2
+2024-10-07 11:59:2024-10-07 12:00:42,940  * Restarting with stat
+2024-10-07 12:01:57,575  * Restarting with stat
+2024-10-07 12:02:30,918  * Restarting with stat
+2024-10-07 12:03:00,129  * Restarting with stat
+2024-10-07 12:03:42,078  * Restarting with stat
+2024-10-07 12:04:01,925  * Restarting with stat
+2024-10-07 12:04:37,652  * Restarting with stat
+930 Using URL: http://10.65.61.154:9080/api/v2/applications
+2024-10-07 11:59:32,930 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 11:59:32,930 Retrieving credentials for Discovery
+2024-10-07 11:59:32,930 Username found!
+2024-10-07 11:59:32,930 Credentials found for Discovery
+2024-10-07 11:59:32,965 Auth Token: 01ef84c5-5535-d5f1-ada8-005056a3d7b2
+2024-10-07 11:59:32,965 Successfully retrieved stats for Discovery
+2024-10-07 11:59:32,967 127.0.0.1 - - [07/Oct/2024 11:59:32] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 11:59:37,286 Received {'ship': 'All'} from the drop-down menu.
+2024-10-07 11:59:37,287 Going to use All to get API URL.
+2024-10-07 11:59:37,287 Fetching health stats for Discovery
+2024-10-07 11:59:37,288 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 11:59:37,288 Retrieving credentials for Discovery
+2024-10-07 11:59:37,288 Username found!
+2024-10-07 11:59:37,288 Credentials found for Discovery
+2024-10-07 11:59:37,295 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 11:59:37,295 Retrieving credentials for All
+2024-10-07 11:59:37,295 Username found!
+2024-10-07 11:59:37,296 Error: No password configured for All
+2024-10-07 11:59:37,297 Error: Could not find URL for ship: All
+2024-10-07 11:59:37,301 Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-10-07 11:59:37,301 ValueError: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-10-07 11:59:37,302 127.0.0.1 - - [07/Oct/2024 11:59:37] "[31m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 400 -
+2024-10-07 12:00:42,869  * Detected change in 'C:\\Users\\btavarez\\dev\\striim\\striim_ship_api\\strim_app_api\\ship_app.py', reloading

@@ -1,0 +1,209 @@
+2024-10-04 17:25:23,106  * Debugger is active!
+2024-10-04 17:25:23,110  * Debugger PIN: 329-991-988
+2024-10-04 17:25:44,287 127.0.0.1 - - [04/Oct/2024 17:25:44] "GET / HTTP/1.1" 200 -
+2024-10-04 17:25:47,698 Received the following from the frontend: {'ship': '', 'appName': ''}
+2024-10-04 17:25:47,698 Retrieving credentials for 
+2024-10-04 17:25:47,698 Username found!
+2024-10-04 17:25:47,699 Error: No password configured for 
+2024-10-04 17:25:47,701 Error: Could not find URL for ship: 
+2024-10-04 17:25:47,718 Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-10-04 17:25:47,768 127.0.0.1 - - [04/Oct/2024 17:25:47] "[35m[1mDELETE /application/undeploy HTTP/1.1[0m" 500 -
+2024-10-04 17:26:05,757 127.0.0.1 - - [04/Oct/2024 17:26:05] "GET / HTTP/1.1" 200 -
+2024-10-04 17:26:07,356 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-04 17:26:07,356 Retrieving credentials for Discovery
+2024-10-04 17:26:07,357 Username found!
+2024-10-04 17:26:07,357 Credentials found for Discovery
+2024-10-04 17:26:07,359 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:26:08,306 RESPONSE: {"token":"01ef8297-768b-2dc1-ada8-005056a3d7b2"}
+2024-10-04 17:26:08,307 Attempting to retrieve auth token...
+2024-10-04 17:26:08,307 Retrieved authorization token!
+2024-10-04 17:26:08,307 Using token: 01ef8297-768b-2dc1-ada8-005056a3d7b2
+2024-10-04 17:26:08,313 Built URL: http://10.65.61.154:9080/health?token=01ef8297-768b-2dc1-ada8-005056a3d7b2
+2024-10-04 17:26:08,462 Application health API was retrieved successfully.
+2024-10-04 17:26:08,462 Looking to see if application name was given...
+2024-10-04 17:26:08,462 No specific application name given. Will display health stats for all applications.
+2024-10-04 17:26:08,467 127.0.0.1 - - [04/Oct/2024 17:26:08] "POST /get_applications HTTP/1.1" 200 -
+2024-10-04 17:26:12,035 Received the following from the frontend: {'ship': 'Discovery', 'appName': 'admin.benny_test'}
+2024-10-04 17:26:12,036 Retrieving credentials for Discovery
+2024-10-04 17:26:12,036 Username found!
+2024-10-04 17:26:12,036 Credentials found for Discovery
+2024-10-04 17:26:12,037 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:26:12,887 RESPONSE: {"token":"01ef8297-7951-79b1-ada8-005056a3d7b2"}
+2024-10-04 17:26:12,888 Attempting to retrieve auth token...
+2024-10-04 17:26:12,888 Retrieved authorization token!
+2024-10-04 17:26:12,888 Using token: 01ef8297-7951-79b1-ada8-005056a3d7b2
+2024-10-04 17:26:12,893 Built following URL: http://10.65.61.154:9080/api/v2/applications/admin.benny_test/deployment
+2024-10-04 17:26:12,895 Trying to undeploy app: admin.benny_test on ship Discovery
+2024-10-04 17:26:13,356 admin.benny_test undeployed successfully!
+2024-10-04 17:26:13,358 127.0.0.1 - - [04/Oct/2024 17:26:13] "DELETE /application/undeploy HTTP/1.1" 200 -
+2024-10-04 17:26:14,870 Received the following from the frontend: {'ship': 'Discovery', 'appName': 'admin.benny_test'}
+2024-10-04 17:26:14,871 Retrieving credentials for Discovery
+2024-10-04 17:26:14,871 Username found!
+2024-10-04 17:26:14,871 Credentials found for Discovery
+2024-10-04 17:26:14,873 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:26:15,802 RESPONSE: {"token":"01ef8297-7b06-0781-ada8-005056a3d7b2"}
+2024-10-04 17:26:15,803 Attempting to retrieve auth token...
+2024-10-04 17:26:15,803 Retrieved authorization token!
+2024-10-04 17:26:15,803 Using token: 01ef8297-7b06-0781-ada8-005056a3d7b2
+2024-10-04 17:26:15,807 Built following URL: http://10.65.61.154:9080/api/v2/applications/admin.benny_test/deployment
+2024-10-04 17:26:15,809 Starting deployment process for app: admin.benny_test on ship: Discovery
+2024-10-04 17:26:15,809 Deploying admin.benny_test on Discovery...
+2024-10-04 17:26:17,399 Deployment successful: {'namespace': 'admin', 'name': 'benny_test', 'status': 'DEPLOYED', 'links': [{'rel': 'self', 'allow': ['GET', 'DELETE'], 'href': '/api/v2/applications/admin.benny_test'}, {'rel': 'deployment', 'allow': ['POST', 'DELETE'], 'href': '/api/v2/applications/admin.benny_test/deployment'}, {'rel': 'sprint', 'allow': ['POST', 'DELETE'], 'href': '/api/v2/applications/admin.benny_test/sprint'}]}
+2024-10-04 17:26:17,400 127.0.0.1 - - [04/Oct/2024 17:26:17] "POST /application/deploy HTTP/1.1" 200 -
+2024-10-04 17:26:26,234 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-04 17:26:26,253 127.0.0.1 - - [04/Oct/2024 17:26:26] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-04 17:26:28,708 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-04 17:26:28,709 Retrieving credentials for Discovery
+2024-10-04 17:26:28,709 Username found!
+2024-10-04 17:26:28,709 Credentials found for Discovery
+2024-10-04 17:26:28,711 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 17:26:29,666 RESPONSE: {"token":"01ef8297-8345-b171-ada8-005056a3d7b2"}
+2024-10-04 17:26:29,667 Attempting to retrieve auth token...
+2024-10-04 17:26:29,667 Retrieved authorization token!
+2024-10-04 17:26:29,667 Using token: 01ef8297-8345-b171-ada8-005056a3d7b2
+2024-10-04 17:26:29,667 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-04 17:26:29,668 Retrieving credentials for Discovery
+2024-10-04 17:26:29,668 Username found!
+2024-10-04 17:26:29,668 Credentials found for Discovery
+2024-10-04 17:26:29,668 Received {'ship': 'Discovery'} from the drop down menu.
+2024-10-04 17:26:29,668 Going to use Discovery to get API URL.
+2024-10-04 17:26:29,668 URL API: http://10.65.61.154:9080/api/v2/applications
+2024-10-04 17:26:29,668 Parsing URL to add correct endpoint
+2024-10-04 17:26:29,668 Final API URL is: http://10.65.61.154:9080/health?token=01ef8297-8345-b171-ada8-005056a3d7b2
+2024-10-04 17:26:29,668 Starting to get stats based on user selection: Discovery
+2024-10-04 17:26:29,822 Response: 200
+2024-10-04 17:26:29,822 Retrieved app statistics for Discovery was successfull!
+2024-10-04 17:26:29,827 127.0.0.1 - - [04/Oct/2024 17:26:29] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-06 11:23:08,959 Received the following from the frontend: {'ship': 'Dawn'}
+2024-10-06 11:23:08,959 Retrieving credentials for Dawn
+2024-10-06 11:23:08,959 Username found!
+2024-10-06 11:23:08,959 Credentials found for Dawn
+2024-10-06 11:23:08,959 Built URL: http://dawstriim01v.dawn.ncl.com:9080/security/authenticate
+2024-10-06 11:23:10,938 RESPONSE: {"token":"01ef83f7-ee49-cef1-a859-005056b42f69"}
+2024-10-06 11:23:10,938 Attempting to retrieve auth token...
+2024-10-06 11:23:10,938 Retrieved authorization token!
+2024-10-06 11:23:10,938 Using token: 01ef83f7-ee49-cef1-a859-005056b42f69
+2024-10-06 11:23:10,938 Received the following from the frontend: {'ship': 'Dawn'}
+2024-10-06 11:23:10,938 Retrieving credentials for Dawn
+2024-10-06 11:23:10,938 Username found!
+2024-10-06 11:23:10,938 Credentials found for Dawn
+2024-10-06 11:23:10,938 Received {'ship': 'Dawn'} from the drop down menu.
+2024-10-06 11:23:10,938 Going to use Dawn to get API URL.
+2024-10-06 11:23:10,938 URL API: http://dawstriim01v.dawn.ncl.com:9080/api/v2/applications
+2024-10-06 11:23:10,938 Parsing URL to add correct endpoint
+2024-10-06 11:23:10,938 Final API URL is: http://dawstriim01v.dawn.ncl.com:9080/health?token=01ef83f7-ee49-cef1-a859-005056b42f69
+2024-10-06 11:23:10,938 Starting to get stats based on user selection: Dawn
+2024-10-06 11:23:11,425 Response: 200
+2024-10-06 11:23:11,425 Retrieved app statistics for Dawn was successfull!
+2024-10-06 11:23:11,437 127.0.0.1 - - [06/Oct/2024 11:23:11] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-06 11:23:19,085 Received the following from the frontend: {'ship': 'Sun'}
+2024-10-06 11:23:19,085 Retrieving credentials for Sun
+2024-10-06 11:23:19,085 Username found!
+2024-10-06 11:23:19,085 Credentials found for Sun
+2024-10-06 11:23:19,085 Built URL: http://sunstriim01v.sun.ncl.com:9080/security/authenticate
+2024-10-06 11:23:23,637 RESPONSE: {"token":"01ef83f7-f5c1-e321-a875-005056b35544"}
+2024-10-06 11:23:23,637 Attempting to retrieve auth token...
+2024-10-06 11:23:23,637 Retrieved authorization token!
+2024-10-06 11:23:23,637 Using token: 01ef83f7-f5c1-e321-a875-005056b35544
+2024-10-06 11:23:23,637 Received the following from the frontend: {'ship': 'Sun'}
+2024-10-06 11:23:23,637 Retrieving credentials for Sun
+2024-10-06 11:23:23,637 Username found!
+2024-10-06 11:23:23,637 Credentials found for Sun
+2024-10-06 11:23:23,637 Received {'ship': 'Sun'} from the drop down menu.
+2024-10-06 11:23:23,637 Going to use Sun to get API URL.
+2024-10-06 11:23:23,637 URL API: http://sunstriim01v.sun.ncl.com:9080/api/v2/applications
+2024-10-06 11:23:23,637 Parsing URL to add correct endpoint
+2024-10-06 11:23:23,637 Final API URL is: http://sunstriim01v.sun.ncl.com:9080/health?token=01ef83f7-f5c1-e321-a875-005056b35544
+2024-10-06 11:23:23,637 Starting to get stats based on user selection: Sun
+2024-10-06 11:23:26,345 Response: 200
+2024-10-06 11:23:26,345 Retrieved app statistics for Sun was successfull!
+2024-10-06 11:23:26,360 127.0.0.1 - - [06/Oct/2024 11:23:26] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-06 11:23:29,779 Received the following from the frontend: {'ship': 'Graduar'}
+2024-10-06 11:23:29,779 Retrieving credentials for Graduar
+2024-10-06 11:23:29,779 Username found!
+2024-10-06 11:23:29,779 Credentials found for Graduar
+2024-10-06 11:23:29,779 Error: Could not find URL for ship: Graduar
+2024-10-06 11:23:29,790 Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-10-06 11:23:29,854 127.0.0.1 - - [06/Oct/2024 11:23:29] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-06 11:23:32,334 Received the following from the frontend: {'ship': 'Gem'}
+2024-10-06 11:23:32,334 Retrieving credentials for Gem
+2024-10-06 11:23:32,334 Username found!
+2024-10-06 11:23:32,334 Credentials found for Gem
+2024-10-06 11:23:32,334 Built URL: http://gemstriim01v.gem.ncl.com:9080/security/authenticate
+2024-10-06 11:23:33,701 RESPONSE: {"token":"01ef83f7-fbf5-6961-aa86-005056ae7535"}
+2024-10-06 11:23:33,701 Attempting to retrieve auth token...
+2024-10-06 11:23:33,701 Retrieved authorization token!
+2024-10-06 11:23:33,701 Using token: 01ef83f7-fbf5-6961-aa86-005056ae7535
+2024-10-06 11:23:33,701 Received the following from the frontend: {'ship': 'Gem'}
+2024-10-06 11:23:33,701 Retrieving credentials for Gem
+2024-10-06 11:23:33,701 Username found!
+2024-10-06 11:23:33,701 Credentials found for Gem
+2024-10-06 11:23:33,701 Received {'ship': 'Gem'} from the drop down menu.
+2024-10-06 11:23:33,701 Going to use Gem to get API URL.
+2024-10-06 11:23:33,701 URL API: http://gemstriim01v.gem.ncl.com:9080/api/v2/applications
+2024-10-06 11:23:33,701 Parsing URL to add correct endpoint
+2024-10-06 11:23:33,701 Final API URL is: http://gemstriim01v.gem.ncl.com:9080/health?token=01ef83f7-fbf5-6961-aa86-005056ae7535
+2024-10-06 11:23:33,701 Starting to get stats based on user selection: Gem
+2024-10-06 11:23:33,986 Response: 200
+2024-10-06 11:23:33,986 Retrieved app statistics for Gem was successfull!
+2024-10-06 11:23:33,998 127.0.0.1 - - [06/Oct/2024 11:23:33] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-06 11:23:44,211 Received the following from the frontend: {'ship': 'Insignia'}
+2024-10-06 11:23:44,211 Retrieving credentials for Insignia
+2024-10-06 11:23:44,211 Username found!
+2024-10-06 11:23:44,211 Credentials found for Insignia
+2024-10-06 11:23:44,211 Built URL: http://10.16.50.154:9080/security/authenticate
+2024-10-06 11:23:48,182 RESPONSE: {"token":"01ef83f8-045b-fc41-ab61-0050569a4daf"}
+2024-10-06 11:23:48,182 Attempting to retrieve auth token...
+2024-10-06 11:23:48,182 Retrieved authorization token!
+2024-10-06 11:23:48,182 Using token: 01ef83f8-045b-fc41-ab61-0050569a4daf
+2024-10-06 11:23:48,182 Received the following from the frontend: {'ship': 'Insignia'}
+2024-10-06 11:23:48,182 Retrieving credentials for Insignia
+2024-10-06 11:23:48,182 Username found!
+2024-10-06 11:23:48,182 Credentials found for Insignia
+2024-10-06 11:23:48,182 Received {'ship': 'Insignia'} from the drop down menu.
+2024-10-06 11:23:48,182 Going to use Insignia to get API URL.
+2024-10-06 11:23:48,182 URL API: http://10.16.50.154:9080/api/v2/applications
+2024-10-06 11:23:48,182 Parsing URL to add correct endpoint
+2024-10-06 11:23:48,182 Final API URL is: http://10.16.50.154:9080/health?token=01ef83f8-045b-fc41-ab61-0050569a4daf
+2024-10-06 11:23:48,182 Starting to get stats based on user selection: Insignia
+2024-10-06 11:23:50,685 Response: 200
+2024-10-06 11:23:50,685 Retrieved app statistics for Insignia was successfull!
+2024-10-06 11:23:50,704 127.0.0.1 - - [06/Oct/2024 11:23:50] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-06 11:23:57,066 Received the following from the frontend: {'ship': 'Pride Of America'}
+2024-10-06 11:23:57,066 Retrieving credentials for Pride Of America
+2024-10-06 11:23:57,066 Username found!
+2024-10-06 11:23:57,066 Credentials found for Pride Of America
+2024-10-06 11:23:57,066 Error: Could not find URL for ship: Pride Of America
+2024-10-06 11:23:57,081 Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-10-06 11:23:57,112 127.0.0.1 - - [06/Oct/2024 11:23:57] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-06 11:24:02,324 Received the following from the frontend: {'ship': 'Prima'}
+2024-10-06 11:24:02,324 Retrieving credentials for Prima
+2024-10-06 11:24:02,324 Username found!
+2024-10-06 11:24:02,324 Credentials found for Prima
+2024-10-06 11:24:02,324 Built URL: http://pristriim01v.prima.ncl.com:9080/security/authenticate
+2024-10-06 11:24:05,484 RESPONSE: {"token":"01ef83f7-0360-efe1-a3c1-005056aaf62d"}
+2024-10-06 11:24:05,484 Attempting to retrieve auth token...
+2024-10-06 11:24:05,484 Retrieved authorization token!
+2024-10-06 11:24:05,484 Using token: 01ef83f7-0360-efe1-a3c1-005056aaf62d
+2024-10-06 11:24:05,484 Received the following from the frontend: {'ship': 'Prima'}
+2024-10-06 11:24:05,484 Retrieving credentials for Prima
+2024-10-06 11:24:05,484 Username found!
+2024-10-06 11:24:05,484 Credentials found for Prima
+2024-10-06 11:24:05,484 Received {'ship': 'Prima'} from the drop down menu.
+2024-10-06 11:24:05,484 Going to use Prima to get API URL.
+2024-10-06 11:24:05,484 URL API: http://pristriim01v.prima.ncl.com:9080/api/v2/applications
+2024-10-06 11:24:05,484 Parsing URL to add correct endpoint
+2024-10-06 11:24:05,484 Final API URL is: http://pristriim01v.prima.ncl.com:9080/health?token=01ef83f7-0360-efe1-a3c1-005056aaf62d
+2024-10-06 11:24:05,484 Starting to get stats based on user selection: Prima
+2024-10-06 11:24:05,914 Response: 200
+2024-10-06 11:24:05,914 Retrieved app statistics for Prima was successfull!
+2024-10-06 11:24:05,938 127.0.0.1 - - [06/Oct/2024 11:24:05] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-06 11:24:09,873 127.0.0.1 - - [06/Oct/2024 11:24:09] "GET / HTTP/1.1" 200 -
+2024-10-06 11:24:13,929 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-06 11:24:13,934 127.0.0.1 - - [06/Oct/2024 11:24:13] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-06 11:24:17,838 127.0.0.1 - - [06/Oct/2024 11:24:17] "GET / HTTP/1.1" 200 -
+2024-10-06 11:24:22,620 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-06 11:24:22,620 127.0.0.1 - - [06/Oct/2024 11:24:22] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-06 11:24:25,048 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-06 11:24:25,053 127.0.0.1 - - [06/Oct/2024 11:24:25] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-06 11:24:25,774 127.0.0.1 - - [06/Oct/2024 11:24:25] "GET / HTTP/1.1" 200 -

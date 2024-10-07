@@ -1,0 +1,82 @@
+# @app.route('/striim/status-all')   
+# def check_all_status():
+
+#     try:
+#         auth_token = get_token()
+#         print("AUTH TOKEN @:", auth_token)
+#         if not auth_token:
+#             raise ValueError("Authorization token is missing")
+#         app_health, app_status = health_stats(auth_token)
+#         print("APP HEALTH: ", app_health)
+
+#         if not app_health:
+#             raise ValueError("Failed to retrieve app health stats")
+#         return render_template('all_status.html', app_health=app_health, active_page='status', )
+            
+#     except ValueError as ve:
+#         return render_template('error.html', error_message=str(ve)), 400
+#     except requests.RequestException as e:
+#         return render_template('error.html', error_message='Failed to fetch data from the extrnal service.'), 502
+#     except Exception as e:
+#         return render_template('error.html', error_message='An unexpected error occurred. Please try again later.')
+
+
+<!-- <h1>Ship Application Status</h1>
+        <div class="table-container">    
+            <table class="table table-sm table-hover">
+                <th>App Name</th>
+                <th>Status</th>
+                {% for key , value in app_health.items() %}
+                {% if key == 'healthRecords' %}
+                {% for inner_key, inner_value in value[0].items() %}
+                {% if inner_key =='appHealthMap' %}
+                {% for inner_inner_key, inner_inner_value in inner_value.items() %}
+                <tr>
+                    <td>{{ inner_inner_value['fqAppName'] }}</td>
+                    <td>{{ inner_inner_value['status'] }}</td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
+
+            </table> -->
+        <!-- </div> -->
+
+
+        def get_token():
+        
+        striim_ship_api_url, selected_ship, command, app_name = url_builder(endpoint=None)
+
+        
+        print(striim_api_url)
+        payload = {'username': username, 'password': password}
+        print("HOLA")
+        print("PAYLOAD", payload)
+        try:
+            # url = discovery_striim_api_url + auth_path
+
+            url = SHIP_API_MAP.get(selected_ship) 
+        
+            parts = url.split("/")
+
+            segment_to_keep = [0,1,2]
+            new_parts = [part for idx, part in enumerate(parts) if idx in segment_to_keep]
+            parsed_url = "/".join(new_parts) + "/" + auth_path
+            print("PARSED URL: ", parsed_url)
+            resp = requests.post(parsed_url, data=payload)
+            print(resp)
+            logging.info("Attempting to retrieve auth token...")
+            if resp.status_code != 200:
+                return "Likely: wrong username / password"
+            tokenjson = json.loads(resp.text)
+            logging.info("Retrieved authorization token!")
+            logging.info(f"Using token: {tokenjson['token']}")
+            print(tokenjson)
+            return tokenjson["token"]
+        except RequestException as ex:
+            logging.error(ex)
+            raise ex
+        except Exception as e:
+            logging.error(e)

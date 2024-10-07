@@ -1,0 +1,19 @@
+2024-10-07 12:58:37,173  * Debugger is active!
+2024-10-07 12:58:37,176  * Debugger PIN: 329-991-988
+2024-10-07 12:58:37,420 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 12:58:37,435 127.0.0.1 - - [07/Oct/2024 12:58:37] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 12:58:38,850 Received {'ship': 'All'} from the drop-down menu.
+2024-10-07 12:58:38,850 Going to use All to get API URL.
+2024-10-07 12:58:38,851 Fetching health stats for ('Discovery', 'http://10.65.61.154:9080/api/v2/applications')
+2024-10-07 12:58:38,851 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 12:58:38,851 Retrieving credentials for ('Discovery', 'http://10.65.61.154:9080/api/v2/applications')
+2024-10-07 12:58:38,851 Username found!
+2024-10-07 12:58:38,851 Error: No password configured for ('Discovery', 'http://10.65.61.154:9080/api/v2/applications')
+2024-10-07 12:58:38,853 Received the following from the frontend: {'ship': 'All'}
+2024-10-07 12:58:38,853 Retrieving credentials for All
+2024-10-07 12:58:38,853 Username found!
+2024-10-07 12:58:38,854 Error: No password configured for All
+2024-10-07 12:58:38,854 Error: Could not find URL for ship: All
+2024-10-07 12:58:38,858 Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-10-07 12:58:38,858 ValueError: Invalid URL 'None': No scheme supplied. Perhaps you meant https://None?
+2024-10-07 12:58:38,858 127.0.0.1 - - [07/Oct/2024 12:58:38] "[31m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 400 -

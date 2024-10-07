@@ -1,0 +1,63 @@
+2024-10-03 10:49:18,385  * Debugger is active!
+2024-10-03 10:49:18,385  * Debugger PIN: 329-991-988
+2024-10-03 12:14:55,910 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 12:14:55,937 127.0.0.1 - - [03/Oct/2024 12:14:55] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 12:15:00,666 Selected ship for token authentication is: Breakaway
+2024-10-03 12:15:00,666 Selected ship for token authentication is: Breakaway
+2024-10-03 12:15:00,667 Using STRIIM API URL: http://brestriim01v.breakaway.ncl.com:9080
+2024-10-03 12:15:00,667 Split URL to append token endpoint: ['http:', '', 'brestriim01v.breakaway.ncl.com:9080']
+2024-10-03 12:15:00,668 New URL after parse and appending token endpoint http://brestriim01v.breakaway.ncl.com:9080/security/authenticate
+2024-10-03 12:15:00,669 Selected ship for token authentication is: Breakaway
+2024-10-03 12:15:00,669 Getting password for API URL http://brestriim01v.breakaway.ncl.com:9080/security/authenticate based on front-end selection Breakaway
+2024-10-03 12:15:00,669 None
+2024-10-03 12:15:00,670 Error: No password configured for Breakaway
+2024-10-03 12:15:00,670 Selected ship for token authentication is: Breakaway
+2024-10-03 12:15:00,670 Selected ship for token authentication is: Breakaway
+2024-10-03 12:15:00,671 Using STRIIM API URL: http://brestriim01v.breakaway.ncl.com:9080
+2024-10-03 12:15:00,671 Split URL to append token endpoint: ['http:', '', 'brestriim01v.breakaway.ncl.com:9080']
+2024-10-03 12:15:00,671 New URL after parse and appending token endpoint http://brestriim01v.breakaway.ncl.com:9080/security/authenticate
+2024-10-03 12:15:01,357 RESPONSE: 
+2024-10-03 12:15:01,357 Attempting to retrieve auth token...
+2024-10-03 12:15:01,358 RESPONSE: 
+2024-10-03 12:15:01,358 Failed to retrieve token. Status Code: 400
+2024-10-03 12:15:01,358 Selected ship for token authentication is: Breakaway
+2024-10-03 12:15:01,358 Selected ship for token authentication is: Breakaway
+2024-10-03 12:15:01,359 Using STRIIM API URL: http://brestriim01v.breakaway.ncl.com:9080
+2024-10-03 12:15:01,359 Split URL to append token endpoint: ['http:', '', 'brestriim01v.breakaway.ncl.com:9080']
+2024-10-03 12:15:01,359 New URL after parse and appending token endpoint http://brestriim01v.breakaway.ncl.com:9080/security/authenticate
+2024-10-03 12:15:01,360 Selected ship for token authentication is: Breakaway
+2024-10-03 12:15:01,360 Getting password for API URL http://brestriim01v.breakaway.ncl.com:9080/security/authenticate based on front-end selection Breakaway
+2024-10-03 12:15:01,360 None
+2024-10-03 12:15:01,360 Error: No password configured for Breakaway
+2024-10-03 12:15:01,367 127.0.0.1 - - [03/Oct/2024 12:15:01] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-03 12:15:27,620 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 12:15:27,622 127.0.0.1 - - [03/Oct/2024 12:15:27] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 12:15:31,982 Selected ship for token authentication is: Encore
+2024-10-03 12:15:31,983 Selected ship for token authentication is: Encore
+2024-10-03 12:15:31,984 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 12:15:31,984 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 12:15:31,985 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 12:15:31,987 Selected ship for token authentication is: Encore
+2024-10-03 12:15:31,987 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 12:15:31,987 None
+2024-10-03 12:15:31,987 Error: No password configured for Encore
+2024-10-03 12:15:31,988 Selected ship for token authentication is: Encore
+2024-10-03 12:15:31,988 Selected ship for token authentication is: Encore
+2024-10-03 12:15:31,989 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 12:15:31,989 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 12:15:31,990 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 12:15:32,643 RESPONSE: 
+2024-10-03 12:15:32,643 Attempting to retrieve auth token...
+2024-10-03 12:15:32,643 RESPONSE: 
+2024-10-03 12:15:32,644 Failed to retrieve token. Status Code: 400
+2024-10-03 12:15:32,645 Selected ship for token authentication is: Encore
+2024-10-03 12:15:32,645 Selected ship for token authentication is: Encore
+2024-10-03 12:15:32,646 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 12:15:32,646 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 12:15:32,646 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 12:15:32,647 Selected ship for token authentication is: Encore
+2024-10-03 12:15:32,647 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 12:15:32,648 None
+2024-10-03 12:15:32,648 Error: No password configured for Encore
+2024-10-03 12:15:32,656 127.0.0.1 - - [03/Oct/2024 12:15:32] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-03 12:18:33,952  * Detected change in 'C:\\Users\\btavarez\\dev\\striim\\striim_ship_api\\strim_app_api\\ship_app.py', reloading

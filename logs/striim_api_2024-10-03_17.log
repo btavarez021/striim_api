@@ -1,0 +1,75 @@
+2024-10-03 17:17:22,912  * Debugger is active!
+2024-10-03 17:17:22,912  * Debugger PIN: 329-991-988
+2024-10-03 17:17:24,282 127.0.0.1 - - [03/Oct/2024 17:17:24] "GET / HTTP/1.1" 200 -
+2024-10-03 17:17:25,493 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 17:17:25,513 127.0.0.1 - - [03/Oct/2024 17:17:25] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 17:17:27,751 Selected ship for token authentication is: Getaway
+2024-10-03 17:17:27,751 Selected ship for token authentication is: Getaway
+2024-10-03 17:17:27,751 Using STRIIM API URL: http://getstriim01v.getaway.ncl.com:9080/api/v2/applications
+2024-10-03 17:17:27,751 Split URL to append token endpoint: ['http:', '', 'getstriim01v.getaway.ncl.com:9080', 'api', 'v2', 'applications']
+2024-10-03 17:17:27,753 New URL after parse and appending token endpoint http://getstriim01v.getaway.ncl.com:9080/security/authenticate
+2024-10-03 17:17:27,753 Selected ship for token authentication is: Getaway
+2024-10-03 17:17:27,753 Getting password for API URL http://getstriim01v.getaway.ncl.com:9080/security/authenticate based on front-end selection Getaway
+2024-10-03 17:17:27,753 gEtDMmc7s80_RPeJ
+2024-10-03 17:17:27,759 gEtDMmc7s80_RPeJ
+2024-10-03 17:17:27,759 HEADERS: {'username': 'admin', 'password': 'gEtDMmc7s80_RPeJ'}
+2024-10-03 17:17:27,763 Selected ship for token authentication is: Getaway
+2024-10-03 17:17:27,763 Selected ship for token authentication is: Getaway
+2024-10-03 17:17:27,763 Using STRIIM API URL: http://getstriim01v.getaway.ncl.com:9080/api/v2/applications
+2024-10-03 17:17:27,763 Split URL to append token endpoint: ['http:', '', 'getstriim01v.getaway.ncl.com:9080', 'api', 'v2', 'applications']
+2024-10-03 17:17:27,763 New URL after parse and appending token endpoint http://getstriim01v.getaway.ncl.com:9080/security/authenticate
+2024-10-03 17:17:29,441 RESPONSE: {"token":"01ef81cd-e8e5-d571-818a-00505682a1c9"}
+2024-10-03 17:17:29,441 Attempting to retrieve auth token...
+2024-10-03 17:17:29,441 Retrieved authorization token!
+2024-10-03 17:17:29,441 Using token: 01ef81cd-e8e5-d571-818a-00505682a1c9
+2024-10-03 17:17:29,441 Selected ship for token authentication is: Getaway
+2024-10-03 17:17:29,441 Selected ship for token authentication is: Getaway
+2024-10-03 17:17:29,441 Using STRIIM API URL: http://getstriim01v.getaway.ncl.com:9080/api/v2/applications
+2024-10-03 17:17:29,441 Split URL to append token endpoint: ['http:', '', 'getstriim01v.getaway.ncl.com:9080', 'api', 'v2', 'applications']
+2024-10-03 17:17:29,441 New URL after parse and appending token endpoint http://getstriim01v.getaway.ncl.com:9080/security/authenticate
+2024-10-03 17:17:29,441 Selected ship for token authentication is: Getaway
+2024-10-03 17:17:29,441 Getting password for API URL http://getstriim01v.getaway.ncl.com:9080/security/authenticate based on front-end selection Getaway
+2024-10-03 17:17:29,457 gEtDMmc7s80_RPeJ
+2024-10-03 17:17:29,460 gEtDMmc7s80_RPeJ
+2024-10-03 17:17:29,460 HEADERS: {'username': 'admin', 'password': 'gEtDMmc7s80_RPeJ'}
+2024-10-03 17:17:29,918 127.0.0.1 - - [03/Oct/2024 17:17:29] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 17:17:30,860 127.0.0.1 - - [03/Oct/2024 17:17:30] "GET / HTTP/1.1" 200 -
+2024-10-04 09:13:23,149 127.0.0.1 - - [04/Oct/2024 09:13:23] "GET / HTTP/1.1" 200 -
+2024-10-04 09:13:26,292 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-04 09:13:26,295 127.0.0.1 - - [04/Oct/2024 09:13:26] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-04 09:13:28,434 Selected ship for token authentication is: Dawn
+2024-10-04 09:13:28,435 Selected ship for token authentication is: Dawn
+2024-10-04 09:13:28,435 Using STRIIM API URL: http://dawstriim01v.dawn.ncl.com:9080/api/v2/applications
+2024-10-04 09:13:28,435 Split URL to append token endpoint: ['http:', '', 'dawstriim01v.dawn.ncl.com:9080', 'api', 'v2', 'applications']
+2024-10-04 09:13:28,436 New URL after parse and appending token endpoint http://dawstriim01v.dawn.ncl.com:9080/security/authenticate
+2024-10-04 09:13:28,436 Selected ship for token authentication is: Dawn
+2024-10-04 09:13:28,436 Getting password for API URL http://dawstriim01v.dawn.ncl.com:9080/security/authenticate based on front-end selection Dawn
+2024-10-04 09:13:28,437 g6fASC*%=(kEh^Y3
+2024-10-04 09:13:28,441 g6fASC*%=(kEh^Y3
+2024-10-04 09:13:28,442 HEADERS: {'username': 'admin', 'password': 'g6fASC*%=(kEh^Y3'}
+2024-10-04 09:13:28,443 Selected ship for token authentication is: Dawn
+2024-10-04 09:13:28,443 Selected ship for token authentication is: Dawn
+2024-10-04 09:13:28,444 Using STRIIM API URL: http://dawstriim01v.dawn.ncl.com:9080/api/v2/applications
+2024-10-04 09:13:28,445 Split URL to append token endpoint: ['http:', '', 'dawstriim01v.dawn.ncl.com:9080', 'api', 'v2', 'applications']
+2024-10-04 09:13:28,445 New URL after parse and appending token endpoint http://dawstriim01v.dawn.ncl.com:9080/security/authenticate
+2024-10-04 09:13:30,201 RESPONSE: {"token":"01ef8253-7763-7d41-b0ca-005056b42f69"}
+2024-10-04 09:13:30,202 Attempting to retrieve auth token...
+2024-10-04 09:13:30,202 Retrieved authorization token!
+2024-10-04 09:13:30,202 Using token: 01ef8253-7763-7d41-b0ca-005056b42f69
+2024-10-04 09:13:30,203 Selected ship for token authentication is: Dawn
+2024-10-04 09:13:30,204 Selected ship for token authentication is: Dawn
+2024-10-04 09:13:30,204 Using STRIIM API URL: http://dawstriim01v.dawn.ncl.com:9080/api/v2/applications
+2024-10-04 09:13:30,204 Split URL to append token endpoint: ['http:', '', 'dawstriim01v.dawn.ncl.com:9080', 'api', 'v2', 'applications']
+2024-10-04 09:13:30,204 New URL after parse and appending token endpoint http://dawstriim01v.dawn.ncl.com:9080/security/authenticate
+2024-10-04 09:13:30,205 Selected ship for token authentication is: Dawn
+2024-10-04 09:13:30,205 Getting password for API URL http://dawstriim01v.dawn.ncl.com:9080/security/authenticate based on front-end selection Dawn
+2024-10-04 09:13:30,205 g6fASC*%=(kEh^Y3
+2024-10-04 09:13:30,207 g6fASC*%=(kEh^Y3
+2024-10-04 09:13:30,207 HEADERS: {'username': 'admin', 'password': 'g6fASC*%=(kEh^Y3'}
+2024-10-04 09:13:30,775 127.0.0.1 - - [04/Oct/2024 09:13:30] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-04 09:13:32,758 127.0.0.1 - - [04/Oct/2024 09:13:32] "GET / HTTP/1.1" 200 -
+2024-10-04 09:13:35,297 Selected ship for token authentication is: None
+2024-10-04 09:13:35,297 Selected ship for token authentication is: None
+2024-10-04 09:13:35,298 Using STRIIM API URL: None
+2024-10-04 09:13:35,299 127.0.0.1 - - [04/Oct/2024 09:13:35] "[35m[1mPOST /get_applications HTTP/1.1[0m" 500 -
+2024-10-04 09:13:57,936  * Detected change in 'C:\\Users\\btavarez\\dev\\striim\\striim_ship_api\\strim_app_api\\ship_app.py', reloading

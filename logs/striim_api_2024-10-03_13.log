@@ -1,0 +1,334 @@
+2024-10-03 13:49:44,194  * Debugger is active!
+2024-10-03 13:49:44,210  * Debugger PIN: 329-991-988
+2024-10-03 13:49:45,171 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:49:45,188 127.0.0.1 - - [03/Oct/2024 13:49:45] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:49:46,349 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:49:46,379 127.0.0.1 - - [03/Oct/2024 13:49:46] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:49:49,692 Selected ship for token authentication is: Encore
+2024-10-03 13:49:49,692 Selected ship for token authentication is: Encore
+2024-10-03 13:49:49,692 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 13:49:49,692 Split U2024-10-03 14:03:01,312  * Restarting with stat
+2024-10-03 14:09:45,242  * Restarting with stat
+2024-10-03 14:16:05,102  * Restarting with stat
+2024-10-03 14:22:36,732  * Restarting with stat
+2024-10-03 14:28:08,991  * Restarting with stat
+2024-10-03 14:35:08,612  * Restarting with stat
+2024-10-03 14:36:31,405  * Restarting with stat
+2024-10-03 14:43:13,063  * Restarting with stat
+2024-10-03 14:45:14,474  * Restarting with stat
+2024-10-03 14:46:28,261  * Restarting with stat
+2024-10-03 14:47:33,815  * Restarting with stat
+2024-10-03 14:50:19,379  * Restarting with stat
+2024-10-03 14:51:18,394  * Restarting with stat
+2024-10-03 14:52:36,649  * Restarting with stat
+2024-10-03 14:52:45,866  * Restarting with stat
+2024-10-03 14:52:56,065  * Restarting with stat
+2024-10-03 14:54:46,884  * Restarting with stat
+core.ncl.com:9080
+2024-10-03 13:49:49,701 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 13:49:49,701 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 13:49:50,842 RESPONSE: {"token":"01ef81af-e30d-d851-87f5-005056a78bcd"}
+2024-10-03 13:49:50,842 Attempting to retrieve auth token...
+2024-10-03 13:49:50,842 Retrieved authorization token!
+2024-10-03 13:49:50,842 Using token: 01ef81af-e30d-d851-87f5-005056a78bcd
+2024-10-03 13:49:50,842 Selected ship for token authentication is: Encore
+2024-10-03 13:49:50,842 Selected ship for token authentication is: Encore
+2024-10-03 13:49:50,842 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 13:49:50,842 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 13:49:50,842 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 13:49:50,842 Selected ship for token authentication is: Encore
+2024-10-03 13:49:50,842 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 13:49:50,842 ENC264195_YgDeTo
+2024-10-03 13:49:50,856 ENC264195_YgDeTo
+2024-10-03 13:49:50,856 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 13:49:51,348 127.0.0.1 - - [03/Oct/2024 13:49:51] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 13:50:27,596 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:50:27,611 127.0.0.1 - - [03/Oct/2024 13:50:27] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:50:28,825 127.0.0.1 - - [03/Oct/2024 13:50:28] "GET / HTTP/1.1" 200 -
+2024-10-03 13:50:29,773 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:50:29,773 127.0.0.1 - - [03/Oct/2024 13:50:29] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:52:31,477 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:52:31,528 127.0.0.1 - - [03/Oct/2024 13:52:31] "[35m[1mGET /striim/status-all HTTP/1.1[0m" 500 -
+2024-10-03 13:52:41,982 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:52:41,982 127.0.0.1 - - [03/Oct/2024 13:52:41] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:52:53,063 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:52:53,067 127.0.0.1 - - [03/Oct/2024 13:52:53] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:52:53,904 127.0.0.1 - - [03/Oct/2024 13:52:53] "GET / HTTP/1.1" 200 -
+2024-10-03 13:52:54,650 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:52:54,657 127.0.0.1 - - [03/Oct/2024 13:52:54] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:54:17,839 127.0.0.1 - - [03/Oct/2024 13:54:17] "GET / HTTP/1.1" 200 -
+2024-10-03 13:54:19,781 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:54:19,781 127.0.0.1 - - [03/Oct/2024 13:54:19] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:56:22,778 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:56:22,800 127.0.0.1 - - [03/Oct/2024 13:56:22] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:56:56,356 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:56:56,358 127.0.0.1 - - [03/Oct/2024 13:56:56] "[35m[1mGET /striim/status-all HTTP/1.1[0m" 500 -
+2024-10-03 13:57:01,022 127.0.0.1 - - [03/Oct/2024 13:57:01] "GET / HTTP/1.1" 200 -
+2024-10-03 13:57:02,455 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:57:02,455 127.0.0.1 - - [03/Oct/2024 13:57:02] "[35m[1mGET /striim/status-all HTTP/1.1[0m" 500 -
+2024-10-03 13:57:12,480 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:57:12,481 127.0.0.1 - - [03/Oct/2024 13:57:12] "[35m[1mGET /striim/status-all HTTP/1.1[0m" 500 -
+2024-10-03 13:57:18,398 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:57:18,413 127.0.0.1 - - [03/Oct/2024 13:57:18] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:57:34,070 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:57:34,070 127.0.0.1 - - [03/Oct/2024 13:57:34] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:57:36,325 Selected ship for token authentication is: Encore
+2024-10-03 13:57:36,325 Selected ship for token authentication is: Encore
+2024-10-03 13:57:36,325 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 13:57:36,325 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 13:57:36,325 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 13:57:36,330 Selected ship for token authentication is: Encore
+2024-10-03 13:57:36,331 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 13:57:36,331 ENC264195_YgDeTo
+2024-10-03 13:57:36,332 ENC264195_YgDeTo
+2024-10-03 13:57:36,332 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 13:57:36,332 Selected ship for token authentication is: Encore
+2024-10-03 13:57:36,332 Selected ship for token authentication is: Encore
+2024-10-03 13:57:36,332 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 13:57:36,339 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 13:57:36,339 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 13:57:37,453 RESPONSE: {"token":"01ef81b0-f926-2ab1-87f5-005056a78bcd"}
+2024-10-03 13:57:37,453 Attempting to retrieve auth token...
+2024-10-03 13:57:37,453 Retrieved authorization token!
+2024-10-03 13:57:37,453 Using token: 01ef81b0-f926-2ab1-87f5-005056a78bcd
+2024-10-03 13:57:37,453 Selected ship for token authentication is: Encore
+2024-10-03 13:57:37,453 Selected ship for token authentication is: Encore
+2024-10-03 13:57:37,453 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 13:57:37,453 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 13:57:37,453 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 13:57:37,453 Selected ship for token authentication is: Encore
+2024-10-03 13:57:37,453 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 13:57:37,453 ENC264195_YgDeTo
+2024-10-03 13:57:37,466 ENC264195_YgDeTo
+2024-10-03 13:57:37,467 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 13:57:37,897 127.0.0.1 - - [03/Oct/2024 13:57:37] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 13:59:10,174 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:59:10,185 127.0.0.1 - - [03/Oct/2024 13:59:10] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:59:11,337 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:59:11,337 127.0.0.1 - - [03/Oct/2024 13:59:11] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:59:12,386 127.0.0.1 - - [03/Oct/2024 13:59:12] "GET / HTTP/1.1" 200 -
+2024-10-03 13:59:13,334 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:59:13,334 127.0.0.1 - - [03/Oct/2024 13:59:13] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:59:17,900 Selected ship for token authentication is: Encore
+2024-10-03 13:59:17,900 Selected ship for token authentication is: Encore
+2024-10-03 13:59:17,900 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 13:59:17,900 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 13:59:17,900 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 13:59:17,900 Selected ship for token authentication is: Encore
+2024-10-03 13:59:17,900 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 13:59:17,900 ENC264195_YgDeTo
+2024-10-03 13:59:17,912 ENC264195_YgDeTo
+2024-10-03 13:59:17,912 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 13:59:17,912 Selected ship for token authentication is: Encore
+2024-10-03 13:59:17,912 Selected ship for token authentication is: Encore
+2024-10-03 13:59:17,912 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 13:59:17,915 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 13:59:17,915 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 13:59:19,338 RESPONSE: {"token":"01ef81b1-35ba-21c1-87f5-005056a78bcd"}
+2024-10-03 13:59:19,338 Attempting to retrieve auth token...
+2024-10-03 13:59:19,338 Retrieved authorization token!
+2024-10-03 13:59:19,338 Using token: 01ef81b1-35ba-21c1-87f5-005056a78bcd
+2024-10-03 13:59:19,338 Selected ship for token authentication is: Encore
+2024-10-03 13:59:19,338 Selected ship for token authentication is: Encore
+2024-10-03 13:59:19,338 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 13:59:19,338 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 13:59:19,338 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 13:59:19,338 Selected ship for token authentication is: Encore
+2024-10-03 13:59:19,338 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 13:59:19,338 ENC264195_YgDeTo
+2024-10-03 13:59:19,338 ENC264195_YgDeTo
+2024-10-03 13:59:19,338 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 13:59:19,783 127.0.0.1 - - [03/Oct/2024 13:59:19] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 13:59:32,779 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 13:59:32,784 127.0.0.1 - - [03/Oct/2024 13:59:32] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 13:59:34,805 Selected ship for token authentication is: Encore
+2024-10-03 13:59:34,805 Selected ship for token authentication is: Encore
+2024-10-03 13:59:34,821 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 13:59:34,821 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 13:59:34,821 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 13:59:34,821 Selected ship for token authentication is: Encore
+2024-10-03 13:59:34,823 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 13:59:34,823 ENC264195_YgDeTo
+2024-10-03 13:59:34,824 ENC264195_YgDeTo
+2024-10-03 13:59:34,824 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 13:59:34,824 Selected ship for token authentication is: Encore
+2024-10-03 13:59:34,824 Selected ship for token authentication is: Encore
+2024-10-03 13:59:34,831 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 13:59:34,831 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 13:59:34,831 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 13:59:36,030 RESPONSE: {"token":"01ef81b1-3fca-e231-87f5-005056a78bcd"}
+2024-10-03 13:59:36,030 Attempting to retrieve auth token...
+2024-10-03 13:59:36,030 Retrieved authorization token!
+2024-10-03 13:59:36,030 Using token: 01ef81b1-3fca-e231-87f5-005056a78bcd
+2024-10-03 13:59:36,030 Selected ship for token authentication is: Encore
+2024-10-03 13:59:36,030 Selected ship for token authentication is: Encore
+2024-10-03 13:59:36,030 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 13:59:36,030 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 13:59:36,030 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 13:59:36,030 Selected ship for token authentication is: Encore
+2024-10-03 13:59:36,030 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 13:59:36,030 ENC264195_YgDeTo
+2024-10-03 13:59:36,045 ENC264195_YgDeTo
+2024-10-03 13:59:36,045 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 13:59:36,507 127.0.0.1 - - [03/Oct/2024 13:59:36] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 14:00:02,379 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 14:00:02,379 127.0.0.1 - - [03/Oct/2024 14:00:02] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 14:00:04,668 Selected ship for token authentication is: Encore
+2024-10-03 14:00:04,668 Selected ship for token authentication is: Encore
+2024-10-03 14:00:04,683 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:00:04,683 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:00:04,683 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:00:04,686 Selected ship for token authentication is: Encore
+2024-10-03 14:00:04,686 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 14:00:04,686 ENC264195_YgDeTo
+2024-10-03 14:00:04,687 ENC264195_YgDeTo
+2024-10-03 14:00:04,687 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 14:00:04,687 Selected ship for token authentication is: Encore
+2024-10-03 14:00:04,687 Selected ship for token authentication is: Encore
+2024-10-03 14:00:04,687 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:00:04,687 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:00:04,687 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:00:05,919 RESPONSE: {"token":"01ef81b1-51ac-5e21-87f5-005056a78bcd"}
+2024-10-03 14:00:05,919 Attempting to retrieve auth token...
+2024-10-03 14:00:05,919 Retrieved authorization token!
+2024-10-03 14:00:05,919 Using token: 01ef81b1-51ac-5e21-87f5-005056a78bcd
+2024-10-03 14:00:05,919 Selected ship for token authentication is: Encore
+2024-10-03 14:00:05,919 Selected ship for token authentication is: Encore
+2024-10-03 14:00:05,919 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:00:05,919 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:00:05,919 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:00:05,919 Selected ship for token authentication is: Encore
+2024-10-03 14:00:05,919 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 14:00:05,919 ENC264195_YgDeTo
+2024-10-03 14:00:05,919 ENC264195_YgDeTo
+2024-10-03 14:00:05,919 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 14:00:06,381 127.0.0.1 - - [03/Oct/2024 14:00:06] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 14:00:50,375 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 14:00:50,394 127.0.0.1 - - [03/Oct/2024 14:00:50] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 14:00:52,370 Selected ship for token authentication is: Encore
+2024-10-03 14:00:52,370 Selected ship for token authentication is: Encore
+2024-10-03 14:00:52,370 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:00:52,370 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:00:52,370 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:00:52,370 Selected ship for token authentication is: Encore
+2024-10-03 14:00:52,370 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 14:00:52,370 ENC264195_YgDeTo
+2024-10-03 14:00:52,378 ENC264195_YgDeTo
+2024-10-03 14:00:52,378 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 14:00:52,378 Selected ship for token authentication is: Encore
+2024-10-03 14:00:52,378 Selected ship for token authentication is: Encore
+2024-10-03 14:00:52,378 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:00:52,378 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:00:52,378 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:00:53,542 RESPONSE: {"token":"01ef81b1-6e03-4fc1-87f5-005056a78bcd"}
+2024-10-03 14:00:53,542 Attempting to retrieve auth token...
+2024-10-03 14:00:53,542 Retrieved authorization token!
+2024-10-03 14:00:53,542 Using token: 01ef81b1-6e03-4fc1-87f5-005056a78bcd
+2024-10-03 14:00:53,542 Selected ship for token authentication is: Encore
+2024-10-03 14:00:53,542 Selected ship for token authentication is: Encore
+2024-10-03 14:00:53,542 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:00:53,542 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:00:53,542 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:00:53,542 Selected ship for token authentication is: Encore
+2024-10-03 14:00:53,542 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 14:00:53,542 ENC264195_YgDeTo
+2024-10-03 14:00:53,560 ENC264195_YgDeTo
+2024-10-03 14:00:53,560 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 14:00:54,036 127.0.0.1 - - [03/Oct/2024 14:00:54] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 14:00:57,329 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 14:00:57,329 127.0.0.1 - - [03/Oct/2024 14:00:57] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 14:00:59,145 Selected ship for token authentication is: Encore
+2024-10-03 14:00:59,145 Selected ship for token authentication is: Encore
+2024-10-03 14:00:59,145 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:00:59,145 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:00:59,145 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:00:59,145 Selected ship for token authentication is: Encore
+2024-10-03 14:00:59,145 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 14:00:59,151 ENC264195_YgDeTo
+2024-10-03 14:00:59,152 ENC264195_YgDeTo
+2024-10-03 14:00:59,152 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 14:00:59,152 Selected ship for token authentication is: Encore
+2024-10-03 14:00:59,152 Selected ship for token authentication is: Encore
+2024-10-03 14:00:59,152 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:00:59,152 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:00:59,152 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:01:00,284 RESPONSE: {"token":"01ef81b1-7215-a3b1-87f5-005056a78bcd"}
+2024-10-03 14:01:00,284 Attempting to retrieve auth token...
+2024-10-03 14:01:00,284 Retrieved authorization token!
+2024-10-03 14:01:00,284 Using token: 01ef81b1-7215-a3b1-87f5-005056a78bcd
+2024-10-03 14:01:00,284 Selected ship for token authentication is: Encore
+2024-10-03 14:01:00,284 Selected ship for token authentication is: Encore
+2024-10-03 14:01:00,284 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:01:00,284 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:01:00,284 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:01:00,284 Selected ship for token authentication is: Encore
+2024-10-03 14:01:00,284 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 14:01:00,284 ENC264195_YgDeTo
+2024-10-03 14:01:00,284 ENC264195_YgDeTo
+2024-10-03 14:01:00,284 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 14:01:00,701 127.0.0.1 - - [03/Oct/2024 14:01:00] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 14:02:18,825 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 14:02:18,839 127.0.0.1 - - [03/Oct/2024 14:02:18] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 14:02:20,716 Selected ship for token authentication is: Encore
+2024-10-03 14:02:20,716 Selected ship for token authentication is: Encore
+2024-10-03 14:02:20,732 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:02:20,732 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:02:20,732 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:02:20,732 Selected ship for token authentication is: Encore
+2024-10-03 14:02:20,732 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 14:02:20,732 ENC264195_YgDeTo
+2024-10-03 14:02:20,740 ENC264195_YgDeTo
+2024-10-03 14:02:20,740 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 14:02:20,740 Selected ship for token authentication is: Encore
+2024-10-03 14:02:20,740 Selected ship for token authentication is: Encore
+2024-10-03 14:02:20,740 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:02:20,740 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:02:20,740 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:02:22,024 RESPONSE: {"token":"01ef81b1-a2b4-62e1-87f5-005056a78bcd"}
+2024-10-03 14:02:22,024 Attempting to retrieve auth token...
+2024-10-03 14:02:22,024 Retrieved authorization token!
+2024-10-03 14:02:22,024 Using token: 01ef81b1-a2b4-62e1-87f5-005056a78bcd
+2024-10-03 14:02:22,024 Selected ship for token authentication is: Encore
+2024-10-03 14:02:22,024 Selected ship for token authentication is: Encore
+2024-10-03 14:02:22,024 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:02:22,024 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:02:22,024 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:02:22,024 Selected ship for token authentication is: Encore
+2024-10-03 14:02:22,024 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 14:02:22,024 ENC264195_YgDeTo
+2024-10-03 14:02:22,035 ENC264195_YgDeTo
+2024-10-03 14:02:22,035 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 14:02:22,485 127.0.0.1 - - [03/Oct/2024 14:02:22] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 14:02:30,709 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 14:02:30,710 127.0.0.1 - - [03/Oct/2024 14:02:30] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 14:02:32,227 Selected ship for token authentication is: Encore
+2024-10-03 14:02:32,227 Selected ship for token authentication is: Encore
+2024-10-03 14:02:32,227 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:02:32,227 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:02:32,227 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:02:32,227 Selected ship for token authentication is: Encore
+2024-10-03 14:02:32,227 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 14:02:32,227 ENC264195_YgDeTo
+2024-10-03 14:02:32,239 ENC264195_YgDeTo
+2024-10-03 14:02:32,239 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 14:02:32,239 Selected ship for token authentication is: Encore
+2024-10-03 14:02:32,239 Selected ship for token authentication is: Encore
+2024-10-03 14:02:32,239 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:02:32,239 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:02:32,239 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:02:33,490 RESPONSE: {"token":"01ef81b1-a98b-2e01-87f5-005056a78bcd"}
+2024-10-03 14:02:33,490 Attempting to retrieve auth token...
+2024-10-03 14:02:33,490 Retrieved authorization token!
+2024-10-03 14:02:33,490 Using token: 01ef81b1-a98b-2e01-87f5-005056a78bcd
+2024-10-03 14:02:33,490 Selected ship for token authentication is: Encore
+2024-10-03 14:02:33,490 Selected ship for token authentication is: Encore
+2024-10-03 14:02:33,490 Using STRIIM API URL: http://encstriim01v.encore.ncl.com:9080
+2024-10-03 14:02:33,490 Split URL to append token endpoint: ['http:', '', 'encstriim01v.encore.ncl.com:9080']
+2024-10-03 14:02:33,490 New URL after parse and appending token endpoint http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-03 14:02:33,490 Selected ship for token authentication is: Encore
+2024-10-03 14:02:33,490 Getting password for API URL http://encstriim01v.encore.ncl.com:9080/security/authenticate based on front-end selection Encore
+2024-10-03 14:02:33,490 ENC264195_YgDeTo
+2024-10-03 14:02:33,505 ENC264195_YgDeTo
+2024-10-03 14:02:33,505 HEADERS: {'username': 'admin', 'password': 'ENC264195_YgDeTo'}
+2024-10-03 14:02:34,038 127.0.0.1 - - [03/Oct/2024 14:02:34] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 14:03:01,253  * Detected change in 'C:\\Users\\btavarez\\dev\\striim\\striim_ship_api\\strim_app_api\\ship_app.py', reloading

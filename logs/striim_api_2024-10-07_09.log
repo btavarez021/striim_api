@@ -1,0 +1,158 @@
+2024-10-07 09:53:03,738  * Debugger is active!
+2024-10-07 09:53:03,743  * Debugger PIN: 329-991-988
+2024-10-07 09:53:12,033 127.0.0.1 - - [07/Oct/2024 09:53:12] "GET / HTTP/1.1" 200 -
+2024-10-07 09:53:12,125 127.0.0.1 - - [07/Oct/2024 09:53:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12024-10-07 10:03:25,897  * Restarting with stat
+2024-10-07 10:03:27,687  * Restarting with stat
+2024-10-07 10:07:45,148  * Restarting with stat
+2024-10-07 10:08:27,973  * Restarting with stat
+200 -
+2024-10-07 09:53:26,904 Received the following from the frontend: {'ship': 'Breakaway'}
+2024-10-07 09:53:26,904 Retrieving credentials for Breakaway
+2024-10-07 09:53:26,904 Username found!
+2024-10-07 09:53:26,904 Error: No password configured for Breakaway
+2024-10-07 09:53:26,905 Built URL: http://brestriim01v.breakaway.ncl.com:9080/security/authenticate
+2024-10-07 09:53:27,175 RESPONSE: 
+2024-10-07 09:53:27,176 Attempting to retrieve auth token...
+2024-10-07 09:53:27,176 RESPONSE: 
+2024-10-07 09:53:27,176 Failed to retrieve token. Status Code: 400
+2024-10-07 09:53:27,177 Received the following from the frontend: {'ship': 'Breakaway'}
+2024-10-07 09:53:27,177 Retrieving credentials for Breakaway
+2024-10-07 09:53:27,177 Username found!
+2024-10-07 09:53:27,177 Error: No password configured for Breakaway
+2024-10-07 09:53:27,177 Received {'ship': 'Breakaway'} from the drop down menu.
+2024-10-07 09:53:27,177 Going to use Breakaway to get API URL.
+2024-10-07 09:53:27,177 URL API: http://brestriim01v.breakaway.ncl.com:9080/api/v2/applications
+2024-10-07 09:53:27,177 Parsing URL to add correct endpoint
+2024-10-07 09:53:27,177 Final API URL is: http://brestriim01v.breakaway.ncl.com:9080/health?token=Likely: wrong username / password
+2024-10-07 09:53:27,177 Starting to get stats based on user selection: Breakaway
+2024-10-07 09:53:27,178 'str' object has no attribute 'items'
+2024-10-07 09:53:27,178 127.0.0.1 - - [07/Oct/2024 09:53:27] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-07 09:53:28,871 Received the following from the frontend: {'ship': 'Encore'}
+2024-10-07 09:53:28,871 Retrieving credentials for Encore
+2024-10-07 09:53:28,871 Username found!
+2024-10-07 09:53:28,871 Credentials found for Encore
+2024-10-07 09:53:28,872 Built URL: http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-07 09:53:30,039 RESPONSE: {"token":"01ef84b3-8859-4961-887f-005056a78bcd"}
+2024-10-07 09:53:30,039 Attempting to retrieve auth token...
+2024-10-07 09:53:30,040 Retrieved authorization token!
+2024-10-07 09:53:30,040 Using token: 01ef84b3-8859-4961-887f-005056a78bcd
+2024-10-07 09:53:30,040 Received the following from the frontend: {'ship': 'Encore'}
+2024-10-07 09:53:30,040 Retrieving credentials for Encore
+2024-10-07 09:53:30,040 Username found!
+2024-10-07 09:53:30,040 Credentials found for Encore
+2024-10-07 09:53:30,040 Received {'ship': 'Encore'} from the drop down menu.
+2024-10-07 09:53:30,040 Going to use Encore to get API URL.
+2024-10-07 09:53:30,041 URL API: http://encstriim01v.encore.ncl.com:9080/api/v2/applications
+2024-10-07 09:53:30,041 Parsing URL to add correct endpoint
+2024-10-07 09:53:30,041 Final API URL is: http://encstriim01v.encore.ncl.com:9080/health?token=01ef84b3-8859-4961-887f-005056a78bcd
+2024-10-07 09:53:30,041 Starting to get stats based on user selection: Encore
+2024-10-07 09:53:30,284 Response: 200
+2024-10-07 09:53:30,284 Retrieved app statistics for Encore was successfull!
+2024-10-07 09:53:30,292 127.0.0.1 - - [07/Oct/2024 09:53:30] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 09:53:34,215 Received the following from the frontend: {'ship': 'Escape'}
+2024-10-07 09:53:34,215 Retrieving credentials for Escape
+2024-10-07 09:53:34,215 Username found!
+2024-10-07 09:53:34,215 Credentials found for Escape
+2024-10-07 09:53:34,216 Built URL: http://escstriim01v.escape.ncl.com:9080/security/authenticate
+2024-10-07 09:53:35,632 RESPONSE: {"token":"01ef84b4-974d-73f1-9ca6-005056962850"}
+2024-10-07 09:53:35,633 Attempting to retrieve auth token...
+2024-10-07 09:53:35,633 Retrieved authorization token!
+2024-10-07 09:53:35,633 Using token: 01ef84b4-974d-73f1-9ca6-005056962850
+2024-10-07 09:53:35,634 Received the following from the frontend: {'ship': 'Escape'}
+2024-10-07 09:53:35,634 Retrieving credentials for Escape
+2024-10-07 09:53:35,634 Username found!
+2024-10-07 09:53:35,634 Credentials found for Escape
+2024-10-07 09:53:35,634 Received {'ship': 'Escape'} from the drop down menu.
+2024-10-07 09:53:35,634 Going to use Escape to get API URL.
+2024-10-07 09:53:35,634 URL API: http://escstriim01v.escape.ncl.com:9080/api/v2/applications
+2024-10-07 09:53:35,634 Parsing URL to add correct endpoint
+2024-10-07 09:53:35,634 Final API URL is: http://escstriim01v.escape.ncl.com:9080/health?token=01ef84b4-974d-73f1-9ca6-005056962850
+2024-10-07 09:53:35,634 Starting to get stats based on user selection: Escape
+2024-10-07 09:53:36,015 Response: 200
+2024-10-07 09:53:36,015 Retrieved app statistics for Escape was successfull!
+2024-10-07 09:53:36,025 127.0.0.1 - - [07/Oct/2024 09:53:36] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 09:56:14,654 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 09:56:14,663 127.0.0.1 - - [07/Oct/2024 09:56:14] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 09:56:18,036 Received the following from the frontend: {'ship': 'Epic'}
+2024-10-07 09:56:18,036 Retrieving credentials for Epic
+2024-10-07 09:56:18,036 Username found!
+2024-10-07 09:56:18,036 Credentials found for Epic
+2024-10-07 09:56:18,037 Built URL: http://epistriim01v.epic.ncl.com:9080/security/authenticate
+2024-10-07 09:56:19,424 RESPONSE: {"token":"01ef84b4-f8e5-e391-95c6-0050569448bd"}
+2024-10-07 09:56:19,425 Attempting to retrieve auth token...
+2024-10-07 09:56:19,425 Retrieved authorization token!
+2024-10-07 09:56:19,425 Using token: 01ef84b4-f8e5-e391-95c6-0050569448bd
+2024-10-07 09:56:19,426 Received the following from the frontend: {'ship': 'Epic'}
+2024-10-07 09:56:19,426 Retrieving credentials for Epic
+2024-10-07 09:56:19,426 Username found!
+2024-10-07 09:56:19,426 Credentials found for Epic
+2024-10-07 09:56:19,426 Received {'ship': 'Epic'} from the drop down menu.
+2024-10-07 09:56:19,426 Going to use Epic to get API URL.
+2024-10-07 09:56:19,426 URL API: http://epistriim01v.epic.ncl.com:9080/api/v2/applications
+2024-10-07 09:56:19,427 Parsing URL to add correct endpoint
+2024-10-07 09:56:19,427 Final API URL is: http://epistriim01v.epic.ncl.com:9080/health?token=01ef84b4-f8e5-e391-95c6-0050569448bd
+2024-10-07 09:56:19,427 Starting to get stats based on user selection: Epic
+2024-10-07 09:56:19,831 Response: 200
+2024-10-07 09:56:19,831 Retrieved app statistics for Epic was successfull!
+2024-10-07 09:56:19,840 127.0.0.1 - - [07/Oct/2024 09:56:19] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 09:56:43,248 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 09:56:43,254 127.0.0.1 - - [07/Oct/2024 09:56:43] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 09:56:44,661 Received the following from the frontend: {'ship': 'Epic'}
+2024-10-07 09:56:44,661 Retrieving credentials for Epic
+2024-10-07 09:56:44,661 Username found!
+2024-10-07 09:56:44,661 Credentials found for Epic
+2024-10-07 09:56:44,662 Built URL: http://epistriim01v.epic.ncl.com:9080/security/authenticate
+2024-10-07 09:56:45,839 RESPONSE: {"token":"01ef84b5-08a4-a691-95c6-0050569448bd"}
+2024-10-07 09:56:45,839 Attempting to retrieve auth token...
+2024-10-07 09:56:45,840 Retrieved authorization token!
+2024-10-07 09:56:45,840 Using token: 01ef84b5-08a4-a691-95c6-0050569448bd
+2024-10-07 09:56:45,841 Received the following from the frontend: {'ship': 'Epic'}
+2024-10-07 09:56:45,841 Retrieving credentials for Epic
+2024-10-07 09:56:45,841 Username found!
+2024-10-07 09:56:45,841 Credentials found for Epic
+2024-10-07 09:56:45,841 Received {'ship': 'Epic'} from the drop down menu.
+2024-10-07 09:56:45,841 Going to use Epic to get API URL.
+2024-10-07 09:56:45,841 URL API: http://epistriim01v.epic.ncl.com:9080/api/v2/applications
+2024-10-07 09:56:45,841 Parsing URL to add correct endpoint
+2024-10-07 09:56:45,841 Final API URL is: http://epistriim01v.epic.ncl.com:9080/health?token=01ef84b5-08a4-a691-95c6-0050569448bd
+2024-10-07 09:56:45,841 Starting to get stats based on user selection: Epic
+2024-10-07 09:56:46,249 Response: 200
+2024-10-07 09:56:46,249 Retrieved app statistics for Epic was successfull!
+2024-10-07 09:56:46,258 127.0.0.1 - - [07/Oct/2024 09:56:46] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-07 10:00:36,466 127.0.0.1 - - [07/Oct/2024 10:00:36] "GET / HTTP/1.1" 200 -
+2024-10-07 10:00:37,608 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-07 10:00:37,610 127.0.0.1 - - [07/Oct/2024 10:00:37] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-07 10:00:39,102 127.0.0.1 - - [07/Oct/2024 10:00:39] "GET / HTTP/1.1" 200 -
+2024-10-07 10:00:43,296 Received the following from the frontend: {'ship': 'Discovery'}
+2024-10-07 10:00:43,297 Retrieving credentials for Discovery
+2024-10-07 10:00:43,297 Username found!
+2024-10-07 10:00:43,297 Credentials found for Discovery
+2024-10-07 10:00:43,299 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 10:00:44,188 RESPONSE: {"token":"01ef84b4-bc1f-91e1-ada8-005056a3d7b2"}
+2024-10-07 10:00:44,190 Attempting to retrieve auth token...
+2024-10-07 10:00:44,190 Retrieved authorization token!
+2024-10-07 10:00:44,190 Using token: 01ef84b4-bc1f-91e1-ada8-005056a3d7b2
+2024-10-07 10:00:44,198 Built URL: http://10.65.61.154:9080/health?token=01ef84b4-bc1f-91e1-ada8-005056a3d7b2
+2024-10-07 10:00:44,238 Application health API was retrieved successfully.
+2024-10-07 10:00:44,238 Looking to see if application name was given...
+2024-10-07 10:00:44,238 No specific application name given. Will display health stats for all applications.
+2024-10-07 10:00:44,243 127.0.0.1 - - [07/Oct/2024 10:00:44] "POST /get_applications HTTP/1.1" 200 -
+2024-10-07 10:01:01,674 Built following URL: http://10.65.61.154:9080/api/v2/applications/admin.benny_test/sprint
+2024-10-07 10:01:01,677 Received the following from the frontend: {'ship': 'Discovery', 'appName': 'admin.benny_test'}
+2024-10-07 10:01:01,677 Retrieving credentials for Discovery
+2024-10-07 10:01:01,677 Username found!
+2024-10-07 10:01:01,677 Credentials found for Discovery
+2024-10-07 10:01:01,678 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-07 10:01:02,437 RESPONSE: {"token":"01ef84b4-c707-9f81-ada8-005056a3d7b2"}
+2024-10-07 10:01:02,437 Attempting to retrieve auth token...
+2024-10-07 10:01:02,437 Retrieved authorization token!
+2024-10-07 10:01:02,437 Using token: 01ef84b4-c707-9f81-ada8-005056a3d7b2
+2024-10-07 10:01:02,439 Built URL: http://10.65.61.154:9080/health?token=01ef84b4-c707-9f81-ada8-005056a3d7b2
+2024-10-07 10:01:02,472 Application health API was retrieved successfully.
+2024-10-07 10:01:02,472 Looking to see if application name was given...
+2024-10-07 10:01:02,472 
+2024-10-07 10:01:02,473 Health stats for admin.benny_test found.
+2024-10-07 10:01:02,473 Trying to start app: admin.benny_test on ship Discovery
+2024-10-07 10:02:04,780 127.0.0.1 - - [07/Oct/2024 10:02:04] "[35m[1mPOST /striim/start HTTP/1.1[0m" 500 -
+2024-10-07 10:03:25,861  * Detected change in 'C:\\Users\\btavarez\\dev\\striim\\striim_ship_api\\strim_app_api\\ship_app.py', reloading

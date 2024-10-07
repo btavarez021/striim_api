@@ -1,0 +1,67 @@
+2024-10-04 15:09:39,136  * Debugger is active!
+2024-10-04 15:09:39,140  * Debugger PIN: 329-991-988
+2024-10-04 15:09:45,473 Received the following from the frontend: {'ship': 'Discovery', 'appName': 'admin.benny_test'}
+2024-10-04 15:09:45,473 Retrieving credentials for Discovery
+2024-10-04 15:09:45,473 Username found!
+2024-10-04 15:09:45,474 Credentials found for Discovery
+2024-10-04 15:09:45,474 Built URL: http://10.65.61.154:9080/security/authenticate
+2024-10-04 15:09:46,378 RESPONSE: {"token":"01ef8284-6aa0-29b1-ada8-005056a3d7b2"}
+2024-10-04 15:09:46,379 Attempting to retrieve auth token...
+2024-10-04 15:09:46,379 Retrieved authorization token!
+2024-10-04 15:09:46,379 Using token: 01ef8284-6aa0-29b1-ada8-005056a3d7b2
+2024-10-04 15:09:46,383 Built following URL: http://10.65.61.154:9080/api/v2/applications/admin.benny_test/deployment
+2024-10-04 15:09:46,385 Trying to undeploy app: admin.benny_test on ship Discovery
+2024-10-04 15:09:46,687 admin.benny_test undeployed successfully!
+2024-10-04 15:09:46,688 127.0.0.1 - - [04/Oct/2024 15:09:46] "DELETE /application/undeploy HTTP/1.1" 200 -
+2024-10-04 15:09:49,569 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-04 15:09:49,604 127.0.0.1 - - [04/Oct/2024 15:09:49] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-04 15:09:53,121 Received the following from the frontend: {'ship': 'Encore'}
+2024-10-04 15:09:53,122 Retrieving credentials for Encore
+2024-10-04 15:09:53,122 Username found!
+2024-10-04 15:09:53,122 Credentials found for Encore
+2024-10-04 15:09:53,123 Built URL: http://encstriim01v.encore.ncl.com:9080/security/authenticate
+2024-10-04 15:09:59,185 Received the following from the frontend: {'ship': 'Explorer'}
+2024-10-04 15:09:59,185 Retrieving credentials for Explorer
+2024-10-04 15:09:59,185 Username found!
+2024-10-04 15:09:59,185 Credentials found for Explorer
+2024-10-04 15:09:59,186 Built URL: http://10.31.50.154:9080/security/authenticate
+2024-10-04 15:10:00,736 RESPONSE: {"token":"01ef8285-462a-4011-bc26-005056bcaa33"}
+2024-10-04 15:10:00,736 Attempting to retrieve auth token...
+2024-10-04 15:10:00,736 Retrieved authorization token!
+2024-10-04 15:10:00,736 Using token: 01ef8285-462a-4011-bc26-005056bcaa33
+2024-10-04 15:10:00,737 Received the following from the frontend: {'ship': 'Explorer'}
+2024-10-04 15:10:00,737 Retrieving credentials for Explorer
+2024-10-04 15:10:00,738 Username found!
+2024-10-04 15:10:00,738 Credentials found for Explorer
+2024-10-04 15:10:00,738 Received {'ship': 'Explorer'} from the drop down menu.
+2024-10-04 15:10:00,738 Going to use Explorer to get API URL.
+2024-10-04 15:10:00,738 URL API: http://10.31.50.154:9080/api/v2/applications
+2024-10-04 15:10:00,738 Parsing URL to add correct endpoint
+2024-10-04 15:10:00,738 Final API URL is: http://10.31.50.154:9080/health?token=01ef8285-462a-4011-bc26-005056bcaa33
+2024-10-04 15:10:00,738 Starting to get stats based on user selection: Explorer
+2024-10-04 15:10:01,276 Response: 200
+2024-10-04 15:10:01,276 Retrieved app statistics for Explorer was successfull!
+2024-10-04 15:10:01,285 127.0.0.1 - - [04/Oct/2024 15:10:01] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-04 15:10:06,304 Received the following from the frontend: {'ship': 'Vista'}
+2024-10-04 15:10:06,304 Retrieving credentials for Vista
+2024-10-04 15:10:06,305 Username found!
+2024-10-04 15:10:06,305 Credentials found for Vista
+2024-10-04 15:10:06,306 Built URL: http://visstriim01v.vista.ncl.com:9080/security/authenticate
+2024-10-04 15:10:07,775 RESPONSE: {"token":"01ef8285-4a80-05a1-947b-005056a38ca6"}
+2024-10-04 15:10:07,776 Attempting to retrieve auth token...
+2024-10-04 15:10:07,776 Retrieved authorization token!
+2024-10-04 15:10:07,777 Using token: 01ef8285-4a80-05a1-947b-005056a38ca6
+2024-10-04 15:10:07,778 Received the following from the frontend: {'ship': 'Vista'}
+2024-10-04 15:10:07,778 Retrieving credentials for Vista
+2024-10-04 15:10:07,779 Username found!
+2024-10-04 15:10:07,779 Credentials found for Vista
+2024-10-04 15:10:07,779 Received {'ship': 'Vista'} from the drop down menu.
+2024-10-04 15:10:07,779 Going to use Vista to get API URL.
+2024-10-04 15:10:07,779 URL API: http://visstriim01v.vista.ncl.com:9080/api/v2/applications
+2024-10-04 15:10:07,779 Parsing URL to add correct endpoint
+2024-10-04 15:10:07,780 Final API URL is: http://visstriim01v.vista.ncl.com:9080/health?token=01ef8285-4a80-05a1-947b-005056a38ca6
+2024-10-04 15:10:07,780 Starting to get stats based on user selection: Vista
+2024-10-04 15:10:08,206 Response: 200
+2024-10-04 15:10:08,206 Retrieved app statistics for Vista was successfull!
+2024-10-04 15:10:08,217 127.0.0.1 - - [04/Oct/2024 15:10:08] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-04 15:10:11,134 127.0.0.1 - - [04/Oct/2024 15:10:11] "GET / HTTP/1.1" 200 -

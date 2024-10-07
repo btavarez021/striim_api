@@ -1,0 +1,192 @@
+2024-10-03 14:54:47,560  * Debugger is active!
+2024-10-03 14:54:47,568  * Debugger PIN: 329-991-988
+2024-10-03 14:54:48,539 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 14:54:48,553 127.0.0.1 - - [03/Oct/2024 14:54:48] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 14:54:51,062 Selected ship for token authentication is: Insignia
+2024-10-03 14:54:51,062 Selected ship for token authentication is: Insignia
+2024-10-03 14:54:51,062 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:54:51,062 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:54:51,062 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:54:51,062 Selected ship for token authentication is: Insignia
+2024-10-03 14:54:51,062 Getting password for API URL http://10.16.50.154:9080/security/authenticate based on front-end selection Insignia
+2024-10-03 14:54:51,062 None
+2024-10-03 14:54:51,070 None
+2024-10-03 14:54:51,070 Error: No password configured for Insignia
+2024-10-03 14:54:51,070 Selected ship for token authentication is: Insignia
+2024-10-03 14:54:51,070 Selected ship for token authentication is: Insignia
+2024-10-03 14:54:51,070 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:54:51,070 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:54:51,070 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:54:53,563 RESPONSE: 
+2024-10-03 14:54:53,563 Attempting to retrieve auth token...
+2024-10-03 14:54:53,563 RESPONSE: 
+2024-10-03 14:54:53,563 Failed to retrieve token. Status Code: 400
+2024-10-03 14:54:53,563 Selected ship for token authentication is: Insignia
+2024-10-03 14:54:53,563 Selected ship for token authentication is: Insignia
+2024-10-03 14:54:53,563 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:54:53,563 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:54:53,563 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:54:53,563 Selected ship for token authentication is: Insignia
+2024-10-03 14:54:53,563 Getting password for API URL http://10.16.50.154:9080/security/authenticate based on front-end selection Insignia
+2024-10-03 14:54:53,563 None
+2024-10-03 14:54:53,563 None
+2024-10-03 14:54:53,563 Error: No password configured for Insignia
+2024-10-03 14:54:53,577 127.0.0.1 - - [03/Oct/2024 14:54:53] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-03 14:55:40,256 Selected ship for token authentication is: Discovery
+2024-10-03 14:55:40,256 Selected ship for token authentication is: Discovery
+2024-10-03 14:55:40,256 Using STRIIM API URL: http://10.65.61.154:9080/api/v2/applications
+2024-10-03 14:55:40,256 Split URL to append token endpoint: ['http:', '', '10.65.61.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:55:40,256 New URL after parse and appending token endpoint http://10.65.61.154:9080/security/authenticate
+2024-10-03 14:55:40,256 Selected ship for token authentication is: Discovery
+2024-10-03 14:55:40,256 Getting password for API URL http://10.65.61.154:9080/security/authenticate based on front-end selection Discovery
+2024-10-03 14:55:40,256 2%cy?jm?UK9vH7bm
+2024-10-03 14:55:40,264 2%cy?jm?UK9vH7bm
+2024-10-03 14:55:40,264 HEADERS: {'username': 'admin', 'password': '2%cy?jm?UK9vH7bm'}
+2024-10-03 14:55:40,264 Selected ship for token authentication is: Discovery
+2024-10-03 14:55:40,264 Selected ship for token authentication is: Discovery
+2024-10-03 14:55:40,264 Using STRIIM API URL: http://10.65.61.154:9080/api/v2/applications
+2024-10-03 14:55:40,264 Split URL to append token endpoint: ['http:', '', '10.65.61.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:55:40,264 New URL after parse and appending token endpoint http://10.65.61.154:9080/security/authenticate
+2024-10-03 14:55:41,325 RESPONSE: {"token":"01ef81b9-1483-f5a1-8112-005056a3d7b2"}
+2024-10-03 14:55:41,325 Attempting to retrieve auth token...
+2024-10-03 14:55:41,325 Retrieved authorization token!
+2024-10-03 14:55:41,325 Using token: 01ef81b9-1483-f5a1-8112-005056a3d7b2
+2024-10-03 14:55:41,325 Selected ship for token authentication is: Discovery
+2024-10-03 14:55:41,325 Selected ship for token authentication is: Discovery
+2024-10-03 14:55:41,325 Using STRIIM API URL: http://10.65.61.154:9080/api/v2/applications
+2024-10-03 14:55:41,325 Split URL to append token endpoint: ['http:', '', '10.65.61.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:55:41,325 New URL after parse and appending token endpoint http://10.65.61.154:9080/security/authenticate
+2024-10-03 14:55:41,325 Selected ship for token authentication is: Discovery
+2024-10-03 14:55:41,325 Getting password for API URL http://10.65.61.154:9080/security/authenticate based on front-end selection Discovery
+2024-10-03 14:55:41,325 2%cy?jm?UK9vH7bm
+2024-10-03 14:55:41,325 2%cy?jm?UK9vH7bm
+2024-10-03 14:55:41,325 HEADERS: {'username': 'admin', 'password': '2%cy?jm?UK9vH7bm'}
+2024-10-03 14:55:41,581 127.0.0.1 - - [03/Oct/2024 14:55:41] "POST /striim/status-by-ship HTTP/1.1" 200 -
+2024-10-03 14:55:46,290 Selected ship for token authentication is: Insignia
+2024-10-03 14:55:46,290 Selected ship for token authentication is: Insignia
+2024-10-03 14:55:46,295 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:55:46,297 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:55:46,297 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:55:46,297 Selected ship for token authentication is: Insignia
+2024-10-03 14:55:46,297 Getting password for API URL http://10.16.50.154:9080/security/authenticate based on front-end selection Insignia
+2024-10-03 14:55:46,297 None
+2024-10-03 14:55:46,297 None
+2024-10-03 14:55:46,303 Error: No password configured for Insignia
+2024-10-03 14:55:46,303 Selected ship for token authentication is: Insignia
+2024-10-03 14:55:46,303 Selected ship for token authentication is: Insignia
+2024-10-03 14:55:46,303 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:55:46,303 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:55:46,303 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:55:48,704 RESPONSE: 
+2024-10-03 14:55:48,704 Attempting to retrieve auth token...
+2024-10-03 14:55:48,704 RESPONSE: 
+2024-10-03 14:55:48,704 Failed to retrieve token. Status Code: 400
+2024-10-03 14:55:48,704 Selected ship for token authentication is: Insignia
+2024-10-03 14:55:48,704 Selected ship for token authentication is: Insignia
+2024-10-03 14:55:48,704 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:55:48,704 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:55:48,704 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:55:48,704 Selected ship for token authentication is: Insignia
+2024-10-03 14:55:48,704 Getting password for API URL http://10.16.50.154:9080/security/authenticate based on front-end selection Insignia
+2024-10-03 14:55:48,704 None
+2024-10-03 14:55:48,704 None
+2024-10-03 14:55:48,704 Error: No password configured for Insignia
+2024-10-03 14:55:48,712 127.0.0.1 - - [03/Oct/2024 14:55:48] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-03 14:58:13,363 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 14:58:13,389 127.0.0.1 - - [03/Oct/2024 14:58:13] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 14:58:18,512 Selected ship for token authentication is: Insignia
+2024-10-03 14:58:18,512 Selected ship for token authentication is: Insignia
+2024-10-03 14:58:18,512 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:58:18,512 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:58:18,512 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:58:18,512 Selected ship for token authentication is: Insignia
+2024-10-03 14:58:18,512 Getting password for API URL http://10.16.50.154:9080/security/authenticate based on front-end selection Insignia
+2024-10-03 14:58:18,527 None
+2024-10-03 14:58:18,531 None
+2024-10-03 14:58:18,534 Error: No password configured for Insignia
+2024-10-03 14:58:18,536 Selected ship for token authentication is: Insignia
+2024-10-03 14:58:18,536 Selected ship for token authentication is: Insignia
+2024-10-03 14:58:18,536 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:58:18,536 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:58:18,536 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:58:21,364 RESPONSE: 
+2024-10-03 14:58:21,364 Attempting to retrieve auth token...
+2024-10-03 14:58:21,364 RESPONSE: 
+2024-10-03 14:58:21,364 Failed to retrieve token. Status Code: 400
+2024-10-03 14:58:21,364 Selected ship for token authentication is: Insignia
+2024-10-03 14:58:21,364 Selected ship for token authentication is: Insignia
+2024-10-03 14:58:21,364 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:58:21,378 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:58:21,378 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:58:21,378 Selected ship for token authentication is: Insignia
+2024-10-03 14:58:21,379 Getting password for API URL http://10.16.50.154:9080/security/authenticate based on front-end selection Insignia
+2024-10-03 14:58:21,379 None
+2024-10-03 14:58:21,382 None
+2024-10-03 14:58:21,382 Error: No password configured for Insignia
+2024-10-03 14:58:21,385 127.0.0.1 - - [03/Oct/2024 14:58:21] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-03 14:59:08,345 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 14:59:08,345 127.0.0.1 - - [03/Oct/2024 14:59:08] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 14:59:11,764 Selected ship for token authentication is: Insignia
+2024-10-03 14:59:11,764 Selected ship for token authentication is: Insignia
+2024-10-03 14:59:11,764 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:59:11,780 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:59:11,780 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:59:11,780 Selected ship for token authentication is: Insignia
+2024-10-03 14:59:11,782 Getting password for API URL http://10.16.50.154:9080/security/authenticate based on front-end selection Insignia
+2024-10-03 14:59:11,782 None
+2024-10-03 14:59:11,784 None
+2024-10-03 14:59:11,784 Error: No password configured for Insignia
+2024-10-03 14:59:11,784 Selected ship for token authentication is: Insignia
+2024-10-03 14:59:11,784 Selected ship for token authentication is: Insignia
+2024-10-03 14:59:11,788 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:59:11,788 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:59:11,788 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:59:14,524 RESPONSE: 
+2024-10-03 14:59:14,524 Attempting to retrieve auth token...
+2024-10-03 14:59:14,524 RESPONSE: 
+2024-10-03 14:59:14,524 Failed to retrieve token. Status Code: 400
+2024-10-03 14:59:14,524 Selected ship for token authentication is: Insignia
+2024-10-03 14:59:14,524 Selected ship for token authentication is: Insignia
+2024-10-03 14:59:14,524 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 14:59:14,524 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 14:59:14,524 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 14:59:14,524 Selected ship for token authentication is: Insignia
+2024-10-03 14:59:14,524 Getting password for API URL http://10.16.50.154:9080/security/authenticate based on front-end selection Insignia
+2024-10-03 14:59:14,524 None
+2024-10-03 14:59:14,524 None
+2024-10-03 14:59:14,524 Error: No password configured for Insignia
+2024-10-03 14:59:14,539 127.0.0.1 - - [03/Oct/2024 14:59:14] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -
+2024-10-03 15:00:33,161 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 15:00:33,180 127.0.0.1 - - [03/Oct/2024 15:00:33] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 15:00:33,907 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-03 15:00:33,907 127.0.0.1 - - [03/Oct/2024 15:00:33] "GET /striim/status-all HTTP/1.1" 200 -
+2024-10-03 15:00:35,605 Selected ship for token authentication is: Insignia
+2024-10-03 15:00:35,605 Selected ship for token authentication is: Insignia
+2024-10-03 15:00:35,609 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 15:00:35,609 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 15:00:35,609 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 15:00:35,609 Selected ship for token authentication is: Insignia
+2024-10-03 15:00:35,609 Getting password for API URL http://10.16.50.154:9080/security/authenticate based on front-end selection Insignia
+2024-10-03 15:00:35,609 None
+2024-10-03 15:00:35,611 None
+2024-10-03 15:00:35,611 Error: No password configured for Insignia
+2024-10-03 15:00:35,611 Selected ship for token authentication is: Insignia
+2024-10-03 15:00:35,611 Selected ship for token authentication is: Insignia
+2024-10-03 15:00:35,616 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 15:00:35,616 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 15:00:35,616 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 15:00:37,908 RESPONSE: 
+2024-10-03 15:00:37,908 Attempting to retrieve auth token...
+2024-10-03 15:00:37,908 RESPONSE: 
+2024-10-03 15:00:37,908 Failed to retrieve token. Status Code: 400
+2024-10-03 15:00:37,908 Selected ship for token authentication is: Insignia
+2024-10-03 15:00:37,908 Selected ship for token authentication is: Insignia
+2024-10-03 15:00:37,915 Using STRIIM API URL: http://10.16.50.154:9080/api/v2/applications
+2024-10-03 15:00:37,915 Split URL to append token endpoint: ['http:', '', '10.16.50.154:9080', 'api', 'v2', 'applications']
+2024-10-03 15:00:37,915 New URL after parse and appending token endpoint http://10.16.50.154:9080/security/authenticate
+2024-10-03 15:00:37,915 Selected ship for token authentication is: Insignia
+2024-10-03 15:00:37,915 Getting password for API URL http://10.16.50.154:9080/security/authenticate based on front-end selection Insignia
+2024-10-03 15:00:37,915 None
+2024-10-03 15:00:37,915 None
+2024-10-03 15:00:37,915 Error: No password configured for Insignia
+2024-10-03 15:00:37,923 127.0.0.1 - - [03/Oct/2024 15:00:37] "[35m[1mPOST /striim/status-by-ship HTTP/1.1[0m" 500 -

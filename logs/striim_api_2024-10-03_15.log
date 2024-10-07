@@ -1,0 +1,32 @@
+2024-10-03 15:59:54,593  * Debugger is active!
+2024-10-03 15:59:54,601  * Debugger PIN: 329-991-988
+2024-10-03 15:59:55,040 127.0.0.1 - - [03/Oct/2024 15:59:55] "GET / HTTP/1.1" 200 -
+2024-10-03 15:59:56,681 Selected ship for token authentication is: Discovery
+2024-10-03 15:59:56,681 Using STRIIM API URL: http://10.65.61.154:9080/api/v2/applications
+2024-10-03 15:59:56,681 Split URL to append token endpoint: ['http:', '', '10.65.61.154:9080', 'api', 'v2', 'applications']
+2024-10-03 15:59:56,681 New URL after parse and appending token endpoint http://10.65.61.154:9080/security/authenticate
+2024-10-03 15:59:56,681 Selected ship for token authentication is: Discovery
+2024-10-02024-10-03 16:00:47,923  * Restarting with stat
+2024-10-03 16:01:18,562  * Restarting with stat
+2024-10-03 16:01:45,966  * Restarting with stat
+2024-10-03 16:02:50,452  * Restarting with stat
+2024-10-03 16:02:53,299  * Restarting with stat
+2024-10-03 16:03:05,897  * Restarting with stat
+vH7bm'}
+2024-10-03 15:59:56,693 Selected ship for token authentication is: Discovery
+2024-10-03 15:59:56,693 Using STRIIM API URL: http://10.65.61.154:9080/api/v2/applications
+2024-10-03 15:59:56,693 Split URL to append token endpoint: ['http:', '', '10.65.61.154:9080', 'api', 'v2', 'applications']
+2024-10-03 15:59:56,693 New URL after parse and appending token endpoint http://10.65.61.154:9080/security/authenticate
+2024-10-03 15:59:57,735 RESPONSE: {"token":"01ef81c2-0f7e-7901-ada8-005056a3d7b2"}
+2024-10-03 15:59:57,735 Attempting to retrieve auth token...
+2024-10-03 15:59:57,735 Retrieved authorization token!
+2024-10-03 15:59:57,735 Using token: 01ef81c2-0f7e-7901-ada8-005056a3d7b2
+2024-10-03 15:59:57,735 Selected ship for token authentication is: Discovery
+2024-10-03 15:59:57,735 Using STRIIM API URL: http://10.65.61.154:9080/api/v2/applications
+2024-10-03 15:59:57,735 Split URL to append token endpoint: ['http:', '', '10.65.61.154:9080', 'api', 'v2', 'applications']
+2024-10-03 15:59:57,735 New URL after parse and appending token endpoint http://10.65.61.154:9080/security/authenticate
+2024-10-03 15:59:58,210 Application health API was retrieved successfully.
+2024-10-03 15:59:58,210 Looking to see if application name was given...
+2024-10-03 15:59:58,210 No specific application name given. Will display health stats for all applications.
+2024-10-03 15:59:58,217 127.0.0.1 - - [03/Oct/2024 15:59:58] "POST /get_applications HTTP/1.1" 200 -
+2024-10-03 16:00:47,873  * Detected change in 'C:\\Users\\btavarez\\dev\\striim\\striim_ship_api\\strim_app_api\\ship_app.py', reloading

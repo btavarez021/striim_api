@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NCL STRIIM API</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+    .alert {
+        margin-top: 10px;
+    }
+    .btn .spinner-border {
+        display: none;
+    }
+    .btn-loading .spinner-border {
+        display: inline-block;
+    }
+    .btn-loading {
+        pointer-events: none;
+    }
+    .btn-sm,
+    .form-label {
+            margin-top: 10px;
+        }
+</style>
+</head>
+<body>
+
+{% include '/static/navbar.html' %}
+
+<!-- SHIP DROPDOWN-->
+<div class="container-fluid">   
+    <div class="mb-3 w-25">
+        <!-- <form id="command-form" method="POST" action="/striim/sendcommands"> -->
+        <form id="command-form" >
+
+            <label for="shipDropdown" class="form-label">Select a Ship</label>
+            <select class="form-select" id="shipDropdown" name="ship">
+                <option value ="">Select a ship first</option>
+                <option value="Discovery">Discovery</option>
+                <option value="Bliss">Bliss</option>
+                <option value="Breakaway">Breakaway</option>
+                <option value="Dawn">Dawn</option>
+                <option value="Encore">Encore</option>
+                <option value="Epic">Epic</option>
+                <option value="Escape">Escape</option>
+                <option value="Explorer">Explorer</option>
+                <option value="Gem">Gem</option>
+                <option value="Getaway">Getaway</option>
+                <option value="Grandeur">Grandeur</option>
+                <option value="Insignia">Insignia</option>
+                <option value="Jade">Jade</option>
+                <option value="Jewel">Jewel</option>
+                <option value="Joy">Joy</option>
+                <option value="Marina">Marina</option>
+                <option value="Mariner">Mariner</option>
+                <option value="Nautica">Nautica</option>
+                <option value="Navigator">Navigator</option>
+                <option value="Pride Of America">Pride Of America</option>
+                <option value="Prima">Prima</option>
+                <option value="Regatta">Regatta</option>
+                <option value="Riviera">Riviera</option>
+                <option value="Sirena">Sirena</option>
+                <option value="Sky">Sky</option>
+                <option value="Splendor">Splendor</option>
+                <option value="Sun">Sun</option>
+                <option value="Voyager">Voyager</option>
+                <option value="Vista">Vista</option>
+                <option value="Viva">Viva</option>
+            </select>
+
+            <label for="appDropdown">Select an app</label>
+            <select class="form-select" id="appDropdown">
+            <option value ="">Select an app</option>
+            </select>
+        
+            <!-- Command Text Box -->
+            <!-- <label for="send-command-to-ship" class="form-label">Input Commands</label>
+                <textarea class="form-control form-control-sm" id="send-command-to-ship" name="command" rows="3"></textarea>
+                <button id="send-command" class="btn btn-primary btn-sm" type="submit">Send Command
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display:none;"></span>
+            </button> -->
+
+            <!-- Check Application Status Button-->
+            <!-- <button id="check-status" class="btn btn-info btn-sm">Check Status
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            </button> -->
+
+            <!-- Start Server Button-->
+            <button id="start-striim" class="btn btn-success btn-sm" type="button">Start App
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            </button>
+
+            <!-- Stop Server Button-->
+            <button id="stop-striim" class="btn btn-danger btn-sm" type="button">Stop App
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            </button>
+            <!-- Deploy Button-->
+            <button id="deploy-app" class="btn btn-primary btn-sm" type="button">Deploy App
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            </button>
+            <!-- Undeploy Button-->
+            <button id="undeploy-app" class="btn btn-primary btn-sm" type="button">Undeploy App
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            </button>
+
+            <!-- Alerts after button is clicked-->
+            <!-- <div id="send-command-alert" class="alert mt-3" role="alert" style="display: none;"></div> -->
+            <div id="start-app-alert" class="alert" role="alert" style="display: none;"></div>
+            <div id="stop-app-alert" class="alert" role="alert" style="display: none;"></div> 
+            <div id="status" class="alert" role="alert" style="display: none;"></div>
+            <div id="deploy-app-alert" class="alert" role="alert" style="display: none;"></div>
+            <div id="undeploy-app-alert" class="alert" role="alert" style="display: none;"></div>
+
+        </form>
+    </div>
+</div>
+
+<script>
+$(document).ready(function() {
+    function clearStatus() {
+        $('#start').hide().removeClass('alert-success alert-danger alert-info');
+        $('#stop').hide().removeClass('alert-success alert-danger alert-info');
+         $('send-command-alert').hide().removeClass('alert-success alert-danger alert-info');
+         $('#deploy-app-alert').hide().removeClass('alert-success alert-danger alert-info');
+         $('#undeploy-app-alert').hide().removeClass('alert-success alert-danger alert-info');
+
+    }
+
+    // Fade out success or alert message after 3 seconds
+    function showAlert(alertElement, duration) {
+        setTimeout(function() {
+            alertElement.fadeOut(); // Smoothly hide the alert
+            }, duration);
+    }
+
+    //Check status
+
+    $('#check-status').click(function() {
+   // Clear the previous status message
+   $('#status').hide().removeClass('alert-success alert-danger');
+   const ship = $('#shipDropdown').val();  // Get the selected ship
+   $('#check-status').prop('disabled', true);  // Disable the button during the request
+   $('#check-status .spinner-border').show();  // Show the spinner
+   $.ajax({
+       url: '/striim/status',
+       type: 'POST',
+       contentType: 'application/json',
+       data: JSON.stringify({ ship: ship }),  // Send the ship data as JSON
+       success: function(data) {
+           $('#status').addClass('alert alert-success').text(data.message).show();  // Show success message
+       },
+       error: function(xhr) {
+           let errorMsg = xhr.responseJSON && xhr.responseJSON.error ? xhr.responseJSON.error : "An error occurred.";
+           errorMsg = xhr.responseJSON.error;
+           $('#status').addClass('alert alert-danger').text('Error: ' + errorMsg).show();  // Show error message
+       },
+       complete: function() {
+           $('#check-status').prop('disabled', false);  // Re-enable the button
+           $('#check-status .spinner-border').hide();  // Hide the spinner
+           $('#check-status').css('pointer-events', 'auto'); // Re-enable button by making pointer events auto in CSS
+           showAlert($('#status'), 6000);  // Optionally show alert
+       }
+   });
+});
+
+// Deploy App Action
+$('#deploy-app').click(function() {
+    if (confirm("Are you sure you want to deploy this application?")) {
+        $('#deploy-app-alert').hide().removeClass('alert-success alert-danger');
+        const ship = $('#shipDropdown').val();  // Get the selected ship
+        const appName = $('#appDropdown').val();  // Get the selected appName
+        console.log("SHIP: ", ship)
+        console.log("APP:", appName)
+        $('#deploy-app').addClass('btn-loading').prop('disabled', true);
+        // Send the request as JSON
+        $.ajax({
+            url: '/application/deploy',
+            type: 'POST',
+            contentType: 'application/json', // Specify JSON content type
+            data: JSON.stringify({ ship: ship, appName: appName }), // Send data as JSON string
+            success: function(data) {
+                $('#deploy-app-alert').addClass('alert alert-success').text(data.message).show();
+            },
+            error: function(xhr) {
+                let errorMsg = xhr.responseJSON && xhr.responseJSON.error ? xhr.responseJSON.error : "An error occurred.";
+                if(xhr.responseJSON && xhr.responseJSON.error) {
+                    console.log('XHR Response: ', xhr);
+                    errorMsg = xhr.responseJSON.error;
+                } else if (xhr.status == 404) {
+                    errorMsg = 'Internal server error. Please try again.'
+                }
+                $('#deploy-app-alert').addClass('alert alert-danger').text('Error: ' + errorMsg).show();
+            },
+            complete: function() {
+                $('#deploy-app').prop('disabled', false).removeClass('#btn-loading')
+                $('#deploy-app .spinner-border').hide();
+                $('#deploy-app').css('pointer-events', 'auto');
+                showAlert($('#deploy-app-alert'), 6000);
+            }
+        });
+    } else {
+        let errorMsg = "No Action performed.";
+        $('#deploy-app-alert').addClass('alert alert-danger').text(errorMsg).show();
+        showAlert($('#deploy-app-alert'), 6000);
+    }
+});
+
+    // $('#deploy-app').click(function() {
+    //         // clearStatus();
+    //         // Confirm that you want to perform action
+    //         if (confirm("Are you sure you want to deploy this application?")) {
+    //             $('#deploy-app-alert').hide().removeClass('alert-success alert-danger');
+    //             const ship = $('#shipDropdown').val();  // Get the selected ship
+    //             const appName = $('#appDropdown').val();  // Get the selected ship
+    //             $('#deploy-app').addClass('btn-loading').prop('disabled', true);
+    //             $.ajax({
+    //                 url: '/application/deploy',
+    //                 type: 'POST',
+    //                 data: JSON.stringify({ ship: ship, appName: appName }),  // Send post request with ship data
+    //                 contentType: 'application/json'
+    //             })
+    //                 .done(function(data) {
+    //                     console.log("DATA: ", data)
+    //                     $('#deploy-app-alert').addClass('alert alert-success').text('Deployed app on ' + ship + ': ' + data.message).show();
+    //                 })
+    //                 .fail(function(xhr) {
+    //                     let errorMsg = xhr.responseJSON && xhr.responseJSON.error ? xhr.responseJSON.error : "An error occurred.";
+    //                     if(xhr.responseJSON && xhr.responseJSON.error) {
+    //                         errorMsg = xhr.responseJSON.error;
+    //                         console.log(xhr.responseJSON)
+    //                     }
+    //                     else if (xhr.status == 404) {
+    //                         errorMsg = 'Internal server error. Please try again.'
+    //                     }
+    //                     $('#deploy-app-alert').addClass('alert alert-danger').text('Error: ' + errorMsg).show();
+    //                     console.log(errorMsg)
+    //                 })
+    //                 .always(function() {
+    //                     $('#deploy-app').prop('disabled', false).removeClass('btn-loading')
+    //                     $('#deploy-app .spinner-border').hide();
+    //                     showAlert($('#deploy-app-alert'), 3000);
+    //                 });
+    //         }
+    //         else {
+    //                 let errorMsg = "No Action performed.";
+    //                 $('#deploy-app-alert').addClass('alert alert-danger').text(errorMsg).show();
+    //                 showAlert($('#deploy-app-alert'), 3000);
+    //             }
+    //     });
+        
+        // undeploy app
+        $('#undeploy-app').click(function() {
+            // clearStatus();
+            // Confirm that you want to perform action
+            if (confirm("Are you sure you want to undeploy this application?")) {
+                $('#undeploy-app-alert').hide().removeClass('alert-success alert-danger');
+                const ship = $('#shipDropdown').val();  // Get the selected ship
+                const appName = $('#appDropdown').val();  // Get the selected ship
+                $('#undeploy-app').addClass('btn-loading').prop('disabled', true);
+                $.ajax({
+                    url: '/application/undeploy',
+                    type: 'DELETE', 
+                    data: JSON.stringify({ ship: ship, appName: appName }),  // Send Delete request with ship data
+                    contentType: 'application/json'
+                })
+                    .done(function(data) {
+                        $('#undeploy-app-alert').addClass('alert alert-success').text(data.message).show();
+                    })
+                    .fail(function(xhr) {
+                        let errorMsg = xhr.responseJSON && xhr.responseJSON.error ? xhr.responseJSON.error : "An error occurred.";
+                        if(xhr.responseJSON && xhr.responseJSON.error) {
+                            errorMsg = xhr.responseJSON.error;
+                        }
+                        else if (xhr.status == 404) {
+                            errorMsg = 'Internal server error. Please try again.'
+                        }
+                        $('#undeploy-app-alert').addClass('alert alert-danger').text('Error: ' + errorMsg).show();
+                    })
+                    .always(function() {
+                        $('#undeploy-app').prop('disabled', false).removeClass('btn-loading')
+                        $('#undeploy-app .spinner-border').hide();
+                        $('#undeploy-app').css('pointer-events', 'auto');
+                        showAlert($('#undeploy-app-alert'), 6000);
+                    });
+            }
+            else {
+                    let errorMsg = "No Action performed.";
+                    $('#undeploy-app-alert').addClass('alert alert-danger').text(errorMsg).show();
+                    showAlert($('#undeploy-app-alert'), 6000);
+                }
+        });
+
+    // Start Server action
+    $('#start-striim').click(function() {
+        // clearStatus();
+        // Confirm that you want to perform action
+        if (confirm("Are you sure you want to start the application?")) {
+            $('#start-app-alert').hide().removeClass('alert-success alert-danger');
+            const ship = $('#shipDropdown').val();  // Get the selected ship
+            const appName = $('#appDropdown').val();  // Get the selected ship
+            $('#start-striim').addClass('btn-loading').prop('disabled', true);
+            $.ajax({
+                    url: '/striim/start',
+                    type: 'POST', 
+                    data: JSON.stringify({ ship: ship, appName:appName }),  // Send POST request with ship and appname data
+                    contentType: 'application/json'
+                })
+                .done(function(data) {
+                    $('#start-app-alert').addClass('alert alert-success').text(data.message).show();
+                })
+                .fail(function(xhr) {
+                    let errorMsg = xhr.responseJSON && xhr.responseJSON.error ? xhr.responseJSON.error : "An error occurred.";
+                    if(xhr.responseJSON && xhr.responseJSON.error) {
+                        errorMsg = xhr.responseJSON.error;
+                    }
+                    else if (xhr.status == 404) {
+                        errorMsg = 'Internal server error. Please try again.'
+                    }
+                    $('#start-app-alert').addClass('alert alert-danger').text('Error: ' + errorMsg).show();
+                })
+                .always(function() {
+                    $('#start-striim').prop('disabled', false).removeClass('btn-loading')
+                    $('#start-striim .spinner-border').hide();
+                    $('#start-striim').css('pointer-events', 'auto'); // Re-enable button by making pointer events auto in CSS
+                    showAlert($('#start-app-alert'), 6000);
+                });
+        }
+    else {
+            let errorMsg = "No Action performed.";
+            $('#start-app-alert').addClass('alert alert-danger').text(errorMsg).show();
+            showAlert($('#start-app-alert'), 6000);
+        }
+    });
+
+    // Stop Server action
+    $('#stop-striim').click(function() {
+        // clearStatus();
+        // Confirm that you want to perform action
+        if (confirm("Are you sure you want to stop the application?")) {
+            $('#stop-app-alert').hide().removeClass('alert-success alert-danger');
+            const ship = $('#shipDropdown').val();  // Get the selected ship
+            const appName = $('#appDropdown').val();  // Get the selected ship
+            $('#stop-striim').addClass('btn-loading').prop('disabled', true);
+            $.ajax({
+                    url: '/striim/stop',
+                    type: 'DELETE', 
+                    data: JSON.stringify({ ship: ship, appName:appName }),  // Send Delete request with ship data
+                    contentType: 'application/json'
+                })
+                .fail(function(xhr) {
+                    let errorMsg = xhr.responseJSON && xhr.responseJSON.error ? xhr.responseJSON.error : "An error occurred.";
+                    if(xhr.responseJSON && xhr.responseJSON.error) {
+                        errorMsg = xhr.responseJSON.error;
+                    }
+                    else if (xhr.status == 404) {
+                        errorMsg = 'Internal server error. Please try again.'
+                    }
+                    $('#stop-app-alert').addClass('alert alert-danger').text('Error: ' + errorMsg).show();
+                })
+                .always(function() {
+                    $('#stop-striim').prop('disabled', false);  // Re-enable the button
+                    $('#stop-striim .spinner-border').hide();  // Hide the spinner
+                    $('#stop-striim').css('pointer-events', 'auto'); // Re-enable button by making pointer events auto in CSS
+                    showAlert($('#stop-app-alert'), 6000)
+                });
+        }
+        else {
+            let errorMsg = "No Action performed.";
+            $('#stop-app-alert').addClass('alert alert-danger').text(errorMsg).show();
+            showAlert($('#stop-app-alert'), 6000);
+        }
+    });
+
+    // Command form submission
+    $('#command-form').submit(function(event) {
+        // clearStatus();
+        // Confirm that you want to perform action
+            event.preventDefault(); // Prevent form from reloading the page
+            const command = $('#send-command-to-ship').val(); // Get the command text
+            const ship = $('#shipDropdown').val(); // Get the selected ship from dropdown
+            console.log(`Sending command: ${command} to ship ${ship}`); // Log for debugging
+            // $('#send-command').prop('disabled', true);
+            // $('#send-command .spinner-border').show();
+            if (command.length <= 5){
+            alert("Input must be at least 5 characters long.");
+                return; // Exit if validation fails
+            }
+
+            if (confirm("Are you sure you want to send the command(s)?")) {
+                $.ajax({
+                    url: '/striim/sendcommands',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({
+                        command: command,
+                        ship: ship
+                    }),
+                    success: function(data) {
+                        $('#send-command-alert').removeClass('alert-danger').addClass('alert alert-success');
+                        $('#send-command-alert').text('Success: ' + data.message).show();
+                        // $('#command-form')[0].reset(); // Clear form on success
+                    },
+                    error: function(xhr) {
+                        let errorMsg = xhr.responseJSON && xhr.responseJSON.error ? xhr.responseJSON.error : "An unknown error occurred.";
+                        $('#send-command-alert').removeClass('alert-success').addClass('alert alert-danger');
+                        $('#send-command-alert').text('Error: ' + errorMsg).show();
+                    },
+                    complete: function() {
+                        $('#send-command').prop('disabled', false);
+                        $('#send-command .spinner-border').hide();
+                        showAlert($('#send-command-alert'), 6000)
+                    }
+                    
+                });
+            }
+            else {
+                let errorMsg = "No Action performed.";
+                $('#send-command-alert').addClass('alert alert-danger').text(errorMsg).show();
+                showAlert($('#send-command-alert'), 6000);
+            }      
+    });
+    
+});
+
+</script>
+<script>
+    $(document).ready(function() {
+   $('#shipDropdown').change(function() {
+       var ship = $(this).val(); // Get selected ship value
+       if (ship) {
+           $.ajax({
+               url: '/get_applications',
+               type: 'POST',
+               contentType: 'application/json',
+               data: JSON.stringify({ ship: ship }),  // Send selected ship as JSON
+               success: function(response) {
+                   console.log(response); // Debugging output
+                   
+                   // Clear the application dropdown before populating
+                   $('#appDropdown').empty().append('<option value="">Select an Application</option>');
+                   // Check if applications were returned
+                   if (response.applications && Array.isArray(response.applications)) {
+                       response.applications.forEach(function(application) {
+                           $('#appDropdown').append(
+                               $('<option></option>').val(application).text(application)
+                           );
+                       });
+                   } else {
+                       $('#appDropdown').append(
+                           $('<option></option>').text('No applications available').attr('disabled', true)
+                       );
+                   }
+               },
+               error: function(xhr, status, error) {
+                   console.error("Error fetching applications: " + error); // Log errors
+               }
+           });
+       } else {
+           // Clear the application dropdown if no ship is selected
+           $('#appDropdown').empty().append('<option value="">Select an Application</option>');
+       }
+   });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+2024-10-02 20:05:43,450  * Debugger is active!
+2024-10-02 20:05:43,469  * Debugger PIN: 329-991-988
+2024-10-02 20:05:45,558 Built following URL: http://10.65.61.154:9080/api/v2/applications/None/deployment
+2024-10-02 20:05:45,599 127.0.0.1 - - [02/Oct/2024 20:05:45] "GET /striim/status-all HTTP2024-10-02 20:06:17,599  * Restarting with stat
+2024-10-02 20:10:17,032  * Restarting with stat
+2024-10-02 20:11:02,344  * Restarting with stat
+2024-10-02 20:11:31,905  * Restarting with stat
+2024-10-02 20:11:46,303  * Restarting with stat
+2024-10-03 08:48:56,890  * Restarting with stat
+2024-10-03 08:49:13,582  * Restarting with stat
+2024-10-03 08:52:47,785  * Restarting with stat
+2024-10-03 08:52:50,856  * Restarting with stat
+2024-10-03 08:54:15,499  * Restarting with stat
+2024-10-03 08:56:40,842  * Restarting with stat
+2024-10-03 08:58:26,992  * Restarting with stat
+2024-10-03 08:58:52,058  * Restarting with stat
+2024-10-03 09:01:26,011  * Restarting with stat
+2024-10-03 09:01:50,843  * Restarting with stat
+2024-10-03 09:02:43,985  * Restarting with stat
+2024-10-03 09:02:45,860  * Restarting with stat
+2024-10-03 09:03:33,348  * Restarting with stat
+2024-10-03 09:04:01,342  * Restarting with stat
+2024-10-03 09:04:37,181  * Restarting with stat
+2024-10-03 09:05:14,793  * Restarting with stat
+2024-10-03 09:05:40,919  * Restarting with stat
