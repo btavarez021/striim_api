@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Application Checkpoint</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<style>
+    h1 {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+    {% include 'static/navbar.html' %}
+ </div>
+ <h1>Checkpoint Information for {{ ship_name }}</h1>
+
+<div class="container mt-5">
+<table class="table table-sm table-hover" >
+<thead>
+<tr>
+<th>Checkpoint Num</th>
+<th>Checkpoint Duration</th>
+<th>Checkpoint Type</th>
+<th>Checkpoint Time</th>
+</tr>
+</thead>
+<tbody>
+{% for checkpoint in checkpoint_data %}
+    {% for results in checkpoint['lastTwoRecordedCheckpoints'] %}
+        <tr>
+            <td>{{ loop.index0 + 1}}</td>
+            <td>{{ results['checkpointDuration'] }}</td>
+            <td>{{ results['checkpointType'] }}</td>
+            <td>{{ results['checkpointTime'] }}</td>
+        </tr>
+    {% endfor %}
+{% endfor %}
+</tbody>
+</table>
+</div>
+</body>
+</html>

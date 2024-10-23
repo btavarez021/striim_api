@@ -32,42 +32,45 @@
 <!-- SHIP DROPDOWN-->
 <div class="container-fluid">   
     <div class="mb-3 w-25">
-        <!-- <form id="command-form" method="POST" action="/striim/sendcommands"> -->
+        <form id="command-form" method="POST" action="/striim/sendcommands">
         <form id="command-form" >
 
             <label for="shipDropdown" class="form-label">Select a Ship</label>
             <select class="form-select" id="shipDropdown" name="ship">
-                <option value ="">Select a ship first</option>
-                <option value="Discovery">Discovery</option>
-                <option value="Bliss">Bliss</option>
-                <option value="Breakaway">Breakaway</option>
-                <option value="Dawn">Dawn</option>
-                <option value="Encore">Encore</option>
-                <option value="Epic">Epic</option>
-                <option value="Escape">Escape</option>
-                <option value="Explorer">Explorer</option>
-                <option value="Gem">Gem</option>
-                <option value="Getaway">Getaway</option>
-                <option value="Grandeur">Grandeur</option>
-                <option value="Insignia">Insignia</option>
-                <option value="Jade">Jade</option>
-                <option value="Jewel">Jewel</option>
-                <option value="Joy">Joy</option>
-                <option value="Marina">Marina</option>
-                <option value="Mariner">Mariner</option>
-                <option value="Nautica">Nautica</option>
-                <option value="Navigator">Navigator</option>
-                <option value="Pride Of America">Pride Of America</option>
-                <option value="Prima">Prima</option>
-                <option value="Regatta">Regatta</option>
-                <option value="Riviera">Riviera</option>
-                <option value="Sirena">Sirena</option>
-                <option value="Sky">Sky</option>
-                <option value="Splendor">Splendor</option>
-                <option value="Sun">Sun</option>
-                <option value="Voyager">Voyager</option>
-                <option value="Vista">Vista</option>
-                <option value="Viva">Viva</option>
+                <option value ="All">All Ships</option>
+                    <option value="Discovery">Discovery</option>
+                    <option value="Bliss">Bliss</option>
+                    <option value="Breakaway">Breakaway</option>
+                    <option value="Dawn">Dawn</option>
+                    <option value="Encore">Encore</option>
+                    <option value="Epic">Epic</option>
+                    <option value="Escape">Escape</option>
+                    <option value="Explorer">Explorer</option>
+                    <option value="Gem">Gem</option>
+                    <option value="Getaway">Getaway</option>
+                    <option value="Grandeur">Grandeur</option>
+                    <option value="Insignia">Insignia</option>
+                    <option value="Jade">Jade</option>
+                    <option value="Jewel">Jewel</option>
+                    <option value="Joy">Joy</option>
+                    <option value="Marina">Marina</option>
+                    <option value="Mariner">Mariner</option>
+                    <option value="Nautica">Nautica</option>
+                    <option value="Navigator">Navigator</option>
+                    <option value="Pearl">Pearl</option>
+                    <option value="PrideOfAmerica">Pride Of America</option>
+                    <option value="Prima">Prima</option>
+                    <option value="Regatta">Regatta</option>
+                    <option value="Riviera">Riviera</option>
+                    <option value="Sirena">Sirena</option>
+                    <option value="Spirit">Spirit</option>
+                    <option value="Sky">Sky</option>
+                    <option value="Splendor">Splendor</option>
+                    <option value="Star">Star</option>
+                    <option value="Sun">Sun</option>
+                    <option value="Voyager">Voyager</option>
+                    <option value="Vista">Vista</option>
+                    <option value="Viva">Viva</option>
             </select>
 
             <label for="appDropdown">Select an app</label>
@@ -75,13 +78,6 @@
             <option value ="">Select an app</option>
             </select>
         
-            <!-- Command Text Box -->
-            <!-- <label for="send-command-to-ship" class="form-label">Input Commands</label>
-                <textarea class="form-control form-control-sm" id="send-command-to-ship" name="command" rows="3"></textarea>
-                <button id="send-command" class="btn btn-primary btn-sm" type="submit">Send Command
-                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true" style="display:none;"></span>
-            </button> -->
-
             <!-- Check Application Status Button-->
             <!-- <button id="check-status" class="btn btn-info btn-sm">Check Status
                 <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -106,7 +102,6 @@
             </button>
 
             <!-- Alerts after button is clicked-->
-            <!-- <div id="send-command-alert" class="alert mt-3" role="alert" style="display: none;"></div> -->
             <div id="start-app-alert" class="alert" role="alert" style="display: none;"></div>
             <div id="stop-app-alert" class="alert" role="alert" style="display: none;"></div> 
             <div id="status" class="alert" role="alert" style="display: none;"></div>
@@ -160,7 +155,7 @@ $(document).ready(function() {
            $('#check-status').prop('disabled', false);  // Re-enable the button
            $('#check-status .spinner-border').hide();  // Hide the spinner
            $('#check-status').css('pointer-events', 'auto'); // Re-enable button by making pointer events auto in CSS
-           showAlert($('#status'), 6000);  // Optionally show alert
+           showAlert($('#status'), 5000);  // Optionally show alert
        }
    });
 });
@@ -171,8 +166,6 @@ $('#deploy-app').click(function() {
         $('#deploy-app-alert').hide().removeClass('alert-success alert-danger');
         const ship = $('#shipDropdown').val();  // Get the selected ship
         const appName = $('#appDropdown').val();  // Get the selected appName
-        console.log("SHIP: ", ship)
-        console.log("APP:", appName)
         $('#deploy-app').addClass('btn-loading').prop('disabled', true);
         // Send the request as JSON
         $.ajax({
@@ -186,10 +179,9 @@ $('#deploy-app').click(function() {
             error: function(xhr) {
                 let errorMsg = xhr.responseJSON && xhr.responseJSON.error ? xhr.responseJSON.error : "An error occurred.";
                 if(xhr.responseJSON && xhr.responseJSON.error) {
-                    console.log('XHR Response: ', xhr);
                     errorMsg = xhr.responseJSON.error;
                 } else if (xhr.status == 404) {
-                    errorMsg = 'Internal server error. Please try again.'
+                    errorMsg = 'Internal server error. Please try again.' 
                 }
                 $('#deploy-app-alert').addClass('alert alert-danger').text('Error: ' + errorMsg).show();
             },
@@ -197,58 +189,15 @@ $('#deploy-app').click(function() {
                 $('#deploy-app').prop('disabled', false).removeClass('#btn-loading')
                 $('#deploy-app .spinner-border').hide();
                 $('#deploy-app').css('pointer-events', 'auto');
-                showAlert($('#deploy-app-alert'), 6000);
+                showAlert($('#deploy-app-alert'), 5000);
             }
         });
     } else {
         let errorMsg = "No Action performed.";
         $('#deploy-app-alert').addClass('alert alert-danger').text(errorMsg).show();
-        showAlert($('#deploy-app-alert'), 6000);
+        showAlert($('#deploy-app-alert'), 5000);
     }
 });
-
-    // $('#deploy-app').click(function() {
-    //         // clearStatus();
-    //         // Confirm that you want to perform action
-    //         if (confirm("Are you sure you want to deploy this application?")) {
-    //             $('#deploy-app-alert').hide().removeClass('alert-success alert-danger');
-    //             const ship = $('#shipDropdown').val();  // Get the selected ship
-    //             const appName = $('#appDropdown').val();  // Get the selected ship
-    //             $('#deploy-app').addClass('btn-loading').prop('disabled', true);
-    //             $.ajax({
-    //                 url: '/application/deploy',
-    //                 type: 'POST',
-    //                 data: JSON.stringify({ ship: ship, appName: appName }),  // Send post request with ship data
-    //                 contentType: 'application/json'
-    //             })
-    //                 .done(function(data) {
-    //                     console.log("DATA: ", data)
-    //                     $('#deploy-app-alert').addClass('alert alert-success').text('Deployed app on ' + ship + ': ' + data.message).show();
-    //                 })
-    //                 .fail(function(xhr) {
-    //                     let errorMsg = xhr.responseJSON && xhr.responseJSON.error ? xhr.responseJSON.error : "An error occurred.";
-    //                     if(xhr.responseJSON && xhr.responseJSON.error) {
-    //                         errorMsg = xhr.responseJSON.error;
-    //                         console.log(xhr.responseJSON)
-    //                     }
-    //                     else if (xhr.status == 404) {
-    //                         errorMsg = 'Internal server error. Please try again.'
-    //                     }
-    //                     $('#deploy-app-alert').addClass('alert alert-danger').text('Error: ' + errorMsg).show();
-    //                     console.log(errorMsg)
-    //                 })
-    //                 .always(function() {
-    //                     $('#deploy-app').prop('disabled', false).removeClass('btn-loading')
-    //                     $('#deploy-app .spinner-border').hide();
-    //                     showAlert($('#deploy-app-alert'), 3000);
-    //                 });
-    //         }
-    //         else {
-    //                 let errorMsg = "No Action performed.";
-    //                 $('#deploy-app-alert').addClass('alert alert-danger').text(errorMsg).show();
-    //                 showAlert($('#deploy-app-alert'), 3000);
-    //             }
-    //     });
         
         // undeploy app
         $('#undeploy-app').click(function() {
@@ -282,13 +231,13 @@ $('#deploy-app').click(function() {
                         $('#undeploy-app').prop('disabled', false).removeClass('btn-loading')
                         $('#undeploy-app .spinner-border').hide();
                         $('#undeploy-app').css('pointer-events', 'auto');
-                        showAlert($('#undeploy-app-alert'), 6000);
+                        showAlert($('#undeploy-app-alert'), 5000);
                     });
             }
             else {
                     let errorMsg = "No Action performed.";
                     $('#undeploy-app-alert').addClass('alert alert-danger').text(errorMsg).show();
-                    showAlert($('#undeploy-app-alert'), 6000);
+                    showAlert($('#undeploy-app-alert'), 5000);
                 }
         });
 
@@ -324,13 +273,13 @@ $('#deploy-app').click(function() {
                     $('#start-striim').prop('disabled', false).removeClass('btn-loading')
                     $('#start-striim .spinner-border').hide();
                     $('#start-striim').css('pointer-events', 'auto'); // Re-enable button by making pointer events auto in CSS
-                    showAlert($('#start-app-alert'), 6000);
+                    showAlert($('#start-app-alert'), 5000);
                 });
         }
     else {
             let errorMsg = "No Action performed.";
             $('#start-app-alert').addClass('alert alert-danger').text(errorMsg).show();
-            showAlert($('#start-app-alert'), 6000);
+            showAlert($('#start-app-alert'), 5000);
         }
     });
 
@@ -363,13 +312,13 @@ $('#deploy-app').click(function() {
                     $('#stop-striim').prop('disabled', false);  // Re-enable the button
                     $('#stop-striim .spinner-border').hide();  // Hide the spinner
                     $('#stop-striim').css('pointer-events', 'auto'); // Re-enable button by making pointer events auto in CSS
-                    showAlert($('#stop-app-alert'), 6000)
+                    showAlert($('#stop-app-alert'), 5000)
                 });
         }
         else {
             let errorMsg = "No Action performed.";
             $('#stop-app-alert').addClass('alert alert-danger').text(errorMsg).show();
-            showAlert($('#stop-app-alert'), 6000);
+            showAlert($('#stop-app-alert'), 5000);
         }
     });
 
@@ -380,7 +329,6 @@ $('#deploy-app').click(function() {
             event.preventDefault(); // Prevent form from reloading the page
             const command = $('#send-command-to-ship').val(); // Get the command text
             const ship = $('#shipDropdown').val(); // Get the selected ship from dropdown
-            console.log(`Sending command: ${command} to ship ${ship}`); // Log for debugging
             // $('#send-command').prop('disabled', true);
             // $('#send-command .spinner-border').show();
             if (command.length <= 5){
@@ -390,7 +338,7 @@ $('#deploy-app').click(function() {
 
             if (confirm("Are you sure you want to send the command(s)?")) {
                 $.ajax({
-                    url: '/striim/sendcommands',
+                    url: '/execute-command',
                     type: 'POST',
                     contentType: 'application/json',
                     data: JSON.stringify({
@@ -410,7 +358,7 @@ $('#deploy-app').click(function() {
                     complete: function() {
                         $('#send-command').prop('disabled', false);
                         $('#send-command .spinner-border').hide();
-                        showAlert($('#send-command-alert'), 6000)
+                        showAlert($('#send-command-alert'), 5000)
                     }
                     
                 });
@@ -418,7 +366,7 @@ $('#deploy-app').click(function() {
             else {
                 let errorMsg = "No Action performed.";
                 $('#send-command-alert').addClass('alert alert-danger').text(errorMsg).show();
-                showAlert($('#send-command-alert'), 6000);
+                showAlert($('#send-command-alert'), 5000);
             }      
     });
     
@@ -436,7 +384,6 @@ $('#deploy-app').click(function() {
                contentType: 'application/json',
                data: JSON.stringify({ ship: ship }),  // Send selected ship as JSON
                success: function(response) {
-                   console.log(response); // Debugging output
                    
                    // Clear the application dropdown before populating
                    $('#appDropdown').empty().append('<option value="">Select an Application</option>');

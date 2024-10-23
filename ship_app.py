@@ -12,7 +12,7 @@ import asyncio
 from dotenv import load_dotenv
 from asyncio import Semaphore
 from flask_cors import CORS
-from quart import Quart, request, jsonify, render_template, abort
+from quart import Quart, request, jsonify, render_template, abort, url_for, redirect, session
 from quart_cors import cors
 from cachetools import TTLCache
 import asyncio
@@ -20,16 +20,21 @@ import aioodbc
 import paramiko
 from itertools import zip_longest
 from concurrent.futures import ThreadPoolExecutor
+from ldap3 import Server, Connection, ALL, NTLM
+from ldap3.core.exceptions import LDAPException
+from functools import wraps
 
 # from db_connections import get_fidelio_odp_data
 
 app = Quart(__name__)
 cors(app)
 
-load_dotenv()
-timeout = httpx.Timeout(60.0)
+load_dotenv() #load .env file for docker build.
+timeout = httpx.Timeout(60.0) 
 
 global_app_health = {}
+
+app.secret_key = 'mysecretkey' # Make this a strong key. Havent played much with this yet.
 
 logging.basicConfig(filename="./logs/striim_api_{:%Y-%m-%d_%H}.log".format(datetime.now()),
                     format='%(asctime)s %(message)s',
@@ -55,7 +60,7 @@ discovery_striim_api_url = 'http://10.65.61.154:9080/'
 auth_path = 'security/authenticate'
 
 
-
+# This maps all the ships to their respective STRIIM API's. This should go in some database and called from there or a config file in the future.
 SHIP_API_MAP = {"Discovery":"http://10.65.61.154:9080/api/v2/applications", 
                 "Dawn":"http://dawstriim01v.dawn.ncl.com:9080/api/v2/applications", "Epic":"http://epistriim01v.epic.ncl.com:9080/api/v2/applications", 
                 "Encore":"http://encstriim01v.encore.ncl.com:9080/api/v2/applications", "Escape": "http://escstriim01v.escape.ncl.com:9080/api/v2/applications",
@@ -77,10 +82,20 @@ SHIP_API_MAP = {"Discovery":"http://10.65.61.154:9080/api/v2/applications",
                 
                 }
 
+# Decorator to check if user is logged in
+def login_required(f):
+   @wraps(f)
+   async def decorated_function(*args, **kwargs):
+       if 'user' not in session:
+           return redirect(url_for('login_form'))  # Redirect to login if not authenticated
+       return await f(*args, **kwargs)
+   return decorated_function
 
-@app.route('/')
-async def index():
+@app.route('/home', methods=['GET'])
+@login_required  # Protect this route with the login_required decorator
+async def home():
     return await render_template('index.html', active_page='interactive_cli')
+
 
 async def build_url(selected_ship, endpoint_type='token', authToken=None):
     """Builds the correct URL based on the selected ship and endpoint type."""
@@ -125,6 +140,75 @@ async def get_credentials(selected_ship):
    logging.info(f"Credentials found for {selected_ship}")
    return headers
 
+
+@app.route('/')
+async def index():
+    return await render_template('/index.html', active_page='interactive_cli')
+
+## Add LDAP Server here when received from cybersecurity or whomever. THEN UNCOMMENT CODE under LOGIN FUNCTION. REMOVE code "if username=='admin' 
+# (ENTIRE BLOCK of code. We dont want it to validate to those creds since we will be using active directory)""
+LDAP_SERVERS = []
+
+# Function to attempt login with multiple LDAP servers
+async def authenticate_login(username, password):
+    for ldap_server in LDAP_SERVERS:
+        try:
+            #Set up LDAP server connection
+            server = Server(ldap_server, get_info=ALL)
+            #Use simple bind or NTLM depending on LDAP server
+            conn = Connection(server, user=username, password=password, authentication=NTLM)
+
+            #Attemp to bind (login) to LDAP server
+            if conn.bind():
+                logging.info(f"Authenticated with {ldap_server}")
+                return True, f"Authenticated with {ldap_server}"
+            else:
+                logging.error(f"Failed to authenticate with  {ldap_server}")
+        
+        except LDAPException as ldap_e:
+            logging.error(f"Error with {ldap_server}: {str(e)}")
+    return False, "Authentication failed for all LDAP servers"
+
+@app.route("/login", methods=['GET'])
+async def login_form():
+    return await render_template('/static/login.html')
+
+@app.route('/logout', methods=['GET'])
+async def logout():
+    session.pop('user', None) #clear the session
+    logging.info(f"{username} successfully logged out")
+    return redirect(url_for('login_form'))
+
+@app.route("/login", methods=['POST'])
+async def login():
+    data = await request.form
+    username = data.get('username')
+    password = data.get('password')
+
+    if not username or not password:
+        logging.warning("Username and Password are required.")
+        return render_template('/static/login.html', error='username and password are required')
+    
+    if username=='admin' and password=='password':
+        logging.info(f"Login Success with {username}")
+        session['user'] = username
+        session['success'] = "Login successful"
+        return redirect(url_for('home'))
+    else:
+        logging.error(f"Unable to login with {username}.")
+        return await render_template('/static/login.html', error="Invalid Username or Password")
+    
+    # # Attempt to authenticate with multiple LDAP servers
+    # success, message = await authenticate_login(username, password)
+
+    # if success:
+    #     logging.info({"message":{message}})
+    #     return await redirect(url_for('home')), success=message)
+    # else:
+    #     logging.error(f"Unable to login with {username}.")
+    #     logging.error(f"{message}")
+    #     return await render_template('login.html', error=message)
+    
 # Create an in-memory cache with a TTL of 3 minutes (180 seconds)
 # and a maximum size of 100 tokens (adjustable based on your use case).
 token_cache = TTLCache(maxsize=50, ttl=180)
@@ -156,36 +240,6 @@ async def get_token(ship, token_url):
            logging.error(f"Error fetching token for {ship}: {e}")
            return None
 
-# async def get_token(selected_ship, token_url):
-#    ship_username = username.get('username')
-#    ship_password = password.get(selected_ship, {}).get('striim_password')  # Use get for safer access
-#    # Retrieve the credentials/headers for the selected ship
-#    headers = await get_credentials(selected_ship)
-#    if not headers:
-#        return None  # Handle case where credentials could not be retrieved
-#    try:
-#        # Make the post request to retrieve the token for the ship
-#        async with httpx.AsyncClient(timeout=timeout) as client:
-#            logging.info("I am here")
-#            logging.info(f"T:{token_url} ")
-#            logging.info("h: ", headers)
-#            resp = await client.post(token_url, data=headers)
-#            logging.info(f"Response from token request: {resp.text}")
-#            if resp.status_code != 200:
-#                logging.error(f"Failed to retrieve token. Status Code: {resp.status_code}")
-#                return None
-#            # Parse the JSON response and extract the token
-#            token_json = resp.json()
-#            token = token_json.get("token")
-#            if not token:
-#                logging.error("Token not found in response.")
-#                return None
-#            logging.info(f"Retrieved token for {selected_ship}: {token}")
-#            return token
-#    except Exception as e:
-#        logging.error(f"Error: {e}")
-#        return None
-   
 async def get_dropdown_values():
    # Get JSON data from the request
    data = await request.get_json()
@@ -282,17 +336,20 @@ def execute_command_on_linux_box(host, username, password, command, timeout=30):
        client.close()
 
 @app.route('/execute-command-form')
+@login_required  # Protect this route with the login_required decorator\
 async def command_form():
     return await render_template('execute_command.html', active_page='linux-cli')
 
 # Function to load ships from a JSON file
 @app.route("/load_ships")
+@login_required  # Protect this route with the login_required decorator
 def load_ships_from_json():
    with open('ship_names.json') as f:  # Update this path as needed
        data = json.load(f)
    return jsonify({"ships": data['ships']})
 
 @app.route('/execute-command', methods=['POST'])
+@login_required  # Protect this route with the login_required decorator
 async def execute_command():
    try:
        data = await request.json
@@ -488,6 +545,7 @@ async def update_sql_health_data(app_name, details, app_health_map, ship, pool):
 
 # Route for showing the checkpoint information for a specific ship
 @app.route('/ship-details/<ship_name>/<app_name>')
+@login_required  # Protect this route with the login_required decorator
 async def ship_details(ship_name, app_name):
    global global_app_health
    logging.info("Fetching health data for ship: %s, app: %s", ship_name, app_name)
@@ -547,6 +605,7 @@ async def url_builder(endpoint=None):
 
 # Route to check the deployment status (GET)
 @app.route('/application/status', methods=['GET'])
+@login_required  # Protect this route with the login_required decorator
 async def check_deployment_status():
     logging.info(f"Checking deployment status...")
 
@@ -586,6 +645,7 @@ async def check_deployment_status():
 
    
 @app.route('/application/deploy', methods=['POST'])
+@login_required  # Protect this route with the login_required decorator
 async def deploy_app():
    selected_ship, app_name, parsed_url, auth_token = await get_dropdown_values()
 
@@ -616,6 +676,7 @@ async def deploy_app():
        return jsonify({"error": str(e)}), 500
     
 @app.route('/application/undeploy', methods=['DELETE'])
+@login_required  # Protect this route with the login_required decorator
 async def undeploy_app():
    # Get necessary values asynchronously
    selected_ship, app_name, parsed_url, auth_token  = await get_dropdown_values()
@@ -646,6 +707,7 @@ async def undeploy_app():
 
 
 @app.route('/striim/status-all', methods=['POST', 'GET'])   
+@login_required  # Protect this route with the login_required decorator
 async def check_status_by_ship():
 
     # striim_ship_api_url, selected_ship, command, app_name = url_builder(endpoint='deployment')
@@ -674,6 +736,7 @@ async def check_status_by_ship():
 
 
 @app.route("/get_applications", methods=["POST"])
+@login_required  # Protect this route with the login_required decorator
 async def get_applications():
 
     try:
@@ -734,6 +797,7 @@ async def get_applications():
 
 
 @app.route('/striim/sendcommands', methods=['POST'])
+@login_required  # Protect this route with the login_required decorator
 async def send_commands_to_ship():
     print("HELLO")
 
@@ -779,6 +843,7 @@ async def send_commands_to_ship():
 
 
 @app.route('/striim/stop', methods=['DELETE'])
+@login_required  # Protect this route with the login_required decorator
 async def stop_server():
    # Get necessary values asynchronously
    selected_ship, app_name, parsed_url, auth_token  = await get_dropdown_values()
@@ -822,6 +887,7 @@ async def stop_server():
 
         
 @app.route('/striim/start', methods=['POST'])
+@login_required  # Protect this route with the login_required decorator
 async def start_server():
    # Get necessary values asynchronously
    selected_ship, app_name, parsed_url, auth_token  = await get_dropdown_values()

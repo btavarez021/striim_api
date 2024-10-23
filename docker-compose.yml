@@ -1,0 +1,12 @@
+services:
+  ship-api-app:
+    build:   # Build the Flask app from the Dockerfile in the current directory
+      context: .
+      dockerfile: Dockerfile
+    ports:
+     - "5000:5000"  # Map host port 5000 to container port 5000
+    environment:
+     - FLASK_ENV=development
+     - FLASK_APP=ship_app.py
+    env_file:
+     - .env  # Load environment variables from .env file
